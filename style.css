@@ -1,12 +1,79 @@
+.Figure-Restaurants
+{
+    height:850px;
+}
+.img_cover
+{
+    height:800px;
+    overflow:hidden;
+}
+#Restaurants img
+{
+    height:80%;
+    width:80%;
+}
+/* Version Desktop */
 @media screen and (min-width:1090px) and (max-width:1280px)  /* styles pour tablettes*/
 {
-
+    .Figure-Restaurants
+    {
+        height:253px;
+    }
+    .img_cover
+    {
+        height:175px;
+        overflow:hidden;
+    }
+    #Restaurants img
+    {
+        height:100%;
+        width:100%;
+    }
 }
 @media screen and (min-width:769px) and (max-width:1089px)  /* styles pour tablettes*/
 {
-
+    .Figure-Restaurants
+    {
+        height:253px;
+    }
+    .img_cover
+    {
+        height:175px;
+        overflow:hidden;
+    }
+    #Restaurants img
+    {
+        height:100%;
+        width:100%;
+    }
 }
 @media screen and (min-width:376px) and (max-width:768px)   /* styles pour mobile paysage+Portrait*/
 {
-
+.Figure-Restaurants
+{
+    height:253px;
+}
+.img_cover
+{
+    height:175px;
+    overflow:hidden;
+}
+#Restaurants img
+{
+    height:100%;
+    width:100%;
+}
+}
+@media screen and (max-width:375px) /* styles pour mobile petit écran paysage+Portrait*/
+{
+.img_cover
+    {
+        height:175px;
+        overflow:hidden;
+    }
+#Restaurants img
+    {
+        height:100%;
+        width:100%;
+    }
 }
