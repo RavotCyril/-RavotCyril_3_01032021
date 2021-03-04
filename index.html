@@ -5,51 +5,52 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="Normalize.CSS"/>
         <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"/>
         <title>ohmyfood</title>
 	</head>
 	<body>
 	<header>
-        <img src="images/logo/ohmyfood.png" alt="logo du site" id="ohmyfood">
-            <p>Paris,Belleville</p>
+            <img src="images/logo/ohmyfood.png" alt="logo du site" id="ohmyfood">
+            <p class="Localisation"><i class="fas fa-map-marker-alt"></i><span>Paris, Belleville</span></p>
         <h1>Réservez le menu qui vous convient</h1>
-            <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-            <button>Explorer nos restaurants</button>
+            <p class="Sous-Titre-H1">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+            <div class="Button-Restaurant"><button>Explorer nos restaurants</button></div>
         <h2>Fonctionnement</h2>
-            1<p>Choisissez un restaurant</p>
-            2<p>Composez votre menu</p>  
-            3<p>Dégustez au restaurant</p>  
+            <p>1 <i class="fas fa-mobile-alt"></i> Choisissez un restaurant</p>
+            <p>2 <i class="fas fa-list-ul"></i> Composez votre menu</p>  
+            <p>3 <i class="fas fa-store"></i>Dégustez au restaurant</p>  
     </header>
     <main id="Restaurants">
         <h2>Restaurants</h2>  
         <div>
             <figure class="Figure-Restaurants">
-                <div class="img_cover"><img src="images/restaurants/La-Palette-De-Goût.jpg" alt="La palette du goût"></div>
-                <figcaption><p>La palette du goût</p><p>Ménilmontan</p></figcaption>
+                <div class="img_cover">Nouveau<img src="images/restaurants/La-Palette-De-Goût.jpg" alt="La palette du goût"></div>
+                <figcaption><p><span class="Menu-Bold">La palette du goût</span><i class="far fa-heart"></i></p><p>Ménilmontan</p></figcaption>
             </figure>
         </div>
         <div>
             <figure class="Figure-Restaurants">
-                <div class="img_cover"><img src="images/restaurants/La-Note-Enchantée.jpg" alt="La note enchantée"></div>
-                    <figcaption><p>La note enchantée</p><p>Charonne</p></figcaption>
+                <div class="img_cover">Nouveau<img src="images/restaurants/La-Note-Enchantée.jpg" alt="La note enchantée"></div>
+                    <figcaption><p><span class="Menu-Bold">La note enchantée</span><i class="far fa-heart"></i></p><p>Charonne</p></figcaption>
             </figure>
         </div>
         <div>
             <figure class="Figure-Restaurants">
                 <div class="img_cover"><img src="images/restaurants/À-la-française.jpg" alt="À la française"></div>
-                <figcaption><p>À la française</p><p>Cité Rouge</p></figcaption>
+                <figcaption><p><span class="Menu-Bold">À la française</span><i class="far fa-heart"></i></p><p>Cité Rouge</p></figcaption>
             </figure>
         </div>
         <div>
             <figure class="Figure-Restaurants">
                 <div class="img_cover"><img src="images/restaurants/Le-Délice-Des-Gens.jpg" alt="Le délice des gens"></div>
-                <figcaption><p>Le délice des gens</p><p>Folie-Méricourt</p></figcaption>
+                <figcaption><p><span class="Menu-Bold">Le délice des gens</span><i class="far fa-heart"></i></p><p>Folie-Méricourt</p></figcaption>
             </figure>
         </div>
     </main>
     <footer>
-    <p>ohmyfood</p>
-    <p>Proposer un restaurant</p>
-    <p>Develir partenaire</p>
+    <h3>ohmyfood</h3>
+    <p><i class="fas fa-utensils"></i>Proposer un restaurant</p>
+    <p><i class="fas fa-hands-helping"></i>Devenir partenaire</p>
     <p>Mentions légales</p>
     <p>Contact</p>
     </footer>
