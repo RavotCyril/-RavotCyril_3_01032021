@@ -1,3 +1,9 @@
+@font-face /* Police et couleur de la page */
+{
+    font-family:"roboto";
+    src:url("Police-Roboto/Roboto-Regular.ttf") format("truetype");
+    src:url("Police-Roboto/Shrikhand-Regular.ttf") format("truetype");
+}
 .Figure-Restaurants
 {
     height:850px;
@@ -76,6 +82,7 @@
 }
 .Localisation
 {
+    text-align:center;
     background-color:#EAEAEA;
     padding:16px 0px;
     margin:0px;
@@ -85,16 +92,24 @@
     margin-right:18px;
     color:#353535 ;
 }
+.Logistique
+{
+    background-color:#F6F6F6; 
+    padding-top:40px;
+    padding-bottom:55px;
+}
 h1
 {
     width:78%;
     margin-left:80px;
+    margin-top:0px;
 }
 .Sous-Titre-H1
 {
-    width:80%;
+    font-size:1.03rem;
+    width:82.14%;
     color:#656565;
-    margin-left:20px;
+    margin-left:24px;
 }
 .Button-Restaurant
 {
@@ -108,12 +123,33 @@ h1
     color:white;
     height:50px;
     width:218px;
+    font-weight:bold;
 }
-
+nav 
+{
+    margin-top:54px;
+    margin-bottom:68px;
+}
+.Nav-Texte-En-Gras
+{
+    font-weight:bold;
+}
 header h2
 {
     font-weight:bold;
     margin-left:20px;
+}
+.Icon-Violet i
+{
+    color:#9356DC;
+    margin-left:25px;
+    margin-right:20px;
+}
+.Icon-Gris i
+{
+    color:#7E7E7E;
+    margin-left:25px;
+    margin-right:20px;
 }
 h3
 {
