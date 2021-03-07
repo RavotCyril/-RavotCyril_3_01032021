@@ -1,23 +1,23 @@
-@font-face /* Police et couleur de la page */
+@font-face  /* Police des 5 pages  " La Page Index et les 4 pages Menu " */
 {
     font-family:"roboto";
     src:url("Police-Roboto/Roboto-Black.ttf") format("truetype");
     src:url("Police-Roboto/Shrikhand-Regular.ttf") format("truetype");
 }
-body  /* Police du site */
+body  /* Police des 5 pages  " La Page Index et les 4 pages Menu " */
 {
     font-family:"Roboto-black.ttf";
 } 
-.Figure-Restaurants
+.Figure-Restaurants  /* Classe pour les figures Main Restaurants Desktop >1280px  " Page Index "  */
 {
     height:850px;
 }
-.img_cover
+.img_cover /* Classe pour les Div Main Restaurants Desktop >1280px   " Page Index "  */
 {
     height:800px;
     overflow:hidden;
 }
-#Restaurants img
+#Restaurants img /* Id pour les img Main Restaurants Desktop >1280px " Page Index " 376 x 768  */
 {
     height:80%;
     width:80%;
@@ -25,50 +25,50 @@ body  /* Police du site */
 /* Version Desktop */
 @media screen and (min-width:1090px) and (max-width:1280px)  /* styles pour tablettes*/
 {
-    .Figure-Restaurants
-    {
+.Figure-Restaurants   /* Classe pour les figures Main Restaurants 1090x1280 " Page Index "  */
+{
     height:253px;
-    }
-    .img_cover
-    {
+}
+.img_cover  /* Classe pour les Div Main Restaurants 1090x1280 " Page Index "  */
+{
     height:175px;
     overflow:hidden;
-    }
-    #Restaurants img
-    {
+}
+#Restaurants img /* Id pour les img Main Restaurants  1090x1280 " Page Index " 376 x 768  */
+{
     height:100%;
     width:100%;
-    }
+}
 }
 @media screen and (min-width:769px) and (max-width:1089px)  /* styles pour tablettes*/
 {
-    .Figure-Restaurants
-    {
+.Figure-Restaurants  /* Classe pour les figures Main Restaurants 769x1089 " Page Index "  */
+{
     height:253px;
-    }
-    .img_cover
-    {
+}
+.img_cover /* Classe pour les Div Main Restaurants 769x1089 " Page Index "  */
+{
     height:175px;
     overflow:hidden;
-    }
-    #Restaurants img
-    {
+}
+#Restaurants img /* Id pour les img Main Restaurants 769x1089 " Page Index " 376 x 768  */
+{
     height:100%;
     width:100%;
-    }
+}
 }
 @media screen and (min-width:376px) and (max-width:768px)   /* styles pour mobile paysage+Portrait*/
 {
-.Figure-Restaurants
+.Figure-Restaurants   /* Classe pour les figures Main Restaurants 376 x 768  " Page Index "  */
 {
     height:253px;
 }
-.img_cover
+.img_cover-index /* Classe pour les Div Main Restaurants 376 x 768 " Page Index "  */
 {
     height:175px;
     overflow:hidden;
 }
-#Restaurants img
+#Restaurants img /* Id pour les img Main Restaurants 376 x 768 " Page Index "  */
 {
     height:100%;
     width:100%;
@@ -76,7 +76,7 @@ body  /* Police du site */
 }
 @media screen and (max-width:375px) /* styles pour mobile petit écran paysage+Portrait*/
 {
-#ohmyfood
+#ohmyfood /* ID Logo de  " Page Index "  */
 {
     font-family:"Shrikhand";
     width:50%;
@@ -85,7 +85,12 @@ body  /* Police du site */
     margin-left:28.5%;
     margin-right:28.5%
 }
-.Localisation
+
+header div  /* Header   " Page Index "  */
+{
+    text-align:center;
+}
+.Localisation /* Classe pour la Div localisation Paris,Belleville   " Page Index " */
 {
     text-align:center;
     background-color:#EAEAEA;
@@ -93,41 +98,41 @@ body  /* Police du site */
     margin-top:0px;
     margin-bottom:0px;
 }
-.Localisation p
+.Localisation p /* Classe pour le texte de la div Localisation " Page Index "  */
 {
     margin:0px;
     width:90%;
 }
-.Localisation i
+.Localisation i /* Classe pour l'icon Localisation " Page Index " */
 {
     margin-right:18px;
     color:#353535 ;
 }
-.Logistique
+.Logistique /* Classe pour le H1 et le bouton  " Page Index "  */
 {
     background-color:#F6F6F6; 
     padding-top:40px;
     padding-bottom:55px;
 }
-h1
+h1 /* Titre h1  " Page Index "  */
 {
     font-family:"Shrikhand";
     width:78%;
     margin-left:80px;
     margin-top:0px;
 }
-.Sous-Titre-H1
+.Sous-Titre-H1 /* Classe pour mettre le texte en-dessous du h1  " Page Index "  */
 {
     font-size:1.03rem;
     width:82.14%;
     color:#656565;
     margin-left:24px;
 }
-.Button-Restaurant
+.Button-Restaurant /* Classe pour la Div pour center le texte "Explorer nos Restaurants"  " Page Index "  */
 {
     text-align:center;
 }
-.Button-Restaurant button
+.Button-Restaurant button /* Classe pour le boutton Restaurant "Explorer nos Restaurants" " Page Index "  */
 {
     background-color:#FF79DA;
     overflow:hidden;
@@ -137,23 +142,23 @@ h1
     width:218px;
     font-weight:bold;
 }
-nav 
+nav  /* Nav Fonctionnement " Page Index "  */
 {
     margin-top:54px;
     margin-bottom:68px;
 }
-.Nav-Texte-En-Gras
+.Nav-Texte-En-Gras /* Classe pour la Nav "Fonctionnement" et mettre le texte en gras  " Page Index "  */
 {
     font-weight:bold;
     margin-top:25px;
 }
-header h2
+header h2 /* Header titre H2 " Fonctionnement " pour le mettre en police Shrikhand et en gras  " Page Index "  */
 {
     font-family:"Shrikhand";
     font-weight:bold;
     margin-left:20px;
 }
-.Nav-Menu
+.Nav-Menu /* Classe Nav-Menu pour mettre les cercles et la couleur violette en font d'écrant + la couleur blanche pour le texte. " Page Index "  */
 {
     display:inline-block;
     height:20px;
@@ -168,34 +173,29 @@ header h2
     overflow:hidden;
     left:0px;
 }
-.Nav-Figure
+.Nav-Figure /* Figure des Nav  " Page Index "  */
 {
     width:325px;
     height:75px;
     box-shadow: 0px 10px 25px #E5E5E5;
     border-radius:20px;
 }
-.Icon-Violet i
+.Icon-Violet i /* Classe pour icon et le mettre en violet " Page Index "   */
 {
     color:#9356DC;
     margin-left:25px;
     margin-right:20px;
     margin-top:25px;
 }
-.Icon-Gris i
+.Icon-Gris i /* Classe pour les 2 icons et les mettrent en gris " Page Index "  */
 {
     color:#7E7E7E;
     margin-left:25px;
     margin-right:20px;
     margin-top:25px;
 }
-h3
-{
-    font-family:"Shrikhand";
-    color:white;
-    margin-top:0px;
-}
-.Figure-Restaurants
+
+.Figure-Restaurants /* Classe des Figures des 4 Menu de la  " Page Index "  */
 {
     width:335px;
     height:253px;
@@ -203,50 +203,50 @@ h3
     border-radius:20px;
     box-shadow: 0px 10px 25px #E5E5E5;
 } 
-.Figure-Restaurants i
+.Figure-Restaurants i /* Classe des Icons Coeurs des Figures des 4 Menu de la " Page Index "   */
 {
     float:right;
     margin-right:25px;
     font-size:21px;
 }
-.Figure-Restaurants p
+.Figure-Restaurants p /* Classe pour le texte des Figures des 4 Menu de la  " Page Index "   */
 {
     margin-top:0px;
     margin-bottom:8px;
 }
-.Figure-Restaurants figcaption
+.Figure-Restaurants figcaption  /* Classe pour le figcaption ( Déscription- Legende ) des Figures des 4 Menu de la  " Page Index " */
 {
     margin-top:18px;
 }
-#Restaurants
+#Restaurants  /* Id pour le Main   */
 {
     padding:55px 20px 65px 20px;
     background-color:#F6F6F6;
 }
-#Restaurants h2
+#Restaurants h2  /* Id pour le titre h2 du Main Restaurants   " Page Index "  */
 {
     font-family:"Shrikhand";
     margin-top:0px;
 }
-#Restaurants img
+#Restaurants img  /*Id pour les images du Main Restaurants    " Page Index "  */
 {
     height:100%;
     width:100%;
     border-radius:20px 20px 0px;
 }
-.img_cover
+.img_cover-index  /* Classe pour les div des images du main Restaurants   " Page Index "  */
 {
     height:175px;
     overflow:hidden;
 }
-#Restaurants a
+#Restaurants a /* Classe pour les liens du ID Restaurants de la  " Page Index "   */
 {
     display:inline-block;
     text-decoration:none;
     color:black;
     margin-bottom:17px;
 }
-.Nouveau
+.Nouveau /* Classe pour le texte nouveau  sur les images  " Page Index "     */
 {
     font-size:0.75em;
     position:absolute;
@@ -256,26 +256,63 @@ h3
     color:#008766;
     padding:10px 13px 9px 13px;
 }
-.Menu-Bold
+.Menu-Bold /* Classe pour mettre en gras les titres des Menu sur la  " Page Index "   */
 {
     font-weight:bold;
     color:black;
 }
 
-footer
+#ohmyfood-Menu-La-Palette-Du-Goût  /* ID Logo de la page    " Page Menu La Palette Du Goût " */
+{
+    font-family:"Shrikhand";
+    width:50%;
+    margin:0px;
+    text-align:center;
+}
+.Figure-Menu-La-Palette-Du-Goût /* Classe pour les Figures    " Page Menu La Palette Du Goût "    */
+{
+    height:253px;
+    margin:0px;
+}
+.Figure-Menu-La-Palette-Du-Goût img /* Classe pour les images du Menu La Palette Du Goût  " Page Menu La Palette Du Goût "    */
+{
+    height:100%;
+    width:100%;
+}
+.img_cover-Menu-La-Palette-Du-Goût /* Classe pour les Div du Menu La Palette Du Goût  " Page Menu La Palette Du Goût "    */
+{
+    height:253px;
+    overflow:hidden;
+}
+.Menu-Boutton-Retour /* Classe pour le bouton-Retour des "4 pages Menu" */
+{
+    background-color: white;
+    padding:0px;
+    border:0px;
+    float:left;
+    margin-left:20px;
+    padding-top:5px;
+}
+footer /* Footer des 5 pages  " La Page Index et les 4 pages Menu "    */
 {
     background-color: #353535;
     padding-left:24px;
     padding-top:25px;
     padding-bottom:20px;
 }
-footer p
+h3 /* Titre h3 pour le footer des 5 pages  " La Page Index et les 4 pages Menu " */  
+{
+    font-family:"Shrikhand";
+    color:white;
+    margin-top:0px;
+}
+footer p /* Texte pour le footer des 5 pages  " La Page Index et les 4 pages Menu "     */
 {
     color:white;
     margin-top:0px;
     margin-bottom:10px;
 }
-footer i
+footer i  /* Style pour les icons pour le footer des 5 pages  " La Page Index et les 4 pages Menu "     */
 {
     width:15px;
     height:15px;
