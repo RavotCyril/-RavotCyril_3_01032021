@@ -398,6 +398,7 @@ h1 /* Titre h1  " Page Index "  */
     height:50px;
     width:218px;
     font-weight:bold;
+    font-size:100%;
 }
 nav  /* Nav Fonctionnement " Page Index "  */
 {
@@ -415,6 +416,7 @@ header h2 /* Header titre H2 " Fonctionnement " pour le mettre en police Shrikha
     font-weight:bold;
     margin-left:20px;
     margin-bottom:33px;
+    font-size:1.5em;
 }
 .Nav-Menu /* Classe Nav-Menu pour mettre les cercles et la couleur violette en font d'écrant + la couleur blanche pour le texte. " Page Index "  */
 {
@@ -439,6 +441,7 @@ header h2 /* Header titre H2 " Fonctionnement " pour le mettre en police Shrikha
     box-shadow: 0px 10px 25px #E5E5E5;
     border-radius:20px;
     margin:0px 20px 23px 34px;
+    font-size:1em;
 }
 .Nav-Figure-pink
 {
@@ -448,6 +451,7 @@ header h2 /* Header titre H2 " Fonctionnement " pour le mettre en police Shrikha
     border-radius:20px;
     margin:0px 20px 23px 34px;
     background-color:#F5EDFF;
+    font-size:1em;
 }
 .Icon-Violet i /* Classe pour icon et le mettre en violet " Page Index "   */
 {
@@ -499,6 +503,7 @@ header h2 /* Header titre H2 " Fonctionnement " pour le mettre en police Shrikha
 .Figure-Restaurants figcaption  /* Classe pour le figcaption ( Déscription- Legende ) des Figures des 4 Menu de la  " Page Index " */
 {
     margin-top:18px;
+    margin-left:13px;
 }
 #Restaurants  /* Id pour le Main   */
 {
@@ -513,13 +518,34 @@ header h2 /* Header titre H2 " Fonctionnement " pour le mettre en police Shrikha
 #Restaurants img  /*Id pour les images du Main Restaurants    " Page Index "  */
 {
     height:100%;
-    width:100%;
+    width:55%;
     border-radius:20px 20px 0px;
 }
+
 .img_cover-index  /* Classe pour les div des images du main Restaurants   " Page Index "  */
 {
     height:175px;
     overflow:hidden;
+}
+#Restaurants .La-palette-du-gout img
+{
+    object-fit:cover;
+    object-position:-90px -120px;
+}
+#Restaurants .La-note-enchantee img
+{
+    object-fit:cover;
+    object-position:-100px -210px;
+}
+#Restaurants .A-la-française img
+{
+    object-fit:cover;
+    object-position:0px -100px;
+}
+#Restaurants .Le-delice-des-sens img
+{
+    object-fit:cover;
+    object-position:0px -120px;
 }
 #Restaurants a /* Classe pour les liens du ID Restaurants de la  " Page Index "   */
 {
@@ -533,7 +559,6 @@ header h2 /* Header titre H2 " Fonctionnement " pour le mettre en police Shrikha
     font-size:0.75em;
     position:absolute;
     margin-top:25px;
-    margin-left:250px;
     background-color:#99E2D0;
     color:#008766;
     padding:10px 13px 9px 13px;
