@@ -15,7 +15,7 @@ body  /* Police des 5 pages  " La Page Index et les 4 pages Menu " */
     margin-bottom:10px;
     font-size:2rem;
 }
-.logo /* Figure du Logo en desktop pour l'aligner au centre" Page Index "  */
+.logo /* Class de la figure du Logo en desktop pour l'aligner au centre" Page Index "  */
 {
     text-align:center;
 }
@@ -568,13 +568,75 @@ header h2 /* Header titre H2 " Fonctionnement " pour le mettre en police Shrikha
     font-weight:bold;
     color:black;
 }
+.Description-Menu  /* Classe pour mettre en léger gris  les descriptions des Menu sur la  " Page La Palette Du Goût "   */
+{
+    color:#1F1F1F;
+    padding-bottom:12px;
+    margin:0px;
+}
+.H1-La-palette-du-gout  /* H1 Titre principal pour mettre la taille et les margins" Page Menu La Palette Du Goût " */
+{
+    font-family:"Shrikhand";
+    font-size:2em;
+    width:100%;
+    margin:0px;
+}
+.H1-La-palette-du-gout i /* Pour mettre un margin-left à l'Icon H1 ( coeur ) Titre principal " Page Menu La Palette Du Goût " */
+{
+    margin-left:35px; 
+}
+.Titre_Entrees-Plats /* Classe pour mettre un margin top-bottom pour les titre Entrées et Plats  " Page La Palette Du Goût "   */
+{
+    margin-top:38px;
+    margin-bottom:27px;
+}
+#Main-Menu-La-Palette-Du-Gout .Titre_Entrees-Plats:hover, .Titre_Desserts:hover
+{
+    border-bottom-color:3px solid #99E2D0;
+}
+.Titre_Desserts /* Classe pour mettre un margin top-bottom pour le titre Desserts  " Page La Palette Du Goût "   */
+{
+    margin-top:50px;
+    margin-bottom:25px;
+}
+.Prix
+{
+    margin-right:23px;
+}
+#Main-Menu-La-Palette-Du-Gout /* Id-Main Pour mettre les paddings du Main " Page Menu La Palette Du Goût " */
+{
+    height:1008px;
+    padding:38px 13px 155px 13px;
+}
 
 #ohmyfood-Menu-La-Palette-Du-Goût  /* ID Logo de la page    " Page Menu La Palette Du Goût " */
 {
     font-family:"Shrikhand";
-    width:50%;
+    width:44%;
+    margin:23px 104px 8px 66px;
+}
+.Menu-Bold2  /* Classe pour mettre les titres de Menu en gras et avec un padding -top "Page Menu La Palette Du Goût" */
+{
+    font-weight:bold;
     margin:0px;
-    text-align:center;
+    padding-top:15px;
+}
+.Boutton-Selectionner /* Classe pour le bouton sélectionner des Menus "Page Menu La Palette Du Goût" */
+{
+    background-color:#99E2D0;
+    border-radius:0px 20px 20px 0px;
+    overflow:hidden;
+    border:none;
+}
+.Boutton-Commander /* Classe pour le bouton Commander des Menus "Page Menu La Palette Du Goût" */
+{
+    width:187px;
+    height:50px;
+    background-color:#B776E1;
+    color:white;
+    border-radius:50px;
+    border:none;
+    margin:45px 82px 58px;
 }
 .Figure-Menu-La-Palette-Du-Goût /* Classe pour les Figures    " Page Menu La Palette Du Goût "    */
 {
@@ -591,15 +653,26 @@ header h2 /* Header titre H2 " Fonctionnement " pour le mettre en police Shrikha
     height:253px;
     overflow:hidden;
 }
+#Main-Menu-La-Palette-Du-Gout figure /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les figures  " Page Menu La Palette Du Goût " */
+{
+    width:97%;
+    height:68px;
+    box-shadow: 0px 10px 25px #E5E5E5;
+    border-radius:20px;
+    padding-left:12px;
+    margin:0px 0px 15px 0px;
+}    
 .Menu-Boutton-Retour /* Classe pour le bouton-Retour des "4 pages Menu" */
 {
+    width:19px;
+    height:16px;
     background-color: white;
-    padding:0px;
     border:0px;
     float:left;
-    margin-left:20px;
-    padding-top:5px;
+    margin:25px 0px 0px 20px;
+    padding:0px;
 }
+
 footer /* Footer des 5 pages  " La Page Index et les 4 pages Menu "    */
 {
     background-color: #353535;
