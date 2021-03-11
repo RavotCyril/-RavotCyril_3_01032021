@@ -1,16 +1,20 @@
 @font-face  /* Police des 5 pages  " La Page Index et les 4 pages Menu " */
 {
-    font-family:"roboto";
+    font-family:"Roboto Black";
     src:url("Police-Roboto/Roboto-Black.ttf") format("truetype");
+}
+@font-face  /* Police des 5 pages  " La Page Index et les 4 pages Menu " */
+{
+    font-family:"Shrikhand";
     src:url("Police-Roboto/Shrikhand-Regular.ttf") format("truetype");
 }
 body  /* Police des 5 pages  " La Page Index et les 4 pages Menu " */
 {
-    font-family:"Roboto-black.ttf";
+    font-family:"Roboto Black", sans-serif;
 } 
 #ohmyfood /* ID Logo de  " Page Index "  */
 {
-    font-family:"Shrikhand";
+    font-family:"Shrikhand", cursive;
     margin-top:22px;
     margin-bottom:10px;
     font-size:2rem;
@@ -78,7 +82,6 @@ nav  /* Nav Fonctionnement " Page Index "  */
 }
 header h2 /* Header titre H2 " Fonctionnement " pour le mettre en police Shrikhand et en gras  " Page Index "  */
 {
-    font-family:"Shrikhand";
     font-weight:bold;
     width:20%;
     font-size:3rem;
@@ -194,7 +197,6 @@ header h2 /* Header titre H2 " Fonctionnement " pour le mettre en police Shrikha
 }
 #Restaurants h2  /* Id pour le titre h2 du Main Restaurants   " Page Index "  */
 {
-    font-family:"Shrikhand";
     margin-top:0px;
 }
 
@@ -223,12 +225,13 @@ header h2 /* Header titre H2 " Fonctionnement " pour le mettre en police Shrikha
 #ohmyfood-Menu-La-Palette-Du-Goût  /* ID Logo de la page    " Page Menu La Palette Du Goût " */
 {
     font-family:"Shrikhand";
-    width:50%;
+    font-size:4rem;
     margin:0px;
     text-align:center;
 }
 .Figure-Menu-La-Palette-Du-Goût /* Classe pour les Figures    " Page Menu La Palette Du Goût "    */
 {
+    width:800px;
     height:253px;
     margin:0px;
 }
@@ -260,7 +263,6 @@ footer /* Footer des 5 pages  " La Page Index et les 4 pages Menu "    */
 }
 h3 /* Titre h3 pour le footer des 5 pages  " La Page Index et les 4 pages Menu " */  
 {
-    font-family:"Shrikhand";
     color:white;
     margin-top:0px;
 }
@@ -269,13 +271,6 @@ footer p /* Texte pour le footer des 5 pages  " La Page Index et les 4 pages Men
     color:white;
     margin-top:0px;
     margin-bottom:10px;
-}
-footer i  /* Style pour les icons pour le footer des 5 pages  " La Page Index et les 4 pages Menu "     */
-{
-    width:15px;
-    height:15px;
-    color:white;
-    margin-right:10px;
 }
 
 /* Version Desktop */
@@ -412,7 +407,6 @@ nav  /* Nav Fonctionnement " Page Index "  */
 }
 header h2 /* Header titre H2 " Fonctionnement " pour le mettre en police Shrikhand et en gras  " Page Index "  */
 {
-    font-family:"Shrikhand";
     font-weight:bold;
     margin-left:20px;
     margin-bottom:33px;
@@ -512,7 +506,6 @@ header h2 /* Header titre H2 " Fonctionnement " pour le mettre en police Shrikha
 }
 #Restaurants h2  /* Id pour le titre h2 du Main Restaurants   " Page Index "  */
 {
-    font-family:"Shrikhand";
     margin-top:0px;
 }
 #Restaurants img  /*Id pour les images du Main Restaurants    " Page Index "  */
@@ -605,7 +598,6 @@ header h2 /* Header titre H2 " Fonctionnement " pour le mettre en police Shrikha
 }
 #Main-Menu-La-Palette-Du-Gout /* Id-Main Pour mettre les paddings du Main " Page Menu La Palette Du Goût " */
 {
-    height:1008px;
     padding:38px 13px 155px 13px;
 }
 
@@ -682,7 +674,6 @@ footer /* Footer des 5 pages  " La Page Index et les 4 pages Menu "    */
 }
 h3 /* Titre h3 pour le footer des 5 pages  " La Page Index et les 4 pages Menu " */  
 {
-    font-family:"Shrikhand";
     color:white;
     margin-top:0px;
 }
@@ -692,11 +683,17 @@ footer p /* Texte pour le footer des 5 pages  " La Page Index et les 4 pages Men
     margin-top:0px;
     margin-bottom:10px;
 }
-footer i  /* Style pour les icons pour le footer des 5 pages  " La Page Index et les 4 pages Menu "     */
+.Fourchette-Couteau i /* Style pour les icons pour le footer des 5 pages  " La Page Index et les 4 pages Menu "     */
 {
-    width:15px;
-    height:15px;
+    font-size:15px;
     color:white;
-    margin-right:10px;
+    margin-right:20px;
+}
+.Partenaire i
+{
+    font-size:12px;
+    color:white;
+    margin-right:17px;
+    transform:rotate(-10deg);
 }
 }
