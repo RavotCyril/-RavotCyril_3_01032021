@@ -3,24 +3,19 @@
     font-family:"Roboto Black";
     src:url("Police-Roboto/Roboto-Black.ttf") format("truetype");
 }
-@font-face  /* Police des 5 pages  " La Page Index et les 4 pages Menu " */
-{
-    font-family:"Shrikhand";
-    src:url("Police-Roboto/Shrikhand-Regular.ttf") format("truetype");
-}
+
 body  /* Police des 5 pages  " La Page Index et les 4 pages Menu " */
 {
     font-family:"Roboto Black", sans-serif;
 } 
 #ohmyfood /* ID Logo de  " Page Index "  */
 {
-    font-family:"Shrikhand", cursive;
-    margin-top:22px;
-    margin-bottom:10px;
     font-size:2rem;
+    margin:22px auto 10px;
 }
-.logo /* Class de la figure du Logo en desktop pour l'aligner au centre" Page Index "  */
+.Logo /* Class de la figure du Logo en desktop pour l'aligner au centre" Page Index "  */
 {
+    margin:0px;
     text-align:center;
 }
 
@@ -43,16 +38,14 @@ body  /* Police des 5 pages  " La Page Index et les 4 pages Menu " */
 }
 h1 /* Titre h1  " Page Index "  */
 {
-    font-family:"Shrikhand";
     width:100%;
-    font-size:4rem;
+    font-size:2rem;
     text-align:center;
 }
 .Sous-Titre-H1 /* Classe pour mettre le texte en-dessous du h1  " Page Index "  */
 {
-    font-size:3rem;
+    font-size:1rem;
     width:100%;
-    color:#656565;
     margin-left:24px;
     text-align:center;
 }
@@ -62,14 +55,15 @@ h1 /* Titre h1  " Page Index "  */
 }
 .Button-Restaurant button /* Classe pour le boutton Restaurant "Explorer nos Restaurants" " Page Index "  */
 {
-    background-color:#FF79DA;
+
+    background:linear-gradient(to bottom right,#FF79DA 0%,#9356DC 100%);
     overflow:hidden;
     border-radius:100px;
     color:white;
     height:100px;
-    width:40%;
-    font-weight:bold;
-    font-size:3rem;
+    width:80%;
+    font-size:2rem;
+    margin:0 auto;
 }
 nav  /* Nav Fonctionnement " Page Index "  */
 {
@@ -80,11 +74,11 @@ nav  /* Nav Fonctionnement " Page Index "  */
 {
     font-weight:bold;
 }
-header h2 /* Header titre H2 " Fonctionnement " pour le mettre en police Shrikhand et en gras  " Page Index "  */
+.Fonctionnement /* Header titre H2 " Fonctionnement " pour le mettre  en gras  " Page Index "  */
 {
     font-weight:bold;
     width:20%;
-    font-size:3rem;
+    font-size:2rem;
     margin-left:20px;
 }
 .Nav-Menu /* Classe Nav-Menu pour mettre les cercles et les chiffres 1-2-3 et la couleur violette en font d'écrant + la couleur blanche pour le texte. " Page Index "  */
@@ -169,7 +163,7 @@ header h2 /* Header titre H2 " Fonctionnement " pour le mettre en police Shrikha
 {
     height:100%;
     width:100%;
-    border-radius:20px 20px 0px;
+    border-radius:20px 20px 0px 0px;
 }
 .Figure-Restaurants figcaption  /* Classe pour le figcaption ( Déscription- Legende ) des Figures des 4 Menu de la  " Page Index " */
 {
@@ -191,11 +185,11 @@ header h2 /* Header titre H2 " Fonctionnement " pour le mettre en police Shrikha
 
 #Restaurants  /* Id pour le Main   */
 {
-    width:50%;
+    width:89.5%;
     padding:55px 25% 65px 25%;
     background-color:#F6F6F6;
 }
-#Restaurants h2  /* Id pour le titre h2 du Main Restaurants   " Page Index "  */
+.Fonctionnement /* Id pour le titre h2 du Main Restaurants   " Page Index "  */
 {
     margin-top:0px;
 }
@@ -224,8 +218,7 @@ header h2 /* Header titre H2 " Fonctionnement " pour le mettre en police Shrikha
 
 #ohmyfood-Menu-La-Palette-Du-Goût  /* ID Logo de la page    " Page Menu La Palette Du Goût " */
 {
-    font-family:"Shrikhand";
-    font-size:4rem;
+    font-size:2rem;
     margin:0px;
     text-align:center;
 }
@@ -329,7 +322,6 @@ footer p /* Texte pour le footer des 5 pages  " La Page Index et les 4 pages Men
 {
 #ohmyfood /* ID Logo de  " Page Index "  */
 {
-    font-family:"Shrikhand";
     width:50%;
     margin-top:22px;
     margin-bottom:10px;
@@ -365,20 +357,17 @@ header div  /* Header   " Page Index "  */
     padding-top:40px;
     padding-bottom:55px;
 }
-h1 /* Titre h1  " Page Index "  */
+.Reserver-Le-Menu /* Titre h2  " Page Index "  */
 {
-    font-family:"Shrikhand";
-    width:78%;
-    margin-left:80px;
-    margin-top:0px;
-    font-size:2em;
+    width:65%;
+    font-size:1.5em;
+    margin:0 auto 20px;
 }
 .Sous-Titre-H1 /* Classe pour mettre le texte en-dessous du h1  " Page Index "  */
 {
     font-size:1.03rem;
-    width:82.14%;
-    color:#656565;
-    margin-left:24px;
+    width:82%;
+    margin:0 auto 35px;
 }
 .Button-Restaurant /* Classe pour la Div pour center le texte "Explorer nos Restaurants"  " Page Index "  */
 {
@@ -389,10 +378,9 @@ h1 /* Titre h1  " Page Index "  */
     background-color:#FF79DA;
     overflow:hidden;
     border-radius:100px;
-    color:white;
+    color:#FFFFFF;
     height:50px;
-    width:218px;
-    font-weight:bold;
+    width:58.5%;
     font-size:100%;
 }
 nav  /* Nav Fonctionnement " Page Index "  */
@@ -405,7 +393,7 @@ nav  /* Nav Fonctionnement " Page Index "  */
     font-weight:bold;
     margin-top:25px;
 }
-header h2 /* Header titre H2 " Fonctionnement " pour le mettre en police Shrikhand et en gras  " Page Index "  */
+.Fonctionnement /* Header titre H2 " Fonctionnement " pour le mettre en gras  " Page Index "  */
 {
     font-weight:bold;
     margin-left:20px;
@@ -430,16 +418,16 @@ header h2 /* Header titre H2 " Fonctionnement " pour le mettre en police Shrikha
 }
 .Nav-Figure /* Figure des Nav  " Page Index "  */
 {
-    width:325px;
+    width:86%;
     height:75px;
     box-shadow: 0px 10px 25px #E5E5E5;
     border-radius:20px;
-    margin:0px 20px 23px 34px;
+    margin:0px 20px 23px 32px;
     font-size:1em;
 }
 .Nav-Figure-pink
 {
-    width:325px;
+    width:86%;
     height:75px;
     box-shadow: 0px 10px 25px #E5E5E5;
     border-radius:20px;
@@ -477,7 +465,8 @@ header h2 /* Header titre H2 " Fonctionnement " pour le mettre en police Shrikha
 }
 .Figure-Restaurants /* Classe des Figures des 4 Menu de la  " Page Index "  */
 {
-    width:335px;
+    position:relative;
+    width:100%;
     height:253px;
     margin:0px;
     border-radius:20px;
@@ -504,45 +493,46 @@ header h2 /* Header titre H2 " Fonctionnement " pour le mettre en police Shrikha
     padding:55px 20px 65px 20px;
     background-color:#F6F6F6;
 }
-#Restaurants h2  /* Id pour le titre h2 du Main Restaurants   " Page Index "  */
+#Restaurants h2  /* Id pour le titre h2 et lui enlever son margin-top du Main Restaurants   " Page Index "  */
 {
     margin-top:0px;
 }
 #Restaurants img  /*Id pour les images du Main Restaurants    " Page Index "  */
 {
+    width:100%;
     height:100%;
-    width:55%;
-    border-radius:20px 20px 0px;
+    border-radius:20px 20px 0px 0px;
 }
 
 .img_cover-index  /* Classe pour les div des images du main Restaurants   " Page Index "  */
 {
+    width:100%;
     height:175px;
     overflow:hidden;
 }
 #Restaurants .La-palette-du-gout img
 {
     object-fit:cover;
-    object-position:-90px -120px;
+    object-position:center;
 }
 #Restaurants .La-note-enchantee img
 {
     object-fit:cover;
-    object-position:-100px -210px;
+    object-position:center;
 }
 #Restaurants .A-la-française img
 {
     object-fit:cover;
-    object-position:0px -100px;
+    object-position:center;
 }
 #Restaurants .Le-delice-des-sens img
 {
     object-fit:cover;
-    object-position:0px -120px;
+    object-position:center;
 }
 #Restaurants a /* Classe pour les liens du ID Restaurants de la  " Page Index "   */
 {
-    display:inline-block;
+    display:block;
     text-decoration:none;
     color:black;
     margin-bottom:17px;
@@ -552,6 +542,7 @@ header h2 /* Header titre H2 " Fonctionnement " pour le mettre en police Shrikha
     font-size:0.75em;
     position:absolute;
     margin-top:25px;
+    right:25px;
     background-color:#99E2D0;
     color:#008766;
     padding:10px 13px 9px 13px;
@@ -569,7 +560,6 @@ header h2 /* Header titre H2 " Fonctionnement " pour le mettre en police Shrikha
 }
 .H1-La-palette-du-gout  /* H1 Titre principal pour mettre la taille et les margins" Page Menu La Palette Du Goût " */
 {
-    font-family:"Shrikhand";
     font-size:2em;
     width:100%;
     margin:0px;
@@ -603,9 +593,8 @@ header h2 /* Header titre H2 " Fonctionnement " pour le mettre en police Shrikha
 
 #ohmyfood-Menu-La-Palette-Du-Goût  /* ID Logo de la page    " Page Menu La Palette Du Goût " */
 {
-    font-family:"Shrikhand";
     width:44%;
-    margin:23px 104px 8px 66px;
+    margin:23px 0px 8px;
 }
 .Menu-Bold2  /* Classe pour mettre les titres de Menu en gras et avec un padding -top "Page Menu La Palette Du Goût" */
 {
@@ -656,13 +645,14 @@ header h2 /* Header titre H2 " Fonctionnement " pour le mettre en police Shrikha
 }    
 .Menu-Boutton-Retour /* Classe pour le bouton-Retour des "4 pages Menu" */
 {
+    position:absolute;
     width:19px;
     height:16px;
     background-color: white;
     border:0px;
-    float:left;
-    margin:25px 0px 0px 20px;
     padding:0px;
+    top:25px;
+    left:5px;
 }
 
 footer /* Footer des 5 pages  " La Page Index et les 4 pages Menu "    */
