@@ -260,8 +260,9 @@ nav  /* Nav Fonctionnement " Page Index "  */
     float:left;
     margin-left:20px;
     padding-top:5px;
+    color:black;
 }
-.Menu-Boutton-Retour a /* Classe pour le bouton-Retour des "4 pages Menu" */
+.Menu-Boutton-Retour a /* Classe pour mettre le liens en noir bouton-Retour des "4 pages Menu" */
 {
     color:black;
 }
@@ -579,7 +580,7 @@ nav  /* Nav Fonctionnement " Page Index "  */
     right:0px;
     background-color:#99E2D0;
     color:#008766;
-    padding:7x 13px 7px 13px;
+    padding:7px 13px 7px 13px;
 }
 .Menu-Bold /* Classe pour mettre en gras les titres des Menu sur la  " Page Index "   */
 {
@@ -607,9 +608,9 @@ nav  /* Nav Fonctionnement " Page Index "  */
     margin-top:38px;
     margin-bottom:27px;
 }
-#Main-Menu-La-Palette-Du-Gout .Titre_Entrees-Plats:hover, .Titre_Desserts:hover
+#Main-Menu-La-Palette-Du-Gout .Titre_Entrees-Plats :hover, .Titre_Desserts :hover /* Classe pour mettre une bordure verte au hover D'entrees-Plats-Desserts */ 
 {
-    border-bottom-color:3px solid #99E2D0;
+    border-bottom:3px solid #99E2D0;
 }
 .Titre_Desserts /* Classe pour mettre un margin top-bottom pour le titre Desserts  " Page La Palette Du Goût "   */
 {
@@ -680,6 +681,7 @@ nav  /* Nav Fonctionnement " Page Index "  */
     width:19px;
     height:16px;
     background-color: white;
+    color:black;
     border:0px;
     padding:0px;
     top:25px;
