@@ -47,7 +47,6 @@ h1 /* Titre h1  " Page Index "  */
 {
     width:100%;
     font-size:2rem;
-    text-align:center;
 }
 .Sous-Titre-H1 /* Classe pour mettre le texte en-dessous du h1  " Page Index "  */
 {
@@ -206,7 +205,7 @@ nav  /* Nav Fonctionnement " Page Index "  */
     margin-bottom:8px;
 }
 
-#Restaurants  /* Id pour le Main   */
+#Restaurants  /* Style pour mettre un backgroun-color et des paddings ou Main " Page Index  */
 {
     width:89.5%;
     padding:55px 25% 65px 25%;
@@ -251,7 +250,11 @@ nav  /* Nav Fonctionnement " Page Index "  */
     object-fit:cover;
     object-position:center;
 }
-
+.img_cover-Menu-La-Palette-Du-Goût /* Classe pour la Div de l'image du Menu La Palette Du Goût  " Page Menu La Palette Du Goût "    */
+{
+    height:260px;
+    overflow: hidden;
+}
 .Menu-Boutton-Retour /* Classe pour le bouton-Retour des "4 pages Menu" */
 {
     background-color: white;
@@ -592,38 +595,44 @@ nav  /* Nav Fonctionnement " Page Index "  */
     color:#1F1F1F;
     padding-bottom:12px;
     margin:0px;
+    font-size:14px;
 }
 .H1-La-palette-du-gout  /* H1 Titre principal pour mettre la taille et les margins" Page Menu La Palette Du Goût " */
 {
-    font-size:2em;
+    font-size:1.8em;
     width:100%;
-    margin:40px 0px;
+    margin:0px 0px 0px 20px;
 }
 .H1-La-palette-du-gout i /* Pour mettre un margin-left à l'Icon H1 ( coeur ) Titre principal " Page Menu La Palette Du Goût " */
 {
-    margin-left:35px; 
+    margin:0px 38px 0px 33px; 
 }
 .Titre_Entrees-Plats /* Classe pour mettre un margin top-bottom pour les titre Entrées et Plats  " Page La Palette Du Goût "   */
 {
-    margin-top:38px;
-    margin-bottom:27px;
+    font-weight:normal;
+    margin:38px 0px 25px 20px;
 }
-#Main-Menu-La-Palette-Du-Gout .Titre_Entrees-Plats :hover, .Titre_Desserts :hover /* Classe pour mettre une bordure verte au hover D'entrees-Plats-Desserts */ 
+#Main-Menu-La-Palette-Du-Gout .Titre_Entrees-Plats:hover, .Titre_Desserts:hover /* Classe pour mettre une bordure verte au hover des Titres H2 D'entrees-Plats-Desserts " Page La Palette Du Goût "*/ 
 {
-    border-bottom:3px solid #99E2D0;
+    padding-bottom:7px;
+    border-bottom:1px solid #99E2D0;
+    border-width:4px;
+    inline-size:41px;
 }
 .Titre_Desserts /* Classe pour mettre un margin top-bottom pour le titre Desserts  " Page La Palette Du Goût "   */
 {
-    margin-top:50px;
-    margin-bottom:25px;
+    font-weight:normal;
+    margin:47px 0px 25px 20px;
 }
-.Prix
+.Prix  /* Classe pour mettre Les chiffres ( prix ) à droite avec un margin right dans les figures  " Page La Palette Du Goût "   */
 {
+    float:right;
     margin-right:23px;
 }
 #Main-Menu-La-Palette-Du-Gout /* Id-Main Pour mettre les paddings du Main " Page Menu La Palette Du Goût " */
 {
-    padding:0px 13px 155px 13px;
+    padding:40px 0px 0px;
+    background-color:#F6F6F6;
 }
 
 #ohmyfood-Menu-La-Palette-Du-Goût  /* ID Logo de la page    " Page Menu La Palette Du Goût " */
@@ -635,7 +644,7 @@ nav  /* Nav Fonctionnement " Page Index "  */
 {
     font-weight:bold;
     margin:0px;
-    padding-top:15px;
+    padding:10px 0px 10px;
 }
 .Boutton-Selectionner /* Classe pour le bouton sélectionner des Menus "Page Menu La Palette Du Goût" */
 {
@@ -648,7 +657,7 @@ nav  /* Nav Fonctionnement " Page Index "  */
 {
     width:187px;
     height:50px;
-    background-color:#B776E1;
+    background:linear-gradient(to bottom right,#FF79DA 0%,#9356DC 100%);
     color:white;
     border-radius:50px;
     border:none;
@@ -657,6 +666,7 @@ nav  /* Nav Fonctionnement " Page Index "  */
 .Figure-Menu img /* Classe pour la figure de l'image du Menu La Palette Du Goût  " Page Menu La Palette Du Goût "    */
 {
     width:100%;
+    height:100%;
     object-fit:cover;
     object-position:center;
 }
@@ -666,14 +676,23 @@ nav  /* Nav Fonctionnement " Page Index "  */
     overflow:hidden;
     margin:0px;
 }
+.img_cover-Menu-La-Palette-Du-Goût /* Classe pour la Div de l'image du Menu La Palette Du Goût  " Page Menu La Palette Du Goût "    */
+{
+    height:260px;
+    overflow: hidden;
+}
 #Main-Menu-La-Palette-Du-Gout figure /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les figures  " Page Menu La Palette Du Goût " */
 {
-    width:97%;
-    height:68px;
-    box-shadow: 0px 10px 25px #E5E5E5;
+    width:90.4%;
+    height:69px;
+    box-shadow:0px 3px 20px #E5E5E5;
     border-radius:20px;
-    padding-left:12px;
-    margin:0px 0px 15px 0px;
+    padding-left:3.2%;
+    margin:0px 3.2% 15px 3.2%;
+}
+#Main-Menu-La-Palette-Du-Gout .Mousse-Au-Chocolat /* Id-Main  Pour enlever le margin-bottom de la dernière figure " .Mousse-Au-Chocolat  " Page Menu La Palette Du Goût " */
+{
+    margin:0px 3.2%;
 }
 .Menu-Boutton-Retour /* Classe pour le bouton-Retour des "4 pages Menu" */
 {
