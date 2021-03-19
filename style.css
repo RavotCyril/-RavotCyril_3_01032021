@@ -3,7 +3,6 @@
     font-family:"Roboto Regular";
     src:url("Police-Roboto/Roboto-Regular.ttf") format("truetype");
 }
-
 body  /* Police des 5 pages  " La Page Index et les 4 pages Menu " */
 {
     font-family:"Roboto Regular", sans-serif;
@@ -283,11 +282,13 @@ header
     width:100%;
     font-weight:normal;
     padding:38px 0px 7px 10px;
-    margin-bottom:25px;
+    margin-bottom:7px;
+    margin-top:0px;
 }
-
-#Main-Menu-La-Palette-Du-Gout .Titre_Entrees, .Titre_Plats, .Titre_Desserts /* Classe pour mettre une bordure verte au des Titres H2 D'entrees-Plats-Desserts " Page La Palette Du Goût "*/ 
+.Bordure-Titre /* Classe pour mettre une bordure verte au des Titres H2 D'entrees-Plats-Desserts " Page La Palette Du Goût "*/ 
 {
+    display:block;
+    width:100%;
     padding-bottom:7px;
     border-bottom:1px solid #99E2D0;
     border-width:4px;
@@ -764,12 +765,13 @@ header
     font-weight:normal;
     margin:47px 0px 25px 20px;
 }
-#Main-Menu-La-Palette-Du-Gout .Titre_Entrees, .Titre_Plats, .Titre_Desserts /* Classe pour mettre une bordure verte au des Titres H2 D'entrees-Plats-Desserts " Page La Palette Du Goût "*/ 
+.Bordure-Titre /* Classe pour mettre une bordure verte au des Titres H2 D'entrees-Plats-Desserts " Page La Palette Du Goût "*/ 
 {
+    display:block;
+    width:40px;
     padding-bottom:7px;
     border-bottom:1px solid #99E2D0;
     border-width:4px;
-    inline-size:41px;
 }
 .Titre_Desserts /* Classe pour mettre un margin top-bottom pour le titre Desserts  " Page La Palette Du Goût "   */
 {
