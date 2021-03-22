@@ -647,11 +647,12 @@ nav  /* Nav Fonctionnement " Page Index "  */
     color:#2F2F2E;
     margin-top:0px;
     margin-bottom:8px;
+    font-size:1.0rem;
 }
 .Figure-Restaurants figcaption  /* Classe pour le figcaption ( Déscription- Legende ) des Figures des 4 Menu de la  " Page Index " */
 {
     height:59px;
-    padding:18px 0px 5px;
+    padding:16px 0px 5px;
     margin-left:13px;
 }
 #Restaurants  /* Id pour le Main   */
@@ -716,6 +717,8 @@ nav  /* Nav Fonctionnement " Page Index "  */
 {
     font-weight:bold;
     color:black;
+    font-size:1.0rem;
+    height:17px;
 }
 .Coeur  /* Classe pour mettre l'Icon Coeur en flex  " Page Index "   */
 {
@@ -772,18 +775,12 @@ header
     line-height:22px;
     font-size:1.4rem;
 }
-.Titre_Entrees /* Classe pour mettre un margin top-bottom pour les titre Entrées et Plats  " Page La Palette Du Goût "   */
+.Titre_Entrees, .Titre_Plats /* Classe pour mettre un margin top-bottom pour les titre Entrées et Plats  " Page La Palette Du Goût "   */
 {
     font-weight:normal;
     font-size:1rem;
     margin:0px 0px 10px 20px;
-    padding-top:38px;
-}
-.Titre_Plats /* Classe pour enlever le margin top pour le titre Plats  " Page La Palette Du Goût "   */
-{
-    font-weight:normal;
-    font-size:1rem;
-    margin:0px 0px 10px 20px;
+    padding-top:23px;
 }
 .Titre_Desserts /* Classe pour mettre un margin top-bottom pour le titre Desserts  " Page La Palette Du Goût "   */
 {
@@ -875,7 +872,20 @@ header
 {
     margin:0px 3.2%;
 }
-
+.Titre_Plats-La-Note-Enchantee /* Classe pour mettre un margin top-bottom pour le titre Plat  " Page La Note Enchantee "   */
+{
+    font-weight:normal;
+    font-size:1rem;
+    margin:0px 0px 10px 20px;
+    padding-top:35px;
+}
+.Titre_Plats-A-La-Francaise /* Classe pour mettre un margin top-bottom pour le titre Plat  " Page La Note Enchantee "   */
+{
+    font-weight:normal;
+    font-size:1rem;
+    margin:0px 0px 10px 20px;
+    padding-top:27px;
+}
 /*--------------------------------------------- Styles  pour  " Page Menu "--------------------------------------------------------------- */
 
 .Bouton-Retour-Logo  /* Classe du Logo et du Bouton Retour pour mettre la Div en position relative des "4 pages Menu" */
