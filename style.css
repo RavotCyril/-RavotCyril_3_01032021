@@ -276,6 +276,7 @@ nav  /* Nav Fonctionnement " Page Index "  */
 }
 .Description-Menu  /* Classe pour mettre en léger gris  les descriptions des Menu sur la  " Page La Palette Du Goût "   */
 {
+    display:inline-block;
     color:#353535;
     padding:0px 0px 12px 10px;
     margin:0px;
@@ -318,10 +319,8 @@ nav  /* Nav Fonctionnement " Page Index "  */
 
 .Prix  /* Classe pour mettre Les chiffres ( prix ) à droite avec un margin right dans les divs  " Page La Palette Du Goût "   */
 {
-    display:flex;
-    flex-direction:row-reverse;
     margin:0px 20px 0px 0px;
-    font-size:2rem;
+    font-size:1.5rem;
     color:#353535;
 }
 #Main-Menu-La-Palette-Du-Gout /* Id-Main Pour mettre les paddings du Main " Page Menu La Palette Du Goût " */
@@ -337,7 +336,7 @@ nav  /* Nav Fonctionnement " Page Index "  */
 }
 .Menu-Bold2  /* Classe pour mettre les titres de Menu en gras et avec un padding -top "Page Menu La Palette Du Goût" */
 {
-    font-size:2rem;
+    font-size:1.5rem;
     font-weight:bold;
     margin:0px;
     padding:10px 0px 10px 10px;
@@ -691,8 +690,6 @@ nav  /* Nav Fonctionnement " Page Index "  */
 }
 .Prix  /* Classe pour mettre Les chiffres ( prix ) à droite avec un margin right dans les divs  " Page La Palette Du Goût "   */
 {
-    display:flex;
-    flex-direction:row-reverse;
     margin:0px 20px 0px 0px;
     font-size:1.5rem;
     color:#353535;
@@ -889,6 +886,7 @@ nav  /* Nav Fonctionnement " Page Index "  */
 }
 .Description-Menu  /* Classe pour mettre en léger gris  les descriptions des Menu sur la  " Page La Palette Du Goût "   */
 {
+    display:inline-block;
     color:#353535;
     padding:0px 0px 12px 10px;
     margin:0px;
@@ -899,8 +897,6 @@ nav  /* Nav Fonctionnement " Page Index "  */
 }
 .Prix  /* Classe pour mettre Les chiffres ( prix ) à droite avec un margin right dans les divs  " Page La Palette Du Goût "   */
 {
-    display:flex;
-    flex-direction:row-reverse;
     font-weight:bold;
     margin:0px 20px 0px 0px;
     font-size:1rem;
@@ -1165,6 +1161,7 @@ header
 }
 .Description-Menu  /* Classe pour mettre en léger gris  les descriptions des Menu sur la  " Page La Palette Du Goût "   */
 {
+    display:inline-block;
     color:#353535;
     padding:0px;
     margin:0px;
@@ -1231,7 +1228,6 @@ header
 
 .Prix  /* Classe pour mettre Les chiffres ( prix ) à droite avec un margin right dans les divs  " Page La Palette Du Goût "   */
 {
-    float:right;
     margin-right:23px;
     font-size:initial;
     color:#353535;
@@ -1389,6 +1385,7 @@ footer p /* Texte pour le footer des 5 pages  " La Page Index et les 4 pages Men
 }
 .Description-Menu  /* Classe pour mettre en léger gris  les descriptions des Menu sur la  " Page La Palette Du Goût "   */
 {
+    display:inline-block;
     color:#353535;
     padding:0px 0px 12px 0px;
     margin:0px;
