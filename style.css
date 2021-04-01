@@ -342,14 +342,18 @@ nav  /* Nav Fonctionnement " Page Index "  */
     margin:0px;
     padding:10px 0px 10px 10px;
 }
-.Figure-Menu /* Classe pour la figure de l'image du Menu La Palette Du Goût   " Page Menu La Palette Du Goût "    */
+.Figure-Menu /* Classe pour la figure de l'image du Menu La Palette Du Goût   " Page Menu  "    */
 {
-    width:60%;
-    height:auto;
+    width:100%;
     margin:0px;
-    padding:0px 20%;
+    padding:0px;
 }
-.Figure-Menu img /* Classe pour la figure de l'image du Menu La Palette Du Goût  " Page Menu La Palette Du Goût "    */
+.img_cover-Menu /* Classe pour la Div de l'image du Menu La Palette Du Goût  " Page Menu  "    */
+{
+    height:260px;
+    overflow:hidden;
+}
+.Figure-Menu img /* Classe pour la figure de l'image du Menu La Palette Du Goût  " Page Menu  "    */
 {
     width:100%;
     height:100%;
@@ -1274,10 +1278,10 @@ header
     margin:0px;
     padding:0px;
 }
-.img_cover-Menu-La-Palette-Du-Goût /* Classe pour la Div de l'image du Menu La Palette Du Goût  " Page Menu La Palette Du Goût "    */
+.img_cover-Menu /* Classe pour la Div de l'image du Menu La Palette Du Goût  " Page Menu La Palette Du Goût "    */
 {
     height:260px;
-    overflow: hidden;
+    overflow:hidden;
 }
 #Main-Menu-La-Palette-Du-Gout .Menu-Rectangle /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les divs  " Page Menu La Palette Du Goût " */
 {
