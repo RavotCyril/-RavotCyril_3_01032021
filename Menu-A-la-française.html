@@ -3,48 +3,84 @@
 	<head>
 	    <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="normalize.css"/>
-        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="/css/normalize.css"/>
+        <link rel="stylesheet" href="/css/style.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"/>
         <title>ohmyfood</title>
 	</head>
 	<body>
-        <header class="Header-La-Palette-Du-Gout">
+        <header class="Header-Menu">
             <div class="Bouton-Retour-Logo">
                 <a href="index.html"><span class="Menu-Boutton-Retour"><i class="fas fa-arrow-left"></i></span></a>
                 <img src="images/logo/ohmyfood.png" alt="logo du site" id="ohmyfood-Menu-A-La-Française">
             </div>
                 <figure class="Figure-Menu"><div class="img_cover-Menu"><img src="images/restaurants/À-la-française.jpg" alt="La note enchantée"></div></figure>
         </header>
-            <main id="Main-Menu-La-Palette-Du-Gout">
+            <main id="Main-Menu">
                 <h1 class="H1-La-palette-du-gout">À la Française<i class="far fa-heart"></i></h1>
                 <div class="Content-Menu">
                     <div class="Entrees">
                         <h2 class="Titre_Entrees"><span class="Bordure-Titre">ENTRÉES</span></h2>
-                            <div class="Menu-Rectangle"><h3 class="Menu-Bold2">Tartare de poulpe acidulé</h3>
-                                <p class="Description-Menu">Aux zestes d'orange<div class="Prix">25€</div></p></div>
-                            <div class="Menu-Rectangle"><h3 class="Menu-Bold2">Velouté de légumes d'antan</h3>
-                                <p class="Description-Menu">Carotte, panais, topinambour<div class="Prix">35€</div></p></div>
-                            <div class="Menu-Rectangle"><h3 class="Menu-Bold2">Soupe à l'oignon</h3>
-                                <p class="Description-Menu">Revisitée<div class="Prix">20€</div></p></div>
+                        <div class="Menu-Rectangle">
+                            <h3 class="Menu-Bold2">Tartare de poulpe acidulé</h3>
+                            <div class="Flex-Text-Prix">
+                                <p class="Description-Menu">Aux zestes d'orange</p><div class="Prix">25€</div>
+                            </div>
+                        </div>
+                        <div class="Menu-Rectangle">
+                            <h3 class="Menu-Bold2">Velouté de légumes d'antan</h3>
+                            <div class="Flex-Text-Prix">
+                                <p class="Description-Menu">Carotte, panais, topinambour</p><div class="Prix">35€</div>
+                            </div>
+                        </div>
+                        <div class="Menu-Rectangle">
+                            <h3 class="Menu-Bold2">Soupe à l'oignon</h3>
+                            <div class="Flex-Text-Prix">
+                                 <p class="Description-Menu">Revisitée</p><div class="Prix">20€</div>
+                            </div>
+                        </div>
                     </div>
                     <div class="Plats">
                         <h2 class="Titre_Plats"><span class="Bordure-Titre">PLATS</span></h2>
-                            <div class="Menu-Rectangle"><h3 class="Menu-Bold2">Coquilles Saint-Jacques</h3>
-                                <p class="Description-Menu">Accompagnées d'une purée de panais<div class="Prix">40€</div></p></div>
-                            <div class="Menu-Rectangle"><h3 class="Menu-Bold2">Magret de canard</h3>
-                                <p class="Description-Menu">Et parmentier de pommes de terre<div class="Prix">35€</div></p></div>
-                            <div class="Menu-Rectangle"><h3 class="Menu-Bold2">Pigeonneau d’Ille-et-Vilaine</h3>
-                                <p class="Description-Menu">Sur son lit de gnocchis aux légumes<div class="Prix">44€</div></p></div>
+                        <div class="Menu-Rectangle">
+                            <h3 class="Menu-Bold2">Coquilles Saint-Jacques</h3>
+                            <div class="Flex-Text-Prix">
+                                <p class="Description-Menu">Accompagnées d'une purée de panais</p><div class="Prix">40€</div>
+                            </div>
+                        </div>
+                        <div class="Menu-Rectangle">
+                            <h3 class="Menu-Bold2">Magret de canard</h3>
+                            <div class="Flex-Text-Prix">
+                                <p class="Description-Menu">Et parmentier de pommes de terre</p><div class="Prix">35€</div>
+                            </div>
+                        </div>
+                        <div class="Menu-Rectangle">
+                            <h3 class="Menu-Bold2">Pigeonneau d’Ille-et-Vilaine</h3>
+                            <div class="Flex-Text-Prix">
+                                <p class="Description-Menu">Sur son lit de gnocchis aux légumes</p><div class="Prix">44€</div>
+                            </div>
+                        </div>
                     </div>
                     <div class="Desserts">
                         <h2 class="Titre_Desserts"><span class="Bordure-Titre">DESSERTS</span></h2>
-                            <div class="Menu-Rectangle"><h3 class="Menu-Bold2">Pétales de violettes glacés</h3>
-                                <p class="Description-Menu">Et purée de noisettes<div class="Prix">18€</div></p></div>
-                            <div class="Menu-Rectangle"><h3 class="Menu-Bold2">Fondant au chocolat</h3>
-                                <p class="Description-Menu">Revisité<div class="Prix">22€</div></p></div>
-                            <div class="Menu-Rectangle"><h3 class="Menu-Bold2">Millefeuille croustillant</h3>
-                                <p class="Description-Menu">Myrtilles et pâte d’amande<div class="Prix">23€</div></p></div>
+                        <div class="Menu-Rectangle">
+                            <h3 class="Menu-Bold2">Pétales de violettes glacés</h3>
+                            <div class="Flex-Text-Prix">
+                                <p class="Description-Menu">Et purée de noisettes</p><div class="Prix">18€</div>
+                            </div>
+                        </div>
+                        <div class="Menu-Rectangle">
+                            <h3 class="Menu-Bold2">Fondant au chocolat</h3>
+                            <div class="Flex-Text-Prix">
+                                <p class="Description-Menu">Revisité</p><div class="Prix">22€</div>
+                            </div>
+                        </div>
+                        <div class="Menu-Rectangle">
+                            <h3 class="Menu-Bold2">Millefeuille croustillant</h3>
+                            <div class="Flex-Text-Prix">
+                                <p class="Description-Menu">Myrtilles et pâte d’amande</p><div class="Prix">23€</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="Div-Boutton">
