@@ -469,22 +469,41 @@ footer h3 /* Titre h3 pour le footer des 5 pages  Version Desktop " La Page Inde
 .loading
 {
     display:flex;
-    justify-content:center;    
+    justify-content:center;
+    animation: loader 3s ease;    
 }
-.loading::after
+.loading:after
 {
+    position:absolute;
     content:"";
-    width:50px;
-    height:50px;
+    width:80px;
+    height:80px;
+    top: calc( 50vh - 40px );
     border:10px solid #dddddd;
     border-top-color:#009579;
     border-bottom-color:#009579;
     border-radius:50%;
-    animation: loading 3s ease infinite;
+    animation: loading 3s ease;
 }
 @keyframes loading 
 {
-    to{transform: rotate(1turn);
+to
+{
+    transform:rotate(1turn);
+}
+}
+@keyframes loader 
+{
+    0% {
+        opacity : 1;
+    }
+    66% {
+        opacity: 1;
+    }
+100%
+{
+opacity: 0;
+display: none;
 }
 }
 /* Version Desktop */
