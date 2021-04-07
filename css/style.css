@@ -462,7 +462,31 @@ footer h3 /* Titre h3 pour le footer des 5 pages  Version Desktop " La Page Inde
     margin-top:0px;
     font-size:2rem;
 }
-
+.Contact
+{
+    text-decoration:none;
+}
+.loading
+{
+    display:flex;
+    justify-content:center;    
+}
+.loading::after
+{
+    content:"";
+    width:50px;
+    height:50px;
+    border:10px solid #dddddd;
+    border-top-color:#009579;
+    border-bottom-color:#009579;
+    border-radius:50%;
+    animation: loading 3s ease infinite;
+}
+@keyframes loading 
+{
+    to{transform: rotate(1turn);
+}
+}
 /* Version Desktop */
 @media screen and (min-width:1090px) and (max-width:1280px)  /* styles pour tablettes*/
 {
@@ -1422,6 +1446,7 @@ footer p /* Texte pour le footer des 5 pages  " La Page Index et les 4 pages Men
 {
     font-weight:bold;
 }
+
 }
 @media screen and (max-width:350px) /* styles pour les mobiles très petit écrants */
 {
