@@ -162,19 +162,15 @@ nav  /* Nav Fonctionnement " Page Index "  */
     font-size:2rem;
     margin:0px 0px 20px 40px;
 }
-.content   /* Classe pour mettre 2 figures  en flex colonne " Page Index " */
+.content   /* Classe pour mettre les 4 figures  en flex colonne " Page Index " */
 {
     display:flex;
     justify-content:space-around;
 }
-.content2  /* Classe pour mettre 2 figures  en flex colonne " Page Index" */
-{
-    display:flex;
-    justify-content:space-around;
-}
+
 #Restaurants .La-Palette-Du-Gout, .La-Note-Enchantee, .A-la-Française, .Le-Delice-Des-Sens /* Classe pour les liens du ID Restaurants de la  " Page Index "   */
 {
-    width:45%;
+    width:23%;
     display:block;
     color:black;
 }
@@ -219,7 +215,7 @@ nav  /* Nav Fonctionnement " Page Index "  */
     color:#2F2F2E;
     margin-top:10px;
     margin-bottom:25px;
-    font-size:20px;
+    font-size:21px;
 }
 .Nouveau /* Classe pour le texte nouveau  sur les images  " Page Index "     */
 {
@@ -235,16 +231,18 @@ nav  /* Nav Fonctionnement " Page Index "  */
 {
     font-weight:bold;
     color:black;
+    font-size:21px;
 }
 .Coeur  /* Classe pour mettre l'Icon Coeur en flex  " Page Index "   */
 {
     display:flex;
     justify-content:space-between;
+    align-items:center;
     font-size:21px;
 }
-#Restaurants i
+#Restaurants i 
 {
-    font-size:2rem;
+    font-size:25px;
     padding:0px 40px 0px 0px;
 }
 
@@ -462,50 +460,92 @@ footer h3 /* Titre h3 pour le footer des 5 pages  Version Desktop " La Page Inde
     margin-top:0px;
     font-size:2rem;
 }
-.Contact
+.Contact   /* Pour enlever le surlignement de contact ( émail ) " La Page Index et les 4 pages Menu " */  
 {
     text-decoration:none;
 }
-.loading
+#Loader-Total /* Pour mettre en place le loader total de la page " La Page Index et les 4 pages Menu " */ 
 {
-    display:flex;
-    justify-content:center;
-    animation: loader 3s ease;    
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
 }
-.loading:after
+#Loader  /* Pour mettre en place le symbole du loader " La Page Index et les 4 pages Menu " */ 
 {
-    position:absolute;
-    content:"";
-    width:80px;
-    height:80px;
-    top: calc( 50vh - 40px );
-    border:10px solid #dddddd;
-    border-top-color:#009579;
-    border-bottom-color:#009579;
-    border-radius:50%;
-    animation: loading 3s ease;
+    display:block;
+    position:relative;
+    left:50%;
+    top:50%;
+    width: 150px;
+    height: 150px;
+    margin:-75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #3498db;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
 }
-@keyframes loading 
+#Loader:before 
 {
-to
-{
-    transform:rotate(1turn);
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #e74c3c;
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
 }
-}
-@keyframes loader 
+
+#Loader:after 
 {
-    0% {
-        opacity : 1;
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #f9c922;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
+
+@-webkit-keyframes spin 
+{
+    0%   {
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);  /* IE 9 */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+        
     }
-    66% {
-        opacity: 1;
+    100% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
     }
-100%
+}
+@keyframes spin 
 {
-opacity: 0;
-display: none;
+    0%   {
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);  /* IE 9 */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+    100% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    }
 }
-}
+
 /* Version Desktop */
 @media screen and (min-width:1090px) and (max-width:1280px)  /* styles pour tablettes*/
 {
@@ -542,10 +582,29 @@ display: none;
 {
     margin:42px 10px 0px 35px;
 }
+.Menu-Bold /* Classe pour mettre en gras les titres des Menu sur la  " Page Index "   */
+{
+    font-weight:bold;
+    color:black;
+    font-size:19px;
+}
+.Figure-Restaurants p /* Classe pour le texte des Figures des 4 Menu de la  " Page Index "   */
+{
+    color:#2F2F2E;
+    margin-top:10px;
+    margin-bottom:25px;
+    font-size:19px;
+}
 #Restaurants h2   /* Id pour le titre h2 et lui enlever son margin-top du Main Restaurants   " Page Index "  */
 {
     margin:0px 0px 20px 30px;
 }
+#Restaurants i 
+{
+    font-size:23px;
+    padding:0px 40px 0px 0px;
+}
+
 .Menu-Boutton-Retour /* Classe pour le bouton-Retour des "4 pages Menu" */
 {
     position:absolute;
@@ -556,6 +615,8 @@ display: none;
     left:-25px;
     top:25px;
 }
+ /* -----------------------------------------------------------Page Menu --------------------------------------------------------------------------- */
+
 .H1-La-palette-du-gout  /* H1 Titre principal pour mettre la taille et les margins" Page Menu La Palette Du Goût " */
 {
     font-size:2.5em;
@@ -687,7 +748,38 @@ nav  /* Nav Fonctionnement " Page Index "  */
 {
     margin:0px 0px 20px 30px;
 }
-
+.Menu-Bold /* Classe pour mettre en gras les titres des Menu sur la  " Page Index "   */
+{
+    font-weight:bold;
+    color:black;
+    font-size:19px;
+    display:flex;
+    align-items:center;
+}
+.Figure-Restaurants p /* Classe pour le texte des Figures des 4 Menu de la  " Page Index "   */
+{
+    color:#2F2F2E;
+    margin-top:10px;
+    margin-bottom:25px;
+    font-size:19px;
+}
+.content   /* Classe pour mettre les 4 figures  en flex colonne " Page Index " */
+{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+}
+#Restaurants .La-Palette-Du-Gout, .La-Note-Enchantee, .A-la-Française, .Le-Delice-Des-Sens /* Classe pour les liens du ID Restaurants de la  " Page Index "   */
+{
+    width:45%;
+    color:black;
+    margin:0px auto;
+}
+#Restaurants i 
+{
+    font-size:21px;
+    padding:0px 40px 0px 0px;
+}
 /* ---------------------------------------------------------- Page La Palette Du Goût -----------------------------------------*/
 
 .Menu-Boutton-Retour /* Classe pour le bouton-Retour des "4 pages Menu" */
@@ -868,22 +960,36 @@ nav  /* Nav Fonctionnement " Page Index "  */
 {
     margin:0px 43% 20px 10%;
 }
-.content   /*  /* Div pour mettre en flex en desktop + tablette 2 figures La palette du gout et la Note enchantée de la section de l'ID Restaurants  " Page Index "  */
+.Menu-Bold /* Classe pour mettre en gras les titres des Menu sur la  " Page Index "   */
+{
+    font-weight:bold;
+    color:black;
+    font-size:18px;
+}
+.Figure-Restaurants p /* Classe pour le texte des Figures des 4 Menu de la  " Page Index "   */
+{
+    color:#2F2F2E;
+    margin-top:10px;
+    margin-bottom:25px;
+    font-size:18px;
+}
+.content   /*  /* Div pour mettre en flex en desktop + tablette 4 figures La palette du gout et la Note enchantée de la section de l'ID Restaurants  " Page Index "  */
 {
     display:flex;
     flex-direction:column;
 }
-.content2  /* Div pour mettre en flex en desktop + tablette 2 figures A la française et le Délice des sens de la section de l'ID Restaurants  " Page Index "  */
-{
-    display:flex;
-    flex-direction:column;
-}
+
 #Restaurants .La-Palette-Du-Gout, .La-Note-Enchantee, .A-la-Française, .Le-Delice-Des-Sens /* Classe pour les liens du ID Restaurants de la  " Page Index "   */
 {
     width:80%;
     display:block;
     color:black;
     margin:0px auto;
+}
+#Restaurants i 
+{
+    font-size:19px;
+    padding:0px 40px 0px 0px;
 }
 .Menu-Boutton-Retour /* Classe pour le bouton-Retour des "4 pages Menu" */
 {
@@ -1165,18 +1271,13 @@ nav  /* Nav Fonctionnement " Page Index "  */
     margin:0px 0px 28px 0px;
     text-align:initial;
 }
-.content   /*  /* Div pour mettre en flex en desktop + tablette 2 figures La palette du gout et la Note enchantée de la section de l'ID Restaurants  " Page Index "  */
+.content   /*  /* Div pour mettre en flex en desktop + tablette 4 figures La palette du gout et la Note enchantée de la section de l'ID Restaurants  " Page Index "  */
 {
     display:flex;
     flex-direction:column;
     justify-content:initial;
 }
-.content2  /* Div pour mettre en flex en desktop + tablette 2 figures A la française et le Délice des sens de la section de l'ID Restaurants  " Page Index "  */
-{
-    display:flex;
-    flex-direction:column;
-    justify-content:initial;
-}
+
 #Restaurants img  /*Id pour les images du Main Restaurants    " Page Index "  */
 {
     width:100%;
@@ -1232,16 +1333,20 @@ nav  /* Nav Fonctionnement " Page Index "  */
     color:black;
     font-size:1.0rem;
     height:17px;
+    white-space:nowrap; 
+    overflow:hidden;
+    text-overflow:ellipsis;
 }
 .Coeur  /* Classe pour mettre l'Icon Coeur en flex  " Page Index "   */
 {
     display:flex;
     justify-content:space-between;
+    align-items:center;
     font-size:21px;
 }
 #Restaurants i /* Classe pour mettre l'Icon Coeur  " Page Index "   */
 {
-    font-size:1.3rem;
+    font-size:1rem;
     padding:0px 40px 0px 0px;
 }
 
@@ -1469,6 +1574,10 @@ footer p /* Texte pour le footer des 5 pages  " La Page Index et les 4 pages Men
 }
 @media screen and (max-width:350px) /* styles pour les mobiles très petit écrants */
 {
+.Icon-Gris-Phone i, .Icon-Gris-Menu i, .Icon-Violet i  /* Classe pour les 2 icons et les mettrent en gris " Page Index "  */
+    {
+    margin:25px 0px 0px 20px;
+    }
 .H1-La-palette-du-gout  /* H1 Titre principal pour mettre la taille et les margins" Page Menu La Palette Du Goût " */
 {
     font-size:1.2rem;
