@@ -285,11 +285,12 @@ nav  /* Nav Fonctionnement " Page Index "  */
 }
 .H1-La-palette-du-gout  /* H1 Titre principal pour mettre la taille et les margins" Page Menu La Palette Du Goût " */
 {
+    width:98%;
     font-size:3em;
     font-family:"Shrikhand Regular", sans-serif;
     background-color:#F6F6F6;
     margin:0px;
-    padding:40px 0px 50px 50px;
+    padding:40px 0px 50px 2%;
 
 }
 .H1-La-palette-du-gout i  /* Style pour mettre l'icon Coeur  du H1 en flex et avec un margin " Page Menu La Palette Du Goût " */
@@ -658,11 +659,12 @@ footer h3 /* Titre h3 pour le footer des 5 pages  Version Desktop " La Page Inde
 
 .H1-La-palette-du-gout  /* H1 Titre principal pour mettre la taille et les margins" Page Menu La Palette Du Goût " */
 {
+    width:96%;
     font-size:2.5em;
     font-family:"Shrikhand Regular", sans-serif;
     background-color:#F6F6F6;
     margin:0px;
-    padding:40px 0px 50px 50px;
+    padding:40px 0px 50px 4%;
 
 }
 .H1-La-palette-du-gout i  /* Style pour mettre l'icon Coeur  du H1 en flex et avec un margin " Page Menu La Palette Du Goût " */
@@ -833,6 +835,7 @@ nav  /* Nav Fonctionnement " Page Index "  */
 }
 .H1-La-palette-du-gout  /* H1 Titre principal pour mettre la taille et les margins" Page Menu La Palette Du Goût " */
 {
+    width:94%;
     font-size:2.5em;
     font-family:"Shrikhand Regular", sans-serif;
     background-color:#F6F6F6;
@@ -1069,16 +1072,17 @@ nav  /* Nav Fonctionnement " Page Index "  */
 }
 .H1-La-palette-du-gout  /* H1 Titre principal pour mettre la taille et les margins" Page Menu La Palette Du Goût " */
 {
+    width:92.5%;
     font-size:2em;
     font-family:"Shrikhand Regular", sans-serif;
     background-color:#F6F6F6;
     margin:0px;
-    padding:40px 0px 0px 30px;
+    padding:40px 0px 0px 7.5%;
 
 }
 .H1-La-palette-du-gout i  /* Style pour mettre l'icon Coeur  du H1 en flex et avec un margin " Page Menu La Palette Du Goût " */
 {
-    Margin:0px 10px;
+    Margin:0px 5px;
     width:22px;
     height:22px;
     line-height:22px;
@@ -1415,7 +1419,7 @@ nav  /* Nav Fonctionnement " Page Index "  */
     position:absolute;
     top:-66px;
     left:0px;
-    padding:40px 0px 0px 20px;
+    padding:40px 0px 0px 5%;
     border-radius:50px 50px 0px 0px;
     font-size:1.7em;
     height:26px;
