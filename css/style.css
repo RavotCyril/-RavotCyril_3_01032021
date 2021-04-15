@@ -240,10 +240,30 @@ nav  /* Nav Fonctionnement " Page Index "  */
     align-items:center;
     font-size:21px;
 }
-#Restaurants i 
+#Restaurants .coeur i :hover
+{
+    background: white;
+    animation:1s ease-in Coeur;
+}
+#Restaurants i
 {
     font-size:25px;
     padding:0px 40px 0px 0px;
+}
+
+@keyframes Coeur
+{
+    0%   
+    { 
+    transform:scale(0);
+    background:white;
+    }
+    
+    100% 
+    { 
+    transform:scale(1);
+    background:linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
+    }
 }
 
 /*" -----------------------------------------------------Page La Palette Du Goût "  ----------------------------------------------------- */
@@ -305,27 +325,30 @@ nav  /* Nav Fonctionnement " Page Index "  */
 {
     width:30%;
     margin:0px 10px;
-    animation:Plat 0.75s;
+    animation:1.650s ease Plat;
 }
 .Plats
 {   
     width:30%;
     margin:0px 10px;
-    animation:Plat 1s;
+    animation:1.800s linear Plat;
+
 }
 .Desserts    
 {
     width:30%;
     margin:0px 10px;
-    animation:Plat 1.25s;
+    animation:1.925s ease-in Plat;
 }
 @keyframes Plat
 {
-    0% {
-        transform: scaleX(0);
+    0% 
+    {
+    opacity:0;
     }
-    100% {
-        transform: scaleX(1);
+    100% 
+    {
+    opacity:1;
     }
 }
 .Titre_Entrees, .Titre_Plats, .Titre_Desserts  /* Classe pour mettre un margin top-bottom pour le titre Entrées-Plats-Desserts  " Page La Palette Du Goût "   */
@@ -547,43 +570,48 @@ footer h3 /* Titre h3 pour le footer des 5 pages  Version Desktop " La Page Inde
 }
 @keyframes Loader-Finish
 {
-    0%   { 
+    0%   
+    { 
     transform:scale(1);
-    opacity: 1s ease-in-out, visibility 1s ease-in-out;
+    opacity:1 ease-in-out visibility 1s ease-in-out;
     }
 
-    100% { 
+    100% 
+    { 
     transform:scale(0);
-    opacity:0;
-    visibility:hidden;
+    opacity:0 ease-in-out visibility 1s hidden;
     }
 }
 
 @-webkit-keyframes cercle 
 {
-    0%   { 
+    0%   
+    { 
     -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
     -ms-transform: rotate(0deg);  /* IE 9 */
     transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
     }
-    100% {
+    100% 
+    {
     -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
     -ms-transform: rotate(360deg);  /* IE 9 */
     transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
-}
+    }
 }
 @keyframes cercle
 {
-    0%   { 
+    0%   
+    { 
     -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
     -ms-transform: rotate(0deg);  /* IE 9 */
     transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
     }
-    100% {
+    100% 
+    {
     -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
     -ms-transform: rotate(360deg);  /* IE 9 */
     transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
-}
+    }
 }
 /* Version Desktop */
 
