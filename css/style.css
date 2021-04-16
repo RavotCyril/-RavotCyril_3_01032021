@@ -233,36 +233,62 @@ nav  /* Nav Fonctionnement " Page Index "  */
     color:black;
     font-size:21px;
 }
-.Coeur  /* Classe pour mettre l'Icon Coeur en flex  " Page Index "   */
+.Texte-Coeur  /* Classe pour mettre l'Icon Coeur en flex  " Page Index "   */
 {
+    position:relative;
     display:flex;
     justify-content:space-between;
     align-items:center;
     font-size:21px;
 }
-#Restaurants .coeur i :hover
+.Coeur-Vide
 {
-    background: white;
-    animation:1s ease-in Coeur;
-}
-#Restaurants i
-{
-    font-size:25px;
+    display:flex;
+    align-items:center;
+    font-size:1.35rem;
     padding:0px 40px 0px 0px;
+}
+.Coeur-Plein
+{
+    position:absolute;
+    right:41px;
+    top:1px;
+    font-size:1.2rem;
+    opacity:0;
+    color:transparent;
+}
+.Coeur-Plein:hover
+{
+    animation:3s ease-out Coeur;
+    background-clip:text;
+    opacity:1;
 }
 
 @keyframes Coeur
 {
-    0%   
-    { 
-    transform:scale(0);
-    background:white;
+    25%
+    {
+    background:linear-gradient(to bottom, #FF79DA 100%, #9356DC 0%);
+    background:-webkit-linear-gradient(to bottom, #FF79DA 40%, #9356DC 60%);/* Chrome, Opera 15+, Safari 3.1+ */
+    background:-ms-linear-gradient(to bottom, #FF79DA 40%, #9356DC 60%);   /* IE 9 */
+    -webkit-background-clip:text;
+    opacity:0.7;
     }
-    
+    65%
+    {
+    background:linear-gradient(to bottom, #FF79DA 0%, #9356DC 60%);
+    background:-webkit-linear-gradient(to bottom, #FF79DA 0%, #9356DC 60%);/* Chrome, Opera 15+, Safari 3.1+ */
+    background:-ms-linear-gradient(to bottom, #FF79DA 0%, #9356DC 60%);   /* IE 9 */
+    -webkit-background-clip:text;
+    opacity:0.9;
+    }
     100% 
     { 
-    transform:scale(1);
-    background:linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
+    background:linear-gradient(to bottom, #FF79DA 0%, #9356DC 80%);
+    background:-webkit-linear-gradient(to bottom, #FF79DA 0%, #9356DC 80%);/* Chrome, Opera 15+, Safari 3.1+ */
+    background:-ms-linear-gradient(to bottom, #FF79DA 0%, #9356DC 80%);   /* IE 9 */
+    -webkit-background-clip:text;
+    opacity:1;
     }
 }
 
@@ -356,7 +382,7 @@ nav  /* Nav Fonctionnement " Page Index "  */
     display:block;
     font-size:2rem;
     font-weight:normal;
-    padding:23px 0px 7px 0px;
+    padding:23px 0px 20px 0px;
     margin-bottom:7px;
     margin-top:0px;
 }
@@ -667,7 +693,7 @@ footer h3 /* Titre h3 pour le footer des 5 pages  Version Desktop " La Page Inde
 {
     margin:0px 0px 20px 30px;
 }
-#Restaurants i 
+.Coeur i 
 {
     font-size:23px;
     padding:0px 40px 0px 0px;
@@ -728,7 +754,7 @@ footer h3 /* Titre h3 pour le footer des 5 pages  Version Desktop " La Page Inde
     display:block;
     font-size:1.5rem;
     font-weight:normal;
-    padding:23px 0px 7px 0px;
+    padding:23px 0px 20px 0px;
     margin-bottom:7px;
     margin-top:0px;
 }
@@ -844,7 +870,7 @@ nav  /* Nav Fonctionnement " Page Index "  */
     color:black;
     margin:0px auto;
 }
-#Restaurants i 
+.Coeur i 
 {
     font-size:21px;
     padding:0px 40px 0px 0px;
@@ -895,7 +921,7 @@ nav  /* Nav Fonctionnement " Page Index "  */
     display:block;
     font-size:1.5rem;
     font-weight:normal;
-    padding:23px 0px 7px 10px;
+    padding:23px 0px 20px 10px;
     margin:0px 0px 7px 0px;
 }
 .Bordure-Titre /* Classe pour mettre une bordure verte au des Titres H2 D'entrees-Plats-Desserts " Page La Palette Du Goût "*/ 
@@ -1056,7 +1082,7 @@ nav  /* Nav Fonctionnement " Page Index "  */
     color:black;
     margin:0px auto;
 }
-#Restaurants i 
+.Coeur i 
 {
     font-size:19px;
     padding:0px 40px 0px 0px;
@@ -1130,7 +1156,7 @@ nav  /* Nav Fonctionnement " Page Index "  */
     display:block;
     font-size:1.5rem;
     font-weight:normal;
-    padding:23px 0px 7px 30px;
+    padding:23px 0px 20px 30px;
     margin-bottom:7px;
     margin-top:0px;
 }
@@ -1408,14 +1434,14 @@ nav  /* Nav Fonctionnement " Page Index "  */
     overflow:hidden;
     text-overflow:ellipsis;
 }
-.Coeur  /* Classe pour mettre l'Icon Coeur en flex  " Page Index "   */
+.Texte-Coeur  /* Classe pour mettre l'Icon Coeur en flex  " Page Index "   */
 {
     display:flex;
     justify-content:space-between;
     align-items:center;
     font-size:21px;
 }
-#Restaurants i /* Classe pour mettre l'Icon Coeur  " Page Index "   */
+.Coeur i /* Classe pour mettre l'Icon Coeur  " Page Index "   */
 {
     font-size:1rem;
     padding:0px 40px 0px 0px;
