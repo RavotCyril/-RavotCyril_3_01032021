@@ -130,7 +130,7 @@ nav  /* Nav Fonctionnement " Page Index "  */
     font-size:1rem;
     margin:0px 50px;
 }
-.Nav:hover  /* ----------------------------------------------Animation en rose au clique ------------------------------------*/
+.Nav:hover  /* ----------------------------------------------Animation en rose au clique ----------------------------------------------------------*/
 {
     background-color:#F5EDFF;
 }
@@ -351,20 +351,17 @@ nav  /* Nav Fonctionnement " Page Index "  */
 {
     width:30%;
     margin:0px 10px;
-    animation:1.650s ease Plat;
 }
 .Plats
 {   
     width:30%;
     margin:0px 10px;
-    animation:1.800s linear Plat;
 
 }
 .Desserts    
 {
     width:30%;
     margin:0px 10px;
-    animation:1.925s ease-in Plat;
 }
 @keyframes Plat
 {
@@ -458,13 +455,27 @@ nav  /* Nav Fonctionnement " Page Index "  */
     margin:45px 30% 58px;
     font-size:2.5rem;
 }
-#Main-Menu .Menu-Rectangle, .Mousse-Au-Chocolat /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div  " Page Menu La Palette Du Goût " */
+#Main-Menu .Menu-Entrees /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div  " Page Menu  " */
 {
     box-shadow:0px 3px 20px #E5E5E5;
     border-radius:20px;
     margin:0px 0px 25px 0px;
+    animation:1.650s ease Plat;
 }
-
+#Main-Menu .Menu-Plats /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div  " Page Menu  " */
+{
+    box-shadow:0px 3px 20px #E5E5E5;
+    border-radius:20px;
+    margin:0px 0px 25px 0px;
+    animation:1.800s linear Plat;
+}
+#Main-Menu .Menu-Desserts, .Mousse-Au-Chocolat /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div et la dernière avec un padding different " Page Menu La Palette Du Goût " */
+{
+    box-shadow:0px 3px 20px #E5E5E5;
+    border-radius:20px;
+    margin:0px 0px 25px 0px;
+    animation:1.925s ease-in Plat;
+}
 #ohmyfood-Menu-La-Note-Enchantee  /* ID Logo de la page    " Page Menu La Palette Du Goût " */
 {
     width:50%;
@@ -766,12 +777,29 @@ footer h3 /* Titre h3 pour le footer des 5 pages  Version Desktop " La Page Inde
     border-bottom:1px solid #99E2D0;
     border-width:4px;
 }
-#Main-Menu .Menu-Rectangle, .Mousse-Au-Chocolat /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div  " Page Menu La Palette Du Goût " */
+#Main-Menu .Menu-Entrees /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div  " Page Menu  " */
 {
     width:90%;
     box-shadow:0px 3px 20px #E5E5E5;
     border-radius:20px;
     margin:0px 0px 25px 0px;
+    animation:1.650s ease Plat;
+}
+#Main-Menu .Menu-Plats /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div  " Page Menu  " */
+{
+    width:90%;
+    box-shadow:0px 3px 20px #E5E5E5;
+    border-radius:20px;
+    margin:0px 0px 25px 0px;
+    animation:1.800s linear Plat;
+}
+#Main-Menu .Menu-Desserts, .Mousse-Au-Chocolat /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div et la dernière avec un padding different " Page Menu La Palette Du Goût " */
+{
+    width:90%;
+    box-shadow:0px 3px 20px #E5E5E5;
+    border-radius:20px;
+    margin:0px 0px 25px 0px;
+    animation:1.925s ease-in Plat;
 }
 }
 @media screen and (min-width:769px) and (max-width:1089px)  /* styles pour tablettes*/
@@ -928,12 +956,30 @@ nav  /* Nav Fonctionnement " Page Index "  */
 {
     width:90%;
 }
-#Main-Menu .Menu-Rectangle, .Mousse-Au-Chocolat /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les divs  " Page Menu La Palette Du Goût " */
+
+#Main-Menu .Menu-Entrees /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div  " Page Menu  " */
 {
     width:90%;
     box-shadow:0px 3px 20px #E5E5E5;
     border-radius:20px;
     margin:0px 0px 25px 0px;
+    animation:1.650s ease Plat;
+}
+#Main-Menu .Menu-Plats /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div  " Page Menu  " */
+{
+    width:90%;
+    box-shadow:0px 3px 20px #E5E5E5;
+    border-radius:20px;
+    margin:0px 0px 25px 0px;
+    animation:1.800s linear Plat;
+}
+#Main-Menu .Menu-Desserts, .Mousse-Au-Chocolat /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div et la dernière avec un padding different " Page Menu La Palette Du Goût " */
+{
+    width:90%;
+    box-shadow:0px 3px 20px #E5E5E5;
+    border-radius:20px;
+    margin:0px 0px 25px 0px;
+    animation:1.925s ease-in Plat;
 }
 .Menu-Bold2  /* Classe pour mettre les titres de Menu en gras et avec un padding -top "Page Menu La Palette Du Goût" */
 {
@@ -1116,13 +1162,33 @@ nav  /* Nav Fonctionnement " Page Index "  */
 {
     width:100%;
 }
-#Main-Menu .Menu-Rectangle, .Mousse-Au-Chocolat /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les divs  " Page Menu La Palette Du Goût " */
+
+#Main-Menu .Menu-Entrees /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div  " Page Menu  " */
 {
     width:80%;
     height:85px;
     box-shadow:0px 3px 20px #E5E5E5;
     border-radius:20px;
     margin:0px 20px;
+    animation:1.650s ease Plat;
+}
+#Main-Menu .Menu-Plats /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div  " Page Menu  " */
+{
+    width:80%;
+    height:85px;
+    box-shadow:0px 3px 20px #E5E5E5;
+    border-radius:20px;
+    margin:0px 20px;
+    animation:1.800s linear Plat;
+}
+#Main-Menu .Menu-Desserts, .Mousse-Au-Chocolat /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div et la dernière avec un padding different " Page Menu La Palette Du Goût " */
+{
+    width:80%;
+    height:85px;
+    box-shadow:0px 3px 20px #E5E5E5;
+    border-radius:20px;
+    margin:0px 20px;
+    animation:1.925s ease-in Plat;
 }
 .H1-La-palette-du-gout  /* H1 Titre principal pour mettre la taille et les margins" Page Menu La Palette Du Goût " */
 {
@@ -1585,14 +1651,29 @@ nav  /* Nav Fonctionnement " Page Index "  */
     height:260px;
     overflow:hidden;
 }
-#Main-Menu .Menu-Rectangle /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les divs  " Page Menu La Palette Du Goût " */
+
+#Main-Menu .Menu-Entrees /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div  " Page Menu  " */
 {
     width:90%;
     height:69px;
-    box-shadow:0px 3px 20px #E5E5E5;
-    border-radius:20px;
     padding-left:3%;
     margin:0px 3.5% 15px;
+    animation:1.650s ease Plat;
+}
+#Main-Menu .Menu-Plats /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div  " Page Menu  " */
+{
+    width:90%;
+    height:69px;
+    padding-left:3%;
+    margin:0px 3.5% 15px;
+    animation:1.800s linear Plat;
+}
+#Main-Menu .Menu-Desserts /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div et la dernière avec un padding different " Page Menu La Palette Du Goût " */
+{
+    width:90%;
+    height:69px;
+    padding-left:3%;
+    animation:1.925s ease-in Plat;
 }
 #Main-Menu .Mousse-Au-Chocolat /* Id-Main  Pour enlever le margin-bottom de la dernière div " .Mousse-Au-Chocolat  " Page Menu La Palette Du Goût " */
 {
@@ -1602,6 +1683,7 @@ nav  /* Nav Fonctionnement " Page Index "  */
     border-radius:20px;
     padding-left:3.2%;
     margin:0px 3.2%;
+    animation:1.925s ease-in Plat;
 }
 
 /*--------------------------------------------- Styles  pour  " Page Menu "--------------------------------------------------------------- */
@@ -1689,11 +1771,34 @@ footer p /* Texte pour le footer des 5 pages  " La Page Index et les 4 pages Men
 {
     width:90.4%;
     height:80px;
-    box-shadow:0px 3px 20px #E5E5E5;
-    border-radius:20px;
     padding-left:3.2%;
     margin:0px 3.2% 15px 3.2%;
 }
+#Main-Menu .Menu-Entrees /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div  " Page Menu  " */
+{
+    width:90.4%;
+    height:80px;
+    padding-left:3.2%;
+    margin:0px 3.2% 15px 3.2%;
+    animation:1.650s ease Plat;
+}
+#Main-Menu .Menu-Plats /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div  " Page Menu  " */
+{
+    width:90.4%;
+    height:80px;
+    padding-left:3.2%;
+    margin:0px 3.2% 15px 3.2%;
+    animation:1.800s linear Plat;
+}
+#Main-Menu .Menu-Desserts, .Mousse-Au-Chocolat /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div et la dernière avec un padding different " Page Menu La Palette Du Goût " */
+{
+    width:90.4%;
+    height:80px;
+    padding-left:3.2%;
+    margin:0px 3.2% 15px 3.2%;
+    animation:1.925s ease-in Plat;
+}
+
 .Description-Menu  /* Classe pour mettre en léger gris  les descriptions des Menu sur la  " Page La Palette Du Goût "   */
 {
     display:inline-block;
