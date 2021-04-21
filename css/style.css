@@ -320,9 +320,8 @@ nav  /* Nav Fonctionnement " Page Index "  */
 }
 .Description-Menu  /* Classe pour mettre en léger gris  les descriptions des Menu sur la  " Page La Palette Du Goût "   */
 {
-    display:inline-block;
     color:#353535;
-    padding:0px 0px 12px 10px;
+    padding:0px 0px 17px 10px;
     margin:0px;
     font-size:1.3rem;
     white-space:nowrap; 
@@ -331,6 +330,7 @@ nav  /* Nav Fonctionnement " Page Index "  */
 }
 .H1-La-palette-du-gout  /* H1 Titre principal pour mettre la taille et les margins" Page Menu La Palette Du Goût " */
 {
+    display:flex;
     width:98%;
     font-size:3em;
     font-family:"Shrikhand Regular", sans-serif;
@@ -339,13 +339,35 @@ nav  /* Nav Fonctionnement " Page Index "  */
     padding:40px 0px 50px 2%;
 
 }
-.H1-La-palette-du-gout i  /* Style pour mettre l'icon Coeur  du H1 en flex et avec un margin " Page Menu La Palette Du Goût " */
+.Dimension-Coeur
 {
-    Margin:0px 0px 0px 50px;
+    margin-left:50px;
+    width:45px;
+    position:relative;
+}
+.Coeur-Vide-Menu i /* Style pour mettre l'icon Coeur  du H1 en flex et avec un margin " Page Menu La Palette Du Goût " */
+{
+    align-items:center;
+    Margin:0px 0px 0px 0px;
     width:22px;
     height:22px;
     line-height:22px;
     font-size:3rem;
+}
+.Coeur-Plein-Menu
+{
+    top:1px;
+    left:1.5px;
+    position:absolute;
+    font-size:2.85rem;
+    opacity:0;
+    color:transparent;
+}
+.Coeur-Plein-Menu:hover
+{
+    animation:3s ease-out Coeur;
+    background-clip:text;
+    opacity:1;
 }
 .Entrees
 {
@@ -391,13 +413,21 @@ nav  /* Nav Fonctionnement " Page Index "  */
     border-bottom:1px solid #99E2D0;
     border-width:4px;
 }
-
+.Texte-Plat
+{
+    width:80%;
+}
 .Prix  /* Classe pour mettre Les chiffres ( prix ) à droite avec un margin right dans les divs  " Page La Palette Du Goût "   */
 {
+    width:20%;
+    display:flex;
+    flex-direction:column-reverse;
+    font-weight:bold;
     margin:0px 20px 0px 0px;
     font-size:1.3rem;
     color:#353535;
-    padding:0px 0px 12px 0px;
+    padding:0px 0px 17px 0px;
+    align-items:center;
 }
 #Main-Menu /* Id-Main Pour mettre les paddings du Main " Page Menu La Palette Du Goût " */
 {
@@ -412,6 +442,7 @@ nav  /* Nav Fonctionnement " Page Index "  */
 }
 .Menu-Bold2  /* Classe pour mettre les titres de Menu en gras et avec un padding -top "Page Menu La Palette Du Goût" */
 {
+    display:inline-block;
     font-size:1.5rem;
     font-weight:bold;
     margin:0px;
@@ -420,11 +451,66 @@ nav  /* Nav Fonctionnement " Page Index "  */
     overflow:hidden;
     text-overflow:ellipsis;
 }
-.Flex-Text-Prix  /* Classe pour mettre le texte et les prix en flex "Page Menu " */
+
+.Validation-Plat .fa-check-circle
 {
-    display:flex;
-    justify-content:space-between;
-    align-content:center;
+    font-size:21px;
+    margin:calc( 50% - 10.5px );
+    color:#99E2D0;
+    background-color: white;
+    border-radius:70px;
+    overflow:hidden;
+}
+.Validation-Plat i:hover
+{
+    transition:1.5s ease infinite Icon-Validation;
+}
+.Validation-Plat
+{
+    display:none;
+    opacity:0;
+    width:85px;
+    height:85px;
+    border-radius:0px 20px 20px 0px;
+    background-color:#99E2D0;
+    text-align:center;
+}
+.Validation-Plat:hover
+{
+    display:initial;
+    opacity:1;
+    animation:1.5s ease-in infinite running reverse Selection-Plat;
+}
+
+@keyframes Selection-Plat
+{
+    0%   
+    { 
+    transform:rotatey(0deg) translatex(0px);
+    opacity:0 ease-in-out visibility 1s ease-in-out;
+    }
+    50%   
+    { 
+    transform:rotatey(5deg) translatex(25px);
+    opacity:0.5 ease-in-out visibility 1s ease-in-out;
+    }
+    100% 
+    { 
+    transform:rotatey(10deg) translatex(50px);
+    opacity:1 ease-in-out visibility 1s hidden;
+    }
+}
+@keyframes Icon-Validation
+{
+    0%   
+    { 
+    transform:rotate(0deg);
+    }
+
+    100% 
+    { 
+    transform:rotate(360deg);
+    }
 }
 .Figure-Menu /* Classe pour la figure de l'image du Menu La Palette Du Goût   " Page Menu  "    */
 {
@@ -457,6 +543,8 @@ nav  /* Nav Fonctionnement " Page Index "  */
 }
 #Main-Menu .Menu-Entrees /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div  " Page Menu  " */
 {
+    display:flex;
+    overflow: hidden;
     box-shadow:0px 3px 20px #E5E5E5;
     border-radius:20px;
     margin:0px 0px 25px 0px;
@@ -464,6 +552,8 @@ nav  /* Nav Fonctionnement " Page Index "  */
 }
 #Main-Menu .Menu-Plats /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div  " Page Menu  " */
 {
+    display:flex;
+    overflow: hidden;
     box-shadow:0px 3px 20px #E5E5E5;
     border-radius:20px;
     margin:0px 0px 25px 0px;
@@ -471,6 +561,8 @@ nav  /* Nav Fonctionnement " Page Index "  */
 }
 #Main-Menu .Menu-Desserts, .Mousse-Au-Chocolat /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div et la dernière avec un padding different " Page Menu La Palette Du Goût " */
 {
+    display:flex;
+    overflow: hidden;
     box-shadow:0px 3px 20px #E5E5E5;
     border-radius:20px;
     margin:0px 0px 25px 0px;
@@ -732,13 +824,23 @@ footer h3 /* Titre h3 pour le footer des 5 pages  Version Desktop " La Page Inde
     padding:40px 0px 50px 4%;
 
 }
-.H1-La-palette-du-gout i  /* Style pour mettre l'icon Coeur  du H1 en flex et avec un margin " Page Menu La Palette Du Goût " */
+.Coeur-Vide-Menu i /* Style pour mettre l'icon Coeur  du H1 en flex et avec un margin " Page Menu La Palette Du Goût " */
 {
-    Margin:0px 0px 0px 50px;
+    align-items:center;
+    Margin:0px 0px 0px 0px;
     width:22px;
     height:22px;
     line-height:22px;
     font-size:2.5rem;
+}
+.Coeur-Plein-Menu /* Style pour mettre l'icon Coeur  du H1 en flex et avec un margin " Page Menu La Palette Du Goût " */
+{
+    top:1px;
+    left:1.2px;
+    position:absolute;
+    font-size:2.35rem;
+    opacity:0;
+    color:transparent;
 }
 .Content-Menu  /* Classe pour mettre la section Menu en flex colonne " Page Menu La Palette Du Goût " */
 {
@@ -925,13 +1027,23 @@ nav  /* Nav Fonctionnement " Page Index "  */
     padding:40px 0px 50px 6%;
 
 }
-.H1-La-palette-du-gout i  /* Style pour mettre l'icon Coeur  du H1 en flex et avec un margin " Page Menu La Palette Du Goût " */
+.Coeur-Vide-Menu i /* Style pour mettre l'icon Coeur  du H1 en flex et avec un margin " Page Menu La Palette Du Goût " */
 {
-    Margin:0px 0px 0px 50px;
+    align-items:center;
+    Margin:0px 0px 0px 0px;
     width:22px;
     height:22px;
     line-height:22px;
     font-size:2.5rem;
+}
+.Coeur-Plein-Menu /* Style pour mettre l'icon Coeur  du H1 en flex et avec un margin " Page Menu La Palette Du Goût " */
+{
+    top:0px;
+    left:0px;
+    position:absolute;
+    font-size:2.5rem;
+    opacity:0;
+    color:transparent;
 }
 .Content-Menu /* Classe pour mettre en flex la div Content " Page La Palette Du Goût "   */
 {
@@ -991,17 +1103,11 @@ nav  /* Nav Fonctionnement " Page Index "  */
     overflow:hidden;
     text-overflow:ellipsis;
 }
-.Flex-Text-Prix  /* Classe pour mettre le texte et les prix en flex "Page Menu " */
-{
-    display:flex;
-    justify-content:space-between;
-    align-content:center;
-}
 .Description-Menu  /* Classe pour mettre en léger gris  les descriptions des Menu sur la  " Page La Palette Du Goût "   */
 {
     display:inline-block;
     color:#353535;
-    padding:0px 0px 12px 10px;
+    padding:0px 0px 16px 10px;
     margin:0px;
     font-size:1.3rem;
     white-space:nowrap; 
@@ -1010,6 +1116,7 @@ nav  /* Nav Fonctionnement " Page Index "  */
 }
 .Prix  /* Classe pour mettre Les chiffres ( prix ) à droite avec un margin right dans les divs  " Page La Palette Du Goût "   */
 {
+    font-weight:bold;
     margin:0px 20px 0px 0px;
     font-size:1.3rem;
     color:#353535;
@@ -1200,13 +1307,23 @@ nav  /* Nav Fonctionnement " Page Index "  */
     padding:40px 0px 0px 7.5%;
 
 }
-.H1-La-palette-du-gout i  /* Style pour mettre l'icon Coeur  du H1 en flex et avec un margin " Page Menu La Palette Du Goût " */
+.Coeur-Vide-Menu i /* Style pour mettre l'icon Coeur  du H1 en flex et avec un margin " Page Menu La Palette Du Goût " */
 {
-    Margin:0px 5px;
+    align-items:center;
+    Margin:0px 5px 0px 0px;
     width:22px;
     height:22px;
     line-height:22px;
     font-size:2rem;
+}
+.Coeur-Plein-Menu /* Style pour mettre l'icon Coeur  du H1 en flex et avec un margin " Page Menu La Palette Du Goût " */
+{
+    top:0px;
+    left:0px;
+    position:absolute;
+    font-size:2rem;
+    opacity:0;
+    color:transparent;
 }
 .Content-Menu /* Classe pour mettre en flex la div Content " Page La Palette Du Goût "   */
 {
@@ -1243,12 +1360,6 @@ nav  /* Nav Fonctionnement " Page Index "  */
     white-space:nowrap; 
     overflow:hidden;
     text-overflow:ellipsis;
-}
-.Flex-Text-Prix  /* Classe pour mettre le texte et les prix en flex "Page Menu " */
-{
-    display:flex;
-    justify-content:space-between;
-    align-content:center;
 }
 .Description-Menu  /* Classe pour mettre en léger gris  les descriptions des Menu sur la  " Page La Palette Du Goût "   */
 {
@@ -1549,13 +1660,24 @@ nav  /* Nav Fonctionnement " Page Index "  */
     justify-content:space-between;
     align-items:center;
 }
-.H1-La-palette-du-gout i  /* Style pour mettre l'icon Coeur  du H1 en flex et avec un margin " Page Menu La Palette Du Goût " */
+
+.Coeur-Vide-Menu i /* Style pour mettre l'icon Coeur  du H1 en flex et avec un margin " Page Menu La Palette Du Goût " */
 {
+    align-items:center;
     Margin:0px 38px 0px 0px;
     width:22px;
     height:22px;
     line-height:22px;
     font-size:1.4rem;
+}
+.Coeur-Plein-Menu /* Style pour mettre l'icon Coeur  du H1 en flex et avec un margin " Page Menu La Palette Du Goût " */
+{
+    top:4px;
+    left:0.5px;
+    position:absolute;
+    font-size:1.4rem;
+    opacity:0;
+    color:transparent;
 }
 .Content-Menu
 {
@@ -1761,6 +1883,15 @@ footer p /* Texte pour le footer des 5 pages  " La Page Index et les 4 pages Men
 {
     font-size:1.2rem;
 }
+.Coeur-Plein-Menu /* Style pour mettre l'icon Coeur  du H1 en flex et avec un margin " Page Menu La Palette Du Goût " */
+{
+    top:0px;
+    left:0.5px;
+    position:absolute;
+    font-size:1.4rem;
+    opacity:0;
+    color:transparent;
+}
 .Menu-Bold2    
 {
     white-space:nowrap; 
@@ -1798,7 +1929,6 @@ footer p /* Texte pour le footer des 5 pages  " La Page Index et les 4 pages Men
     margin:0px 3.2% 15px 3.2%;
     animation:1.925s ease-in Plat;
 }
-
 .Description-Menu  /* Classe pour mettre en léger gris  les descriptions des Menu sur la  " Page La Palette Du Goût "   */
 {
     display:inline-block;
