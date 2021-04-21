@@ -260,7 +260,7 @@ nav  /* Nav Fonctionnement " Page Index "  */
 .Coeur-Plein:hover
 {
     animation:3s ease-out Coeur;
-    background-clip:text;
+    -webkit-background-clip:text;
     opacity:1;
 }
 
@@ -366,7 +366,7 @@ nav  /* Nav Fonctionnement " Page Index "  */
 .Coeur-Plein-Menu:hover
 {
     animation:3s ease-out Coeur;
-    background-clip:text;
+    -webkit-background-clip:text;
     opacity:1;
 }
 .Entrees
@@ -384,17 +384,6 @@ nav  /* Nav Fonctionnement " Page Index "  */
 {
     width:30%;
     margin:0px 10px;
-}
-@keyframes Plat
-{
-    0% 
-    {
-    opacity:0;
-    }
-    100% 
-    {
-    opacity:1;
-    }
 }
 .Titre_Entrees, .Titre_Plats, .Titre_Desserts  /* Classe pour mettre un margin top-bottom pour le titre Entrées-Plats-Desserts  " Page La Palette Du Goût "   */
 {
@@ -461,43 +450,48 @@ nav  /* Nav Fonctionnement " Page Index "  */
     border-radius:70px;
     overflow:hidden;
 }
-.Validation-Plat i:hover
-{
-    transition:1.5s ease infinite Icon-Validation;
-}
 .Validation-Plat
 {
-    display:none;
     opacity:0;
-    width:85px;
-    height:85px;
     border-radius:0px 20px 20px 0px;
     background-color:#99E2D0;
     text-align:center;
+    width:0px;
+    margin:0px;
 }
-.Validation-Plat:hover
+#Main-Menu.Menu-Entrees:hover
 {
-    display:initial;
     opacity:1;
-    animation:1.5s ease-in infinite running reverse Selection-Plat;
+    animation:3s ease-in both reverse Selection-Plat;
 }
 
 @keyframes Selection-Plat
 {
     0%   
     { 
-    transform:rotatey(0deg) translatex(0px);
-    opacity:0 ease-in-out visibility 1s ease-in-out;
+    opacity:1;
+    width:15px;
+    visibility:visible;
+    }
+    25%   
+    { 
+    opacity:1;
+    width:30px;
     }
     50%   
     { 
-    transform:rotatey(5deg) translatex(25px);
-    opacity:0.5 ease-in-out visibility 1s ease-in-out;
+    opacity:1;
+    width:45px;
+    }
+    75%   
+    { 
+    opacity:1;
+    width:60px;
     }
     100% 
     { 
-    transform:rotatey(10deg) translatex(50px);
-    opacity:1 ease-in-out visibility 1s hidden;
+    opacity:1;
+    width:85px;
     }
 }
 @keyframes Icon-Validation
@@ -548,7 +542,7 @@ nav  /* Nav Fonctionnement " Page Index "  */
     box-shadow:0px 3px 20px #E5E5E5;
     border-radius:20px;
     margin:0px 0px 25px 0px;
-    animation:1.650s ease Plat;
+    animation:1.650s ease  Plat;
 }
 #Main-Menu .Menu-Plats /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div  " Page Menu  " */
 {
@@ -566,7 +560,20 @@ nav  /* Nav Fonctionnement " Page Index "  */
     box-shadow:0px 3px 20px #E5E5E5;
     border-radius:20px;
     margin:0px 0px 25px 0px;
-    animation:1.925s ease-in Plat;
+    animation:1.925s ease-in infinite Plat;
+}
+@keyframes Plat
+{
+    0% 
+    {
+    transform: translatey(0px);
+    opacity:0;
+    }
+    100% 
+    {
+    transform: translatey(-10px);
+    opacity:1;
+    }
 }
 #ohmyfood-Menu-La-Note-Enchantee  /* ID Logo de la page    " Page Menu La Palette Du Goût " */
 {
@@ -1648,7 +1655,7 @@ nav  /* Nav Fonctionnement " Page Index "  */
     font-family:"Shrikhand Regular", sans-serif;
     width:95%;
     position:absolute;
-    top:-66px;
+    top:-65px;
     left:0px;
     padding:40px 0px 0px 5%;
     border-radius:50px 50px 0px 0px;
