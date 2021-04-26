@@ -1,0 +1,84 @@
+.menuItem {
+
+&__Texte-Plat 
+    {
+    width:85%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow:hidden;
+    flex: 1;
+  }
+
+  &__Menu-Bold2 
+  {
+    font-size:1.4rem;
+    font-weight:bold;
+    margin:0px;
+    padding:10px 0px 10px 10px;
+    white-space:nowrap; 
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+
+  &__Description-Menu 
+  {
+    color:#353535;
+    padding:0px 0px 16px 10px;
+    margin:0px;
+    font-size:1.1rem;
+    white-space:nowrap; 
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+
+  &__Prix
+   {
+    width:15%;
+    display:flex;
+    flex-direction:column-reverse;
+    font-weight:bold;
+    margin:0px 20px 0px 0px;
+    font-size:1.2rem;
+    color:#353535;
+  }
+
+  &__Validation-Plat
+   {
+    $color-tertiary:#99e2d0;
+    background-color:$color-tertiary;
+    margin: -1rem -5rem -1rem 1rem;
+    width: 4rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transition-duration: 0.5s;
+  }
+
+  &:hover &__Validation-Plat
+  {
+    margin-right: -1rem;
+  }
+
+  &__Icon-Validation
+  {
+    width:21px;
+    height:21px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color:white;
+    border-radius:100px;
+    transform: rotate(180deg);
+  }
+
+  &:hover &__Icon-Validation
+  {
+    transform: rotate(0);
+  }
+
+  &__Icon-Validation i
+  {
+    $color-tertiary:#99e2d0;
+    color: $color-tertiary;
+  }
+}

@@ -393,6 +393,19 @@ nav  /* Nav Fonctionnement " Page Index "  */
     margin-bottom:7px;
     margin-top:0px;
 }
+.Titre_Entrees
+{
+    animation:1.650s ease  Plat;
+}
+.Titre_Plats
+{
+    animation:1.800s linear  Plat;
+
+}
+.Titre_Desserts
+{
+    animation:1.925s ease-in  Plat;
+}
 .Bordure-Titre /* Classe pour mettre une bordure verte au des Titres H2 D'entrees-Plats-Desserts " Page La Palette Du Goût "*/ 
 {
     width:95%;
@@ -400,10 +413,6 @@ nav  /* Nav Fonctionnement " Page Index "  */
     padding-bottom:7px;
     border-bottom:1px solid #99E2D0;
     border-width:4px;
-}
-.Texte-Plat
-{
-    width:85%;
 }
 .Prix  /* Classe pour mettre Les chiffres ( prix ) à droite avec un margin right dans les divs  " Page La Palette Du Goût "   */
 {
@@ -438,71 +447,76 @@ nav  /* Nav Fonctionnement " Page Index "  */
     overflow:hidden;
     text-overflow:ellipsis;
 }
-
-.Validation-Plat .fa-check-circle
+.Icon-Validation
 {
-    font-size:21px;
-    margin:calc( 50% - 10.5px );
-    color:#99E2D0;
-    background-color: white;
-    border-radius:70px;
+    width:21px;
+    height:21px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color:white;
+    border-radius:100px;
     overflow:hidden;
+    transform: rotate(180deg);
+}
+.Icon-Validation i
+{
+    width:1rem;
+    color:#99e2d0;
 }
 .Validation-Plat
 {
-    opacity:0;
+    background-color:#99e2d0;
     border-radius:0px 20px 20px 0px;
-    background-color:#99E2D0;
-    text-align:center;
-    width:0px;
-    margin:0px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:85px;
+    margin-right:-150px;
 }
-#Main-Menu.Menu-Entrees:hover
+.Menu-Entrees .Validation-Plat:hover
 {
-    opacity:1;
-    animation:3s ease-in both reverse Selection-Plat;
+    overflow:visible;
+    animation:10s alternate both Selection-Plat;
 }
-
 @keyframes Selection-Plat
 {
     0%   
     { 
-    opacity:1;
-    width:15px;
-    visibility:visible;
+    margin-left:0px;
     }
     25%   
     { 
-    opacity:1;
-    width:30px;
+    margin-left:-75px;
     }
     50%   
     { 
-    opacity:1;
-    width:45px;
+    margin-left:-85x;
     }
     75%   
     { 
-    opacity:1;
-    width:60px;
+    margin-left:-95px;
     }
     100% 
-    { 
-    opacity:1;
-    width:85px;
+    {
+    margin-left:-100px;
     }
 }
-@keyframes Icon-Validation
+@keyframes Animation-Icon
 {
-    0%   
-    { 
+    0%
+    {
     transform:rotate(0deg);
     }
-
-    100% 
-    { 
+    50%
+    {
+    transform:rotate(380deg);
+    }
+    100%
+    {
     transform:rotate(360deg);
     }
+}
 }
 .Figure-Menu /* Classe pour la figure de l'image du Menu La Palette Du Goût   " Page Menu  "    */
 {
@@ -533,32 +547,33 @@ nav  /* Nav Fonctionnement " Page Index "  */
     margin:45px 30% 58px;
     font-size:2.5rem;
 }
-#Main-Menu .Menu-Entrees /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div  " Page Menu  " */
+.Menu-Entrees /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div  " Page Menu  " */
 {
     display:flex;
-    overflow: hidden;
     box-shadow:0px 3px 20px #E5E5E5;
     border-radius:20px;
     margin:0px 0px 25px 0px;
     animation:1.650s ease  Plat;
+    overflow:hidden;
+    cursor:pointer;
 }
-#Main-Menu .Menu-Plats /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div  " Page Menu  " */
+.Menu-Plats /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div  " Page Menu  " */
 {
     display:flex;
-    overflow: hidden;
     box-shadow:0px 3px 20px #E5E5E5;
     border-radius:20px;
     margin:0px 0px 25px 0px;
     animation:1.800s linear Plat;
+    overflow:hidden;
 }
-#Main-Menu .Menu-Desserts, .Mousse-Au-Chocolat /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div et la dernière avec un padding different " Page Menu La Palette Du Goût " */
+.Menu-Desserts, .Mousse-Au-Chocolat /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div et la dernière avec un padding different " Page Menu La Palette Du Goût " */
 {
     display:flex;
-    overflow: hidden;
     box-shadow:0px 3px 20px #E5E5E5;
     border-radius:20px;
     margin:0px 0px 25px 0px;
     animation:1.925s ease-in Plat;
+    overflow:hidden;
 }
 @keyframes Plat
 {
