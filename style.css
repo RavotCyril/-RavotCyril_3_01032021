@@ -1,0 +1,67 @@
+.Menu-Entrees__Texte-Plat, .Menu-Plats__Texte-Plat, .Menu-Desserts__Texte-Plat {
+  width: 85%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.Menu-Entrees__Menu-Bold2, .Menu-Plats__Menu-Bold2, .Menu-Desserts__Menu-Bold2 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 0px;
+  padding: 10px 0px 10px 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.Menu-Entrees__Description-Menu, .Menu-Plats__Description-Menu, .Menu-Desserts__Description-Menu {
+  color: #353535;
+  padding: 0px 0px 17px 10px;
+  margin: 0px;
+  font-size: 1.2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.Menu-Entrees__Prix, .Menu-Plats__Prix, .Menu-Desserts__Prix {
+  width: 15%;
+  display: flex;
+  flex-direction: column-reverse;
+  font-weight: bold;
+  margin: 0px 20px 0px 0px;
+  padding: 0px 0px 16px 0px;
+  font-size: 1.2rem;
+  color: #353535;
+  align-items: end;
+}
+.Menu-Entrees__Validation-Plat, .Menu-Plats__Validation-Plat, .Menu-Desserts__Validation-Plat {
+  background-color: #99e2d0;
+  border-radius: 0px 20px 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 85px;
+  margin-right: -150px;
+}
+.Menu-Entrees:hover .Menu-Entrees__Validation-Plat, .Menu-Entrees:hover .Menu-Plats__Validation-Plat, .Menu-Entrees:hover .Menu-Desserts__Validation-Plat, .Menu-Plats:hover .Menu-Entrees__Validation-Plat, .Menu-Plats:hover .Menu-Plats__Validation-Plat, .Menu-Plats:hover .Menu-Desserts__Validation-Plat, .Menu-Desserts:hover .Menu-Entrees__Validation-Plat, .Menu-Desserts:hover .Menu-Plats__Validation-Plat, .Menu-Desserts:hover .Menu-Desserts__Validation-Plat {
+  overflow: visible;
+  animation: 10s alternate both Selection-Plat;
+  margin-right: -100px;
+}
+.Menu-Entrees__Icon-Validation, .Menu-Plats__Icon-Validation, .Menu-Desserts__Icon-Validation {
+  width: 21px;
+  height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 100px;
+  transform: rotate(180deg);
+}
+.Menu-Entrees:hover .Menu-Entrees__Icon-Validation, .Menu-Entrees:hover .Menu-Plats__Icon-Validation, .Menu-Entrees:hover .Menu-Desserts__Icon-Validation, .Menu-Plats:hover .Menu-Entrees__Icon-Validation, .Menu-Plats:hover .Menu-Plats__Icon-Validation, .Menu-Plats:hover .Menu-Desserts__Icon-Validation, .Menu-Desserts:hover .Menu-Entrees__Icon-Validation, .Menu-Desserts:hover .Menu-Plats__Icon-Validation, .Menu-Desserts:hover .Menu-Desserts__Icon-Validation {
+  transform: rotate(0);
+}
+.Menu-Entrees__Icon-Validation i, .Menu-Plats__Icon-Validation i, .Menu-Desserts__Icon-Validation i {
+  color: #99e2d0;
+}
+
+/*# sourceMappingURL=style.css.map */

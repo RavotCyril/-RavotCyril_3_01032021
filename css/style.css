@@ -442,7 +442,7 @@ nav  /* Nav Fonctionnement " Page Index "  */
     font-size:1.4rem;
     font-weight:bold;
     margin:0px;
-    padding:10px 0px 10px 10px;
+    padding:10px 0px 10px 5px;
     white-space:nowrap; 
     overflow:hidden;
     text-overflow:ellipsis;
@@ -457,7 +457,7 @@ nav  /* Nav Fonctionnement " Page Index "  */
     background-color:white;
     border-radius:100px;
     overflow:hidden;
-    transform: rotate(180deg);
+    transform:rotate(180deg);
 }
 .Icon-Validation i
 {
@@ -474,11 +474,7 @@ nav  /* Nav Fonctionnement " Page Index "  */
     width:85px;
     margin-right:-150px;
 }
-.Menu-Entrees .Validation-Plat:hover
-{
-    overflow:visible;
-    animation:10s alternate both Selection-Plat;
-}
+
 @keyframes Selection-Plat
 {
     0%   
@@ -491,7 +487,7 @@ nav  /* Nav Fonctionnement " Page Index "  */
     }
     50%   
     { 
-    margin-left:-85x;
+    margin-left:-85px;
     }
     75%   
     { 
@@ -516,7 +512,6 @@ nav  /* Nav Fonctionnement " Page Index "  */
     {
     transform:rotate(360deg);
     }
-}
 }
 .Figure-Menu /* Classe pour la figure de l'image du Menu La Palette Du Goût   " Page Menu  "    */
 {

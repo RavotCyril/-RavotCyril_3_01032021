@@ -1,12 +1,12 @@
-.menuItem {
+.Menu-Entrees, .Menu-Plats, .Menu-Desserts 
+{
 
-&__Texte-Plat 
+&__Texte-Plat
     {
     width:85%;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow:hidden;
-    flex: 1;
   }
 
   &__Menu-Bold2 
@@ -14,7 +14,7 @@
     font-size:1.4rem;
     font-weight:bold;
     margin:0px;
-    padding:10px 0px 10px 10px;
+    padding:10px 0px 10px 5px;
     white-space:nowrap; 
     overflow:hidden;
     text-overflow:ellipsis;
@@ -23,9 +23,9 @@
   &__Description-Menu 
   {
     color:#353535;
-    padding:0px 0px 16px 10px;
+    padding:0px 0px 17px 10px;
     margin:0px;
-    font-size:1.1rem;
+    font-size:1.2rem;
     white-space:nowrap; 
     overflow:hidden;
     text-overflow:ellipsis;
@@ -38,25 +38,29 @@
     flex-direction:column-reverse;
     font-weight:bold;
     margin:0px 20px 0px 0px;
+    padding:0px 0px 16px 0px;
     font-size:1.2rem;
     color:#353535;
+    align-items:end;
   }
 
   &__Validation-Plat
    {
     $color-tertiary:#99e2d0;
     background-color:$color-tertiary;
-    margin: -1rem -5rem -1rem 1rem;
-    width: 4rem;
+    border-radius:0px 20px 20px 0px;
     display:flex;
     align-items:center;
     justify-content:center;
-    transition-duration: 0.5s;
+    width:85px;
+    margin-right:-150px;
   }
 
   &:hover &__Validation-Plat
   {
-    margin-right: -1rem;
+    overflow:visible;
+    animation:10s alternate both Selection-Plat;
+    margin-right:-100px;
   }
 
   &__Icon-Validation
