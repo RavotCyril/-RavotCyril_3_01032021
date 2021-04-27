@@ -664,14 +664,7 @@ footer p /* Texte pour le footer des 5 pages  " La Page Index et les 4 pages Men
 }
 @media screen and (min-width:376px) and (max-width:768px)   /* styles pour mobile paysage+Portrait*/
 {
-.Localisation /* Classe pour la Div localisation Paris,Belleville   " Page Index " */
-{
-    text-align:center;
-    background-color:#EAEAEA;
-    padding:16px 0px 17px;
-    margin-top:0px;
-    margin-bottom:0px;
-}
+
 .Button-Restaurant button /* Classe pour le boutton Restaurant "Explorer nos Restaurants" " Page Index "  */
 {
     background:linear-gradient(to bottom right,#FF79DA 0%,#9356DC 100%);
@@ -791,24 +784,10 @@ footer p /* Texte pour le footer des 5 pages  " La Page Index et les 4 pages Men
     width:44%;
     margin:22px auto 10px;
 }
-.Localisation /* Classe pour la Div localisation Paris,Belleville   " Page Index " */
-{
-    text-align:center;
-    background-color:#EAEAEA;
-    padding:16px 0px 17px;
-    margin-top:0px;
-    margin-bottom:0px;
-}
 .Localisation p /* Classe pour le texte de la div Localisation " Page Index "  */
 {
     margin:0px;
     width:90%;
-    color:#353535;
-}
-.Localisation i /* Classe pour l'icon Localisation " Page Index " */
-{
-    margin-right:18px;
-    color:#353535 ;
 }
 .Logistique /* Classe pour le H1 et le bouton  " Page Index "  */
 {
