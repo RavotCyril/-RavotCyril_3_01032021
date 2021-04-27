@@ -494,7 +494,10 @@ footer p /* Texte pour le footer des 5 pages  " La Page Index et les 4 pages Men
     font-size:23px;
     padding:0px 40px 0px 0px;
 }
-
+.Coeur-Plein
+{
+    top:0px;
+}
 .Menu-Boutton-Retour /* Classe pour le bouton-Retour des "4 pages Menu" */
 {
     position:absolute;
@@ -634,6 +637,10 @@ nav  /* Nav Fonctionnement " Page Index "  */
     font-size:21px;
     padding:0px 40px 0px 0px;
 }
+.Coeur-Plein
+{
+    top:0px;
+}
 footer h3 /* Titre h3 pour le footer des 5 pages  Version Desktop " La Page Index et les 4 pages Menu " */  
 {
     font-family:"Shrikhand Regular",sans-serif;
@@ -761,6 +768,10 @@ nav  /* Nav Fonctionnement " Page Index "  */
 {
     font-size:19px;
     padding:0px 40px 0px 0px;
+}
+.Coeur-Plein
+{
+    top:0px;
 }
 footer h3 /* Titre h3 pour le footer des 5 pages  " La Page Index et les 4 pages Menu " */  
 {
@@ -895,7 +906,10 @@ nav  /* Nav Fonctionnement " Page Index "  */
     margin:27px 22px 0px 35px;
     font-size:1.1rem;
 }
-
+.Coeur-Plein
+{
+    top:0px;
+}
 .Figure-Restaurants /* Classe des Figures des 4 Menu de la  " Page Index "  */
 {
     position:relative;
