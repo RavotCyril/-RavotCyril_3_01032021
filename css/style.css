@@ -1077,7 +1077,15 @@ footer p /* Texte pour le footer des 5 pages  " La Page Index et les 4 pages Men
 }
 @media screen and (max-width:350px) /* styles pour les mobiles très petit écrants */
 {
-    .H1-La-palette-du-gout  /* H1 Titre principal pour mettre la taille et les margins" Page Menu La Palette Du Goût " */
+.Menu-Boutton-Retour /* Classe pour le bouton-Retour des "4 pages Menu" */
+{
+    top:22px;
+    left:5px;
+    width:0px;
+    height:0px;
+    font-size:0.8rem;
+}
+.H1-La-palette-du-gout  /* H1 Titre principal pour mettre la taille et les margins" Page Menu La Palette Du Goût " */
 {
     font-size:1.2rem;
 }
