@@ -12,288 +12,6 @@ body  /* Police des 5 pages  " La Page Index et les 4 pages Menu " */
 {
     font-family:"Roboto Regular", sans-serif;
 } 
-#ohmyfood /* ID Logo de  " Page Index "  */
-{
-    width:30%;
-    margin:22px auto 10px;
-}
-.Logo /* Class de la figure du Logo en desktop pour l'aligner au centre" Page Index "  */
-{
-    margin:0px;
-    text-align:center;
-}
-.Localisation /* Classe pour la Div localisation Paris,Belleville   " Page Index " */
-{
-    text-align:center;
-    background-color:#EAEAEA;
-    padding:16px 0px 17px;
-    margin-top:0px;
-    margin-bottom:0px;
-}
-.Localisation p /* Classe pour le texte de la div Localisation Paris, Belleville " Page Index "  */
-{
-    text-align:center;
-    margin-bottom:10px;
-    width:100%;
-    color:#353535;
-}
-.Localisation i /* Classe pour l'icon Localisation " Page Index " */
-{
-    margin-right:18px;
-    color:#353535 ;
-}
-.Logistique /* Classe pour le H1 et le bouton  " Page Index "  */
-{
-    background-color:#F6F6F6; 
-    padding-top:40px;
-    padding-bottom:55px;
-}
-.Reserver-Le-Menu /* Titre h1  " Page Index "  */
-{
-    width:65%;
-    font-size:1.5em;
-    margin:0 auto 20px;
-    text-align:center;
-}
-h1 /* Titre h1  " Page Index "  */
-{
-    width:100%;
-    font-size:2rem;
-}
-.Sous-Titre-H1 /* Classe pour mettre le texte en-dessous du h1  " Page Index "  */
-{
-    font-size:1rem;
-    width:100%;
-    text-align:center;
-    margin:0 auto 30px;
-}
-.Button-Restaurant /* Classe pour la Div pour center le texte "Explorer nos Restaurants"  " Page Index "  */
-{
-    text-align:center;
-}
-.Button-Restaurant button /* Classe pour le boutton Restaurant "Explorer nos Restaurants" " Page Index "  */
-{
-    background:linear-gradient(to bottom right,#FF79DA 0%,#9356DC 100%);
-    overflow:hidden;
-    border-radius:100px;
-    color:white;
-    height:100px;
-    max-width:360px;
-    font-size:1.9rem;
-    margin:0px auto;
-    border:none;
-    box-shadow:0px 5px 20px 1px #C5C5C5;
-
-}
-.Button-Restaurant button:hover /* Classe pour éclaircir le boutton Restaurant au hover avec la souris "Explorer nos Restaurants" " Page Index "  */
-{
-    background:linear-gradient(to bottom right,#FF79DA 100%,#9356DC 0%);
-}
-nav  /* Nav Fonctionnement " Page Index "  */
-{
-    display:flex;
-    margin:54px 0px 68px;
-}
-.Nav-Texte-En-Gras /* Classe pour la Nav "Fonctionnement" et mettre le texte en gras  " Page Index "  */
-{
-    font-size:1.1rem;
-    font-weight:bold;
-}
-.Fonctionnement /* Header titre H2 " Fonctionnement " pour le mettre  en gras  " Page Index "  */
-{
-    font-size:2rem;
-    margin:50px 0px 0px 40px;
-}
-.Nav-Menu /* Classe Nav-Menu pour mettre les cercles et les chiffres 1-2-3 et la couleur violette en font d'écrant + la couleur blanche pour le texte. " Page Index "  */
-{
-    display:inline-block;
-    height:36px;
-    width:36px;
-    Border-radius:20px;
-    background-color:#9356DC;
-    color:white;
-    position:absolute;
-    overflow:hidden;
-    top:calc( 50% - 18px );
-    left:-18px;
-    font-size:1rem;
-    text-align:center;
-    line-height:36px;
-}
-.Nav /*  Nav  " Page Index "  */
-{
-    position:relative;
-    width:25%;
-    height:100px;
-    box-shadow: 0px 10px 25px #E5E5E5;
-    border-radius:20px;
-    font-size:1rem;
-    margin:0px 50px;
-}
-.Nav:hover  /* ----------------------------------------------Animation en rose au clique ----------------------------------------------------------*/
-{
-    background-color:#F5EDFF;
-}
-.Icon-Violet i /* Classe pour icon et le mettre en violet " Page Index "   */
-{
-    font-size:1.1rem;
-    margin:42px 10px 0px 35px;
-    color:#9356DC;
-}
-.Icon-Gris-Phone i /* Classe pour l' icon Phone et les mettre en gris " Page Index "  */
-{
-    color:#7E7E7E;
-    font-size:1.1rem;
-    margin:40px 10px 0px 35px;
-}
-.Icon-Gris-Menu i /* Classe pour l' icon Menu et le mettre en gris " Page Index "  */
-{
-    color:#7E7E7E;
-    font-size:1.1rem;
-    margin:42px 10px 0px 35px;
-}
-#Restaurants  /* Style pour mettre un backgroun-color et des paddings ou Main " Page Index  */
-{
-    padding:55px 0px 65px;
-    background-color:#F6F6F6;
-}
-#Restaurants h2   /* Id pour le titre h2 et lui enlever son margin-top du Main Restaurants   " Page Index "  */
-{
-    font-size:2rem;
-    margin:0px 0px 20px 40px;
-}
-.content   /* Classe pour mettre les 4 figures  en flex colonne " Page Index " */
-{
-    display:flex;
-    justify-content:space-around;
-}
-
-#Restaurants .La-Palette-Du-Gout, .La-Note-Enchantee, .A-la-Française, .Le-Delice-Des-Sens /* Classe pour les liens du ID Restaurants de la  " Page Index "   */
-{
-    width:23%;
-    display:block;
-    color:black;
-}
-#Restaurants .La-Palette-Du-Gout a, .La-Note-Enchantee a, .A-la-Française a, .Le-Delice-Des-Sens a/* Classe pour les liens du ID Restaurants de la  " Page Index "   */
-{
-    display:block;
-    text-decoration:none;
-    color:black;
-    margin-bottom:17px;
-}
-.Figure-Restaurants /* Classe pour les figures Main Restaurants Desktop >1280px  " Page Index "  */
-{
-    position:relative;
-    width:100%;
-    margin:0px auto;
-    overflow:hidden;
-    border-radius:20px;
-    box-shadow: 0px 10px 25px #E5E5E5;
-} 
-.img_cover-index /* Classe pour les Div Main Restaurants Desktop >1280px   " Page Index "  */  
-{
-    height:275px;
-    overflow:hidden;
-}
-#Restaurants img  /*Id pour les images du Main Restaurants    " Page Index "  */
-{
-    width:100%;
-    height:100%;
-    border-radius:20px 20px 0px 0px;
-    object-fit:cover;
-    object-position:center;
-}
-
-.Figure-Restaurants figcaption  /* Classe pour le figcaption ( Déscription- Legende ) des Figures des 4 Menu de la  " Page Index " */
-{
-    height:125px;
-    padding-top:18px;
-    margin-left:13px;
-}
-.Figure-Restaurants p /* Classe pour le texte des Figures des 4 Menu de la  " Page Index "   */
-{
-    color:#2F2F2E;
-    margin-top:10px;
-    margin-bottom:25px;
-    font-size:21px;
-}
-.Nouveau /* Classe pour le texte nouveau  sur les images  " Page Index "     */
-{
-    font-size:0.75em;
-    position:absolute;
-    top:13px;
-    right:12px;
-    background-color:#99E2D0;
-    color:#008766;
-    padding:7px 13px 7px 13px;
-}
-.Menu-Bold /* Classe pour mettre en gras les titres des Menu sur la  " Page Index "   */
-{
-    font-weight:bold;
-    color:black;
-    font-size:21px;
-}
-.Texte-Coeur  /* Classe pour mettre l'Icon Coeur en flex  " Page Index "   */
-{
-    position:relative;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    font-size:21px;
-}
-.Coeur-Vide
-{
-    display:flex;
-    align-items:center;
-    font-size:1.35rem;
-    padding:0px 40px 0px 0px;
-}
-.Coeur-Plein
-{
-    position:absolute;
-    right:41px;
-    top:1px;
-    font-size:1.2rem;
-    opacity:0;
-    color:transparent;
-}
-.Coeur-Plein:hover
-{
-    animation:3s ease-out Coeur;
-    -webkit-background-clip:text;
-    opacity:1;
-}
-
-@keyframes Coeur
-{
-    25%
-    {
-    background:linear-gradient(to bottom, #FF79DA 100%, #9356DC 0%);
-    background:-webkit-linear-gradient(to bottom, #FF79DA 40%, #9356DC 60%);/* Chrome, Opera 15+, Safari 3.1+ */
-    background:-ms-linear-gradient(to bottom, #FF79DA 40%, #9356DC 60%);   /* IE 9 */
-    -webkit-background-clip:text;
-    opacity:0.7;
-    }
-    65%
-    {
-    background:linear-gradient(to bottom, #FF79DA 0%, #9356DC 60%);
-    background:-webkit-linear-gradient(to bottom, #FF79DA 0%, #9356DC 60%);/* Chrome, Opera 15+, Safari 3.1+ */
-    background:-ms-linear-gradient(to bottom, #FF79DA 0%, #9356DC 60%);   /* IE 9 */
-    -webkit-background-clip:text;
-    opacity:0.9;
-    }
-    100% 
-    { 
-    background:linear-gradient(to bottom, #FF79DA 0%, #9356DC 80%);
-    background:-webkit-linear-gradient(to bottom, #FF79DA 0%, #9356DC 80%);/* Chrome, Opera 15+, Safari 3.1+ */
-    background:-ms-linear-gradient(to bottom, #FF79DA 0%, #9356DC 80%);   /* IE 9 */
-    -webkit-background-clip:text;
-    opacity:1;
-    }
-}
-
-/*" -----------------------------------------------------Page La Palette Du Goût "  ----------------------------------------------------- */
-
 .Header-Menu
 {
     position:relative;
@@ -414,6 +132,11 @@ nav  /* Nav Fonctionnement " Page Index "  */
     border-bottom:1px solid #99E2D0;
     border-width:4px;
 }
+.Texte-Plat
+{
+    overflow:hidden;
+    width:85%;
+}
 .Prix  /* Classe pour mettre Les chiffres ( prix ) à droite avec un margin right dans les divs  " Page La Palette Du Goût "   */
 {
     width:15%;
@@ -442,7 +165,7 @@ nav  /* Nav Fonctionnement " Page Index "  */
     font-size:1.4rem;
     font-weight:bold;
     margin:0px;
-    padding:10px 0px 10px 5px;
+    padding:10px 0px 10px 10px;
     white-space:nowrap; 
     overflow:hidden;
     text-overflow:ellipsis;
@@ -457,7 +180,8 @@ nav  /* Nav Fonctionnement " Page Index "  */
     background-color:white;
     border-radius:100px;
     overflow:hidden;
-    transform:rotate(180deg);
+    transform: rotate(180deg);
+
 }
 .Icon-Validation i
 {
@@ -474,7 +198,11 @@ nav  /* Nav Fonctionnement " Page Index "  */
     width:85px;
     margin-right:-150px;
 }
-
+.Menu-Entrees .Validation-Plat:hover
+{
+    overflow:visible;
+    animation:10s alternate both Selection-Plat;
+}
 @keyframes Selection-Plat
 {
     0%   
@@ -661,181 +389,10 @@ footer p /* Texte pour le footer des 5 pages  " La Page Index et les 4 pages Men
 {
     text-decoration:none;
 }
-#loader-Container
-{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1000;
-    background-color: white;
-    transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
-    animation: Loader-Finish 3s both;
-}
-#loader 
-{
-    display: block;
-    position: relative;
-    left: 50%;
-    top: 50%;
-    width: 180px;
-    height: 180px;
-    margin: -75px 0 0 -75px;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-color: #3498db;
-    -webkit-animation: cercle 3s ease-in ; /* Chrome, Opera 15+, Safari 5+ */
-    animation: cercle 2s ease-in infinite ; /* Chrome, Firefox 16+, IE 10+, Opera */
-    z-index: 1001;
-}
-
-#loader:before 
-{
-    content: "";
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    right: 5px;
-    bottom: 5px;
-    border-radius:50%;
-    border: 3px dashed transparent ;
-    border-color: black transparent;
-    -webkit-animation: cercle 1s ease-in-out ; /* Chrome, Opera 15+, Safari 5+ */
-    animation: cercle 2s linear; /* Chrome, Firefox 16+, IE 10+, Opera */
-}
-
-#loader:after 
-{
-    content: "";
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    right: 15px;
-    bottom: 15px;
-    border-radius: 50%;
-    border: 3px solid transparent ;
-    border-color: #656565;
-    -webkit-animation: cercle 2s linear ; /* Chrome, Opera 15+, Safari 5+ */
-    animation: cercle 1.5s linear ; /* Chrome, Firefox 16+, IE 10+, Opera */
-}
-@keyframes Loader-Finish
-{
-    0%   
-    { 
-    transform:scale(1);
-    opacity:1 ease-in-out visibility 1s ease-in-out;
-    }
-
-    100% 
-    { 
-    transform:scale(0);
-    opacity:0 ease-in-out visibility 1s hidden;
-    }
-}
-
-@-webkit-keyframes cercle 
-{
-    0%   
-    { 
-    -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
-    -ms-transform: rotate(0deg);  /* IE 9 */
-    transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
-    }
-    100% 
-    {
-    -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
-    -ms-transform: rotate(360deg);  /* IE 9 */
-    transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
-    }
-}
-@keyframes cercle
-{
-    0%   
-    { 
-    -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
-    -ms-transform: rotate(0deg);  /* IE 9 */
-    transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
-    }
-    100% 
-    {
-    -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
-    -ms-transform: rotate(360deg);  /* IE 9 */
-    transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
-    }
-}
 /* Version Desktop */
 
 @media screen and (min-width:1090px) and (max-width:1280px)  /* styles pour tablettes*/
 {
-.Fonctionnement /* Header titre H2 " Fonctionnement " pour le mettre  en gras  " Page Index "  */
-{
-    font-size:2rem;
-    margin:50px 0px 0px 30px;
-}
-.Nav-Menu /* Classe Nav-Menu pour mettre les cercles et les chiffres 1-2-3 et la couleur violette en font d'écrant + la couleur blanche pour le texte. " Page Index "  */
-{
-    display:inline-block;
-    height:30px;
-    width:30px;
-    Border-radius:20px;
-    background-color:#9356DC;
-    color:white;
-    position:absolute;
-    overflow:hidden;
-    top:calc( 50% - 15px );
-    left:-15px;
-    font-size:1rem;
-    text-align:center;
-    line-height:30px;
-}
-.Icon-Violet i /* Classe pour icon et le mettre en violet " Page Index "   */
-{
-    margin:42px 10px 0px 35px;
-}
-.Icon-Gris-Phone i /* Classe pour l' icon Phone et les mettre en gris " Page Index "  */
-{
-    margin:40px 10px 0px 35px;
-}
-    .Icon-Gris-Menu i /* Classe pour l' icon Menu et le mettre en gris " Page Index "  */
-{
-    margin:42px 10px 0px 35px;
-}
-.Menu-Bold /* Classe pour mettre en gras les titres des Menu sur la  " Page Index "   */
-{
-    font-weight:bold;
-    color:black;
-    font-size:19px;
-}
-.Figure-Restaurants p /* Classe pour le texte des Figures des 4 Menu de la  " Page Index "   */
-{
-    color:#2F2F2E;
-    margin-top:10px;
-    margin-bottom:25px;
-    font-size:19px;
-}
-#Restaurants h2   /* Id pour le titre h2 et lui enlever son margin-top du Main Restaurants   " Page Index "  */
-{
-    margin:0px 0px 20px 30px;
-}
-.Coeur i 
-{
-    font-size:23px;
-    padding:0px 40px 0px 0px;
-}
-
-.Menu-Boutton-Retour /* Classe pour le bouton-Retour des "4 pages Menu" */
-{
-    position:absolute;
-    background-color:transparent;
-    border:0px;
-    color:black;
-    font-size:2.5rem;
-    left:-25px;
-    top:25px;
-}
- /* -----------------------------------------------------------Page Menu --------------------------------------------------------------------------- */
-
 .H1-La-palette-du-gout  /* H1 Titre principal pour mettre la taille et les margins" Page Menu La Palette Du Goût " */
 {
     width:96%;
@@ -844,7 +401,7 @@ footer p /* Texte pour le footer des 5 pages  " La Page Index et les 4 pages Men
     background-color:#F6F6F6;
     margin:0px;
     padding:40px 0px 50px 4%;
-
+    
 }
 .Coeur-Vide-Menu i /* Style pour mettre l'icon Coeur  du H1 en flex et avec un margin " Page Menu La Palette Du Goût " */
 {
@@ -915,15 +472,15 @@ footer p /* Texte pour le footer des 5 pages  " La Page Index et les 4 pages Men
     border-radius:20px;
     margin:0px 0px 25px 0px;
     animation:1.800s linear Plat;
-}
+ }
 #Main-Menu .Menu-Desserts, .Mousse-Au-Chocolat /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div et la dernière avec un padding different " Page Menu La Palette Du Goût " */
-{
+    {
     width:90%;
     box-shadow:0px 3px 20px #E5E5E5;
     border-radius:20px;
     margin:0px 0px 25px 0px;
     animation:1.925s ease-in Plat;
-}
+    }
 footer h3 /* Titre h3 pour le footer des 5 pages  Version Desktop " La Page Index et les 4 pages Menu " */  
 {
     font-family:"Shrikhand Regular",sans-serif;
@@ -954,107 +511,6 @@ footer p /* Texte pour le footer des 5 pages  " La Page Index et les 4 pages Men
 }
 @media screen and (min-width:769px) and (max-width:1089px)  /* styles pour tablettes*/
 {
-.Fonctionnement /* Header titre H2 " Fonctionnement " pour le mettre  en gras  " Page Index "  */
-{
-    font-size:2rem;
-    margin:50px 0px 0px 30px;
-}
-.Button-Restaurant button /* Classe pour le boutton Restaurant "Explorer nos Restaurants" " Page Index "  */
-{
-    background:linear-gradient(to bottom right,#FF79DA 0%,#9356DC 100%);
-    overflow:hidden;
-    border-radius:100px;
-    color:white;
-    height:75px;
-    max-width:360px;
-    font-size:1.5rem;
-    margin:0px auto;
-    border:none;
-    box-shadow:0px 5px 20px 1px #C5C5C5;
-}
-nav  /* Nav Fonctionnement " Page Index "  */
-{
-    display:flex;
-    flex-wrap:wrap;
-    margin:54px 0px 68px;
-}
-.Nav /*  Nav  " Page Index "  */
-{
-    position:relative;
-    width:35%;
-    height:100px;
-    box-shadow: 0px 10px 25px #E5E5E5;
-    border-radius:20px;
-    font-size:1rem;
-    margin:0px 0px 20px 50px;
-}
-.Nav-Menu /* Classe Nav-Menu pour mettre les cercles et les chiffres 1-2-3 et la couleur violette en font d'écrant + la couleur blanche pour le texte. " Page Index "  */
-{
-    display:inline-block;
-    height:30px;
-    width:30px;
-    Border-radius:20px;
-    background-color:#9356DC;
-    color:white;
-    position:absolute;
-    overflow:hidden;
-    top:calc( 50% - 15px );
-    left:-15px;
-    font-size:1rem;
-    text-align:center;
-    line-height:30px;
-}
-.Icon-Violet i /* Classe pour icon et le mettre en violet " Page Index "   */
-{
-    margin:42px 10px 0px 35px;
-}
-.Icon-Gris-Phone i /* Classe pour l' icon Phone et les mettre en gris " Page Index "  */
-{
-    margin:40px 10px 0px 35px;
-}
-.Icon-Gris-Menu i /* Classe pour l' icon Menu et le mettre en gris " Page Index "  */
-{
-    margin:42px 10px 0px 35px;
-}
-
-#Restaurants h2   /* Id pour le titre h2 et lui enlever son margin-top du Main Restaurants   " Page Index "  */
-{
-    margin:0px 0px 20px 30px;
-}
-.Menu-Bold /* Classe pour mettre en gras les titres des Menu sur la  " Page Index "   */
-{
-    font-weight:bold;
-    color:black;
-    font-size:19px;
-    display:flex;
-    align-items:center;
-}
-.Figure-Restaurants p /* Classe pour le texte des Figures des 4 Menu de la  " Page Index "   */
-{
-    color:#2F2F2E;
-    margin-top:10px;
-    margin-bottom:25px;
-    font-size:19px;
-}
-.content   /* Classe pour mettre les 4 figures  en flex colonne " Page Index " */
-{
-    display:flex;
-    justify-content:space-around;
-    flex-wrap:wrap;
-}
-#Restaurants .La-Palette-Du-Gout, .La-Note-Enchantee, .A-la-Française, .Le-Delice-Des-Sens /* Classe pour les liens du ID Restaurants de la  " Page Index "   */
-{
-    width:45%;
-    color:black;
-    margin:0px auto;
-}
-.Coeur i 
-{
-    font-size:21px;
-    padding:0px 40px 0px 0px;
-}
-/* ---------------------------------------------------------- Page La Palette Du Goût -----------------------------------------*/
-
 .Menu-Boutton-Retour /* Classe pour le bouton-Retour des "4 pages Menu" */
 {
     position:absolute;
@@ -1073,7 +529,6 @@ nav  /* Nav Fonctionnement " Page Index "  */
     background-color:#F6F6F6;
     margin:0px;
     padding:40px 0px 50px 4%;
-
 }
 .Coeur-Vide-Menu i /* Style pour mettre l'icon Coeur  du H1 en flex et avec un margin " Page Menu La Palette Du Goût " */
 {
@@ -1115,7 +570,7 @@ nav  /* Nav Fonctionnement " Page Index "  */
 {
     width:90%;
 }
-
+    
 #Main-Menu .Menu-Entrees /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div  " Page Menu  " */
 {
     width:90%;
@@ -1153,7 +608,7 @@ nav  /* Nav Fonctionnement " Page Index "  */
 .Description-Menu  /* Classe pour mettre en léger gris  les descriptions des Menu sur la  " Page La Palette Du Goût "   */
 {
     color:#353535;
-    padding:0px 0px 16px 10px;
+     padding:0px 0px 16px 10px;
     margin:0px;
     font-size:1.1rem;
     white-space:nowrap; 
@@ -1197,7 +652,7 @@ footer p /* Texte pour le footer des 5 pages  " La Page Index et les 4 pages Men
     font-size:1.4rem;
     color:white;
     margin-right:28px;
-}
+ }
 .Partenaire i
 {
     font-size:1.4rem;
@@ -1208,112 +663,7 @@ footer p /* Texte pour le footer des 5 pages  " La Page Index et les 4 pages Men
 }
 @media screen and (min-width:376px) and (max-width:768px)   /* styles pour mobile paysage+Portrait*/
 {
-.Localisation /* Classe pour la Div localisation Paris,Belleville   " Page Index " */
-{
-    text-align:center;
-    background-color:#EAEAEA;
-    padding:16px 0px 17px;
-    margin-top:0px;
-    margin-bottom:0px;
-}
-.Button-Restaurant button /* Classe pour le boutton Restaurant "Explorer nos Restaurants" " Page Index "  */
-{
-    background:linear-gradient(to bottom right,#FF79DA 0%,#9356DC 100%);
-    overflow:hidden;
-    border-radius:100px;
-    color:white;
-    height:75px;
-    max-width:360px;
-    font-size:1rem;
-    margin:0px auto;
-    border:none;
-    box-shadow:0px 5px 20px 1px #C5C5C5;
-}
-.Fonctionnement /* Header titre H2 " Fonctionnement " pour le mettre  en gras  " Page Index "  */
-{
-    font-size:2rem;
-    margin:50px 0px 0px 10%;
-}
-nav  /* Nav Fonctionnement " Page Index "  */
-{
-    display:flex;
-    flex-wrap:wrap;
-    margin:54px 0px 68px;
-}
-.Nav-Menu /* Classe Nav-Menu pour mettre les cercles et les chiffres 1-2-3 et la couleur violette en font d'écrant + la couleur blanche pour le texte. " Page Index "  */
-{
-    display:inline-block;
-    height:26px;
-    width:26px;
-    Border-radius:20px;
-    background-color:#9356DC;
-    color:white;
-    position:absolute;
-    overflow:hidden;
-    top:calc( 50% - 13px );
-    left:-12px;
-    font-size:1rem;
-    text-align:center;
-    line-height:26px;
-}
-.Icon-Violet i /* Classe pour icon et le mettre en violet " Page Index "   */
-{
-    margin:42px 10px 0px 35px;
-}
-.Icon-Gris-Phone i /* Classe pour l' icon Phone et les mettre en gris " Page Index "  */
-{
-    margin:40px 10px 0px 35px;
-}
-.Icon-Gris-Menu i /* Classe pour l' icon Menu et le mettre en gris " Page Index "  */
-{
-    margin:42px 10px 0px 35px;
-}
-.Nav /* Figure des Nav  " Page Index "  */
-{
-    position:relative;
-    width:70%;
-    height:100px;
-    box-shadow: 0px 10px 20px #E5E5E5;
-    border-radius:20px;
-    font-size:1rem;
-    margin:0px 20% 20px 10%;
-}
-#Restaurants h2   /* Id pour le titre h2 et lui enlever son margin-top du Main Restaurants   " Page Index "  */
-{
-    margin:0px 43% 20px 10%;
-}
-.Menu-Bold /* Classe pour mettre en gras les titres des Menu sur la  " Page Index "   */
-{
-    font-weight:bold;
-    color:black;
-    font-size:18px;
-}
-.Figure-Restaurants p /* Classe pour le texte des Figures des 4 Menu de la  " Page Index "   */
-{
-    color:#2F2F2E;
-    margin-top:10px;
-    margin-bottom:25px;
-    font-size:18px;
-}
-.content   /*  /* Div pour mettre en flex en desktop + tablette 4 figures La palette du gout et la Note enchantée de la section de l'ID Restaurants  " Page Index "  */
-{
-    display:flex;
-    flex-direction:column;
-}
-
-#Restaurants .La-Palette-Du-Gout, .La-Note-Enchantee, .A-la-Française, .Le-Delice-Des-Sens /* Classe pour les liens du ID Restaurants de la  " Page Index "   */
-{
-    width:80%;
-    display:block;
-    color:black;
-    margin:0px auto;
-}
-.Coeur i 
-{
-    font-size:19px;
-    padding:0px 40px 0px 0px;
-}
-.Menu-Boutton-Retour /* Classe pour le bouton-Retour des "4 pages Menu" */
+    .Menu-Boutton-Retour /* Classe pour le bouton-Retour des "4 pages Menu" */
 {
     position:absolute;
     background-color:transparent;
@@ -1482,251 +832,7 @@ footer p /* Texte pour le footer des 5 pages  " La Page Index et les 4 pages Men
 }
 }
 @media screen and (max-width:375px) /* styles pour mobile petit écran paysage+Portrait*/
-{
-#ohmyfood /* ID Logo de  " Page Index "  */
-{
-    width:44%;
-    margin:22px auto 10px;
-}
-.Localisation /* Classe pour la Div localisation Paris,Belleville   " Page Index " */
-{
-    text-align:center;
-    background-color:#EAEAEA;
-    padding:16px 0px 17px;
-    margin-top:0px;
-    margin-bottom:0px;
-}
-.Localisation p /* Classe pour le texte de la div Localisation " Page Index "  */
-{
-    margin:0px;
-    width:90%;
-    color:#353535;
-}
-.Localisation i /* Classe pour l'icon Localisation " Page Index " */
-{
-    margin-right:18px;
-    color:#353535 ;
-}
-.Logistique /* Classe pour le H1 et le bouton  " Page Index "  */
-{
-    background-color:#F6F6F6; 
-    padding-top:40px;
-    padding-bottom:55px;
-}
-.Reserver-Le-Menu /* Titre h1  " Page Index "  */
-{
-    width:65%;
-    font-size:1.5em;
-    margin:0px auto 22px;
-}
-.Sous-Titre-H1 /* Classe pour mettre le texte en-dessous du h1  " Page Index "  */
-{
-    font-size:1.03rem;
-    width:82%;
-    margin:0 auto 30px;
-    color:#656565;
-}
-.Button-Restaurant /* Classe pour la Div pour center le texte "Explorer nos Restaurants"  " Page Index "  */
-{
-    text-align:center;
-}
-.Button-Restaurant button /* Classe pour le boutton Restaurant "Explorer nos Restaurants" " Page Index "  */
-{
-    background-color:#FF79DA;
-    overflow:hidden;
-    border-radius:100px;
-    color:#FFFFFF;
-    height:50px;
-    width:58%;
-    margin:0px auto;
-    font-size:100%;
-    border:none;
-    box-shadow:0px 5px 20px 1px #C5C5C5;
-
-}
-nav  /* Nav Fonctionnement " Page Index "  */
-{
-    display:flex;
-    flex-direction:column;
-    margin:54px 0px 68px;
-}
-.Nav-Texte-En-Gras /* Classe pour la Nav "Fonctionnement" et mettre le texte en gras  " Page Index "  */
-{
-    font-weight:bold;
-    margin-top:25px;
-    font-size:1rem;
-}
-.Fonctionnement /* Header titre H2 " Fonctionnement " pour le mettre en gras  " Page Index "  */
-{
-    margin:50px 0px 33px 20px;
-    font-size:1.3rem;
-}
-.Nav-Menu /* Classe Nav-Menu pour mettre les cercles et la couleur violette en font d'écrant + la couleur blanche pour le texte. " Page Index "  */
-{
-    display:inline-block;
-    height:24px;
-    width:24px;
-    line-height:24px;
-    Border-radius:20px;
-    background-color:#9356DC;
-    color:white;
-    position:absolute;
-    overflow:hidden;
-    left:-12px;
-    top:calc( 50% - 12px );
-    font-size:0.9rem;
-    text-align:center;
-    margin:0px;
-}
-.Nav /* Nav  " Page Index "  */
-{
-    position:relative;
-    width:87%;
-    height:75px;
-    box-shadow: 0px 10px 25px #E5E5E5;
-    border-radius:20px;
-    margin:0px 5% 23px 8%;
-    font-size:1em;
-}
-
-.Nav:hover  /* ----------------------------------------------Animation en rose au click --------------------------------------------------------*/
-
-{
-    background-color:#F5EDFF;
-}
-.Icon-Gris-Phone i /* Classe pour les 2 icons et les mettrent en gris " Page Index "  */
-{
-    color:#7E7E7E;
-    margin:25px 28px 0px 35px;
-    font-size:1.2rem;
-    text-align:center;
-}
-.Icon-Gris-Menu i /* Classe pour les 2 icons et les mettrent en gris " Page Index "  */
-{
-    color:#7E7E7E;
-    margin:28px 24px 0px 35px;
-    font-size:1rem;
-}
-.Icon-Violet i /* Classe pour icon et le mettre en violet " Page Index "   */
-{
-    color:#9356DC;
-    margin:27px 22px 0px 35px;
-    font-size:1.1rem;
-}
-
-.Figure-Restaurants /* Classe des Figures des 4 Menu de la  " Page Index "  */
-{
-    position:relative;
-    margin:0px;
-    border-radius:20px;
-    box-shadow: 0px 10px 25px #E5E5E5;
-} 
-.Figure-Restaurants p /* Classe pour le texte des Figures des 4 Menu de la  " Page Index "   */
-{
-    color:#2F2F2E;
-    margin-top:0px;
-    margin-bottom:8px;
-    font-size:1.0rem;
-}
-.Figure-Restaurants figcaption  /* Classe pour le figcaption ( Déscription- Legende ) des Figures des 4 Menu de la  " Page Index " */
-{
-    height:59px;
-    padding:16px 0px 5px;
-    margin-left:13px;
-}
-#Restaurants  /* Id pour le Main   */
-{
-    width:88%;
-    padding:58px 6% 65px;
-    background-color:#F6F6F6;
-}
-#Restaurants h2  /* Id pour le titre h2 et lui enlever son margin-top du Main Restaurants   " Page Index "  */
-{
-    font-size:1.3rem;
-    margin:0px 0px 28px 0px;
-    text-align:initial;
-}
-.content   /*  /* Div pour mettre en flex en desktop + tablette 4 figures La palette du gout et la Note enchantée de la section de l'ID Restaurants  " Page Index "  */
-{
-    display:flex;
-    flex-direction:column;
-    justify-content:initial;
-}
-
-#Restaurants img  /*Id pour les images du Main Restaurants    " Page Index "  */
-{
-    width:100%;
-    height:100%;
-    border-radius:20px 20px 0px 0px;
-    object-fit:cover;
-    object-position:center;
-}
-
-.img_cover-index  /* Classe pour les div des images du main Restaurants   " Page Index "  */
-{
-    height:175px;
-    overflow:hidden;
-}
-#Restaurants .La-Palette-Du-Gout, .La-Note-Enchantee, .A-la-Française, .Le-Delice-Des-Sens
-{
-    width:initial;
-}
-#Restaurants .La-Palette-Du-Gout a, .La-Note-Enchantee a, .A-la-Française a /* Classe pour les liens du ID Restaurants de la  " Page Index "   */
-{
-    display:block;
-    text-decoration:none;
-    color:black;
-    margin-bottom:17px;
-}
-#Restaurants .Le-Delice-Des-Sens a /* Classe pour enlever le margin-bottom de la dernière figure Menu Le-Delice-Des-Senss de la  " Page Index "   */
-{
-    display:block;
-    text-decoration:none;
-    color:black;
-    margin-bottom:0px;
-}
-#Restaurants .Le-Delice-Des-Sens img /* Classe pour l'image du menu .Le-delice-des-sens du main Restaurants   " Page Index "  */
-{
-    width:100%;
-    object-fit:cover;
-    object-position:center;
-}
-
-.Nouveau /* Classe pour le texte nouveau  sur les images  " Page Index "     */
-{
-    font-size:0.75em;
-    position:absolute;
-    top:13px;
-    right:12px;
-    background-color:#99E2D0;
-    color:#008766;
-    padding:7px 13px 7px 13px;
-}
-.Menu-Bold /* Classe pour mettre en gras les titres des Menu sur la  " Page Index "   */
-{
-    font-weight:bold;
-    color:black;
-    font-size:1.0rem;
-    height:17px;
-    white-space:nowrap; 
-    overflow:hidden;
-    text-overflow:ellipsis;
-}
-.Texte-Coeur  /* Classe pour mettre l'Icon Coeur en flex  " Page Index "   */
-{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    font-size:21px;
-}
-.Coeur i /* Classe pour mettre l'Icon Coeur  " Page Index "   */
-{
-    font-size:1rem;
-    padding:0px 40px 0px 0px;
-}
-
-/* -----------------------------------------------------------" Page La Palette Du Goût "---------------------------------------------- */
-.Header-Menu
+{.Header-Menu
 {
     width:100%;
     padding:0px;
@@ -1760,15 +866,14 @@ nav  /* Nav Fonctionnement " Page Index "  */
     justify-content:space-between;
     align-items:center;
 }
-
 .Coeur-Vide-Menu i /* Style pour mettre l'icon Coeur  du H1 en flex et avec un margin " Page Menu La Palette Du Goût " */
-{
+    {
     Margin:0px;
     width:22px;
     height:22px;
     line-height:22px;
     font-size:1.4rem;
-}
+    }
 .Coeur-Plein-Menu /* Style pour mettre l'icon Coeur  du H1 en flex et avec un margin " Page Menu La Palette Du Goût " */
 {
     top:4px;
@@ -1780,20 +885,20 @@ nav  /* Nav Fonctionnement " Page Index "  */
 }
 .Dimension-Coeur /* Style pour mettre l'icon Coeur sans margin " Page Menu La Palette Du Goût " */
 {
-    margin:0px;
+     margin:0px;
 }
 .Content-Menu
-{
+    {
     display:initial;
-}
+    }
 .Entrees, .Plats, .Desserts  /* Style pour les titres des différents Plats " Page Menu La Palette Du Goût " */
-{
+    {
     width:initial;
     display:flex;
     flex-direction:column;
     justify-content:space-around;
     margin:0px;
-}
+    }
 .Titre_Entrees /* Classe pour mettre un margin top-bottom pour le titre Entrées  " Page La Palette Du Goût "   */
 {
     font-weight:normal;
@@ -1822,7 +927,6 @@ nav  /* Nav Fonctionnement " Page Index "  */
     border-bottom:1px solid #99E2D0;
     border-width:3px;
 }
-
 .Prix  /* Classe pour mettre Les chiffres ( prix ) à droite avec un margin right dans les divs  " Page La Palette Du Goût "   */
 {
     width:13%;
@@ -1839,7 +943,7 @@ nav  /* Nav Fonctionnement " Page Index "  */
     background-color:#F6F6F6; 
     padding:0px;
 }
-
+    
 .Menu-Bold2  /* Classe pour mettre les titres de Menu en gras et avec un padding -top "Page Menu La Palette Du Goût" */
 {
     font-weight:bold;
@@ -1878,7 +982,6 @@ nav  /* Nav Fonctionnement " Page Index "  */
     height:260px;
     overflow:hidden;
 }
-
 #Main-Menu .Menu-Entrees /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div  " Page Menu  " */
 {
     width:90%;
@@ -1913,9 +1016,6 @@ nav  /* Nav Fonctionnement " Page Index "  */
     margin:0px 3.5%;
     animation:1.925s ease-in Plat;
 }
-
-/*--------------------------------------------- Styles  pour  " Page Menu "--------------------------------------------------------------- */
-
 .Bouton-Retour-Logo  /* Classe du Logo et du Bouton Retour pour mettre la Div en position relative des "4 pages Menu" */
 {
     position:relative;
@@ -1939,12 +1039,12 @@ nav  /* Nav Fonctionnement " Page Index "  */
 {
     color:black;
 }
-footer /* Footer des 5 pages  " La Page Index et les 4 pages Menu "    */
+    footer /* Footer des 5 pages  " La Page Index et les 4 pages Menu "    */
 {
     background-color: #353535;
     padding:27px 0px 26px 25px;
 }
-footer h3 /* Titre h3 pour le footer des 5 pages  " La Page Index et les 4 pages Menu " */  
+    footer h3 /* Titre h3 pour le footer des 5 pages  " La Page Index et les 4 pages Menu " */  
 {
     font-family:"Shrikhand Regular", sans-serif;
     color:white;
@@ -1977,15 +1077,10 @@ footer p /* Texte pour le footer des 5 pages  " La Page Index et les 4 pages Men
 {
     font-weight:bold;
 }
-
 }
 @media screen and (max-width:350px) /* styles pour les mobiles très petit écrants */
 {
-.Icon-Gris-Phone i, .Icon-Gris-Menu i, .Icon-Violet i  /* Classe pour les 2 icons et les mettrent en gris " Page Index "  */
-    {
-    margin:25px 0px 0px 20px;
-    }
-.H1-La-palette-du-gout  /* H1 Titre principal pour mettre la taille et les margins" Page Menu La Palette Du Goût " */
+    .H1-La-palette-du-gout  /* H1 Titre principal pour mettre la taille et les margins" Page Menu La Palette Du Goût " */
 {
     font-size:1.2rem;
 }

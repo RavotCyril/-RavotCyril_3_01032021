@@ -1,7 +1,6 @@
-.Menu-Entrees, .Menu-Plats, .Menu-Desserts 
+.Menu
 {
-
-&__Texte-Plat
+  &__Texte-Plat
     {
     width:85%;
     white-space: nowrap;
@@ -9,7 +8,7 @@
     overflow:hidden;
   }
 
-  &__Menu-Bold2 
+  &__Menu-Bold2
   {
     font-size:1.4rem;
     font-weight:bold;
@@ -80,7 +79,7 @@
     transform: rotate(0);
   }
 
-  &__Icon-Validation i
+  &__Icon-Validation .fasfa-check
   {
     $color-tertiary:#99e2d0;
     color: $color-tertiary;

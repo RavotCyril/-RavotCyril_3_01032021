@@ -1,10 +1,10 @@
-.Menu-Entrees__Texte-Plat, .Menu-Plats__Texte-Plat, .Menu-Desserts__Texte-Plat {
+.Menu__Texte-Plat {
   width: 85%;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.Menu-Entrees__Menu-Bold2, .Menu-Plats__Menu-Bold2, .Menu-Desserts__Menu-Bold2 {
+.Menu__Menu-Bold2 {
   font-size: 1.4rem;
   font-weight: bold;
   margin: 0px;
@@ -13,7 +13,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.Menu-Entrees__Description-Menu, .Menu-Plats__Description-Menu, .Menu-Desserts__Description-Menu {
+.Menu__Description-Menu {
   color: #353535;
   padding: 0px 0px 17px 10px;
   margin: 0px;
@@ -22,7 +22,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.Menu-Entrees__Prix, .Menu-Plats__Prix, .Menu-Desserts__Prix {
+.Menu__Prix {
   width: 15%;
   display: flex;
   flex-direction: column-reverse;
@@ -33,7 +33,7 @@
   color: #353535;
   align-items: end;
 }
-.Menu-Entrees__Validation-Plat, .Menu-Plats__Validation-Plat, .Menu-Desserts__Validation-Plat {
+.Menu__Validation-Plat {
   background-color: #99e2d0;
   border-radius: 0px 20px 20px 0px;
   display: flex;
@@ -42,12 +42,12 @@
   width: 85px;
   margin-right: -150px;
 }
-.Menu-Entrees:hover .Menu-Entrees__Validation-Plat, .Menu-Entrees:hover .Menu-Plats__Validation-Plat, .Menu-Entrees:hover .Menu-Desserts__Validation-Plat, .Menu-Plats:hover .Menu-Entrees__Validation-Plat, .Menu-Plats:hover .Menu-Plats__Validation-Plat, .Menu-Plats:hover .Menu-Desserts__Validation-Plat, .Menu-Desserts:hover .Menu-Entrees__Validation-Plat, .Menu-Desserts:hover .Menu-Plats__Validation-Plat, .Menu-Desserts:hover .Menu-Desserts__Validation-Plat {
+.Menu:hover .Menu__Validation-Plat {
   overflow: visible;
   animation: 10s alternate both Selection-Plat;
   margin-right: -100px;
 }
-.Menu-Entrees__Icon-Validation, .Menu-Plats__Icon-Validation, .Menu-Desserts__Icon-Validation {
+.Menu__Icon-Validation {
   width: 21px;
   height: 21px;
   display: flex;
@@ -57,10 +57,10 @@
   border-radius: 100px;
   transform: rotate(180deg);
 }
-.Menu-Entrees:hover .Menu-Entrees__Icon-Validation, .Menu-Entrees:hover .Menu-Plats__Icon-Validation, .Menu-Entrees:hover .Menu-Desserts__Icon-Validation, .Menu-Plats:hover .Menu-Entrees__Icon-Validation, .Menu-Plats:hover .Menu-Plats__Icon-Validation, .Menu-Plats:hover .Menu-Desserts__Icon-Validation, .Menu-Desserts:hover .Menu-Entrees__Icon-Validation, .Menu-Desserts:hover .Menu-Plats__Icon-Validation, .Menu-Desserts:hover .Menu-Desserts__Icon-Validation {
+.Menu:hover .Menu__Icon-Validation {
   transform: rotate(0);
 }
-.Menu-Entrees__Icon-Validation i, .Menu-Plats__Icon-Validation i, .Menu-Desserts__Icon-Validation i {
+.Menu__Icon-Validation .fasfa-check {
   color: #99e2d0;
 }
 
