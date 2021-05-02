@@ -1,1168 +1,1605 @@
-@font-face  /* Police des 5 pages  " La Page Index et les 4 pages Menu " */
-{
-    font-family:"Roboto Regular";
-    src:url("Police-Roboto/Roboto-Regular.ttf") format("truetype");
-}
-@font-face  /* Police des 5 pages  " La Page Index et les 4 pages Menu " */
-{
-    font-family:"Shrikhand Regular";
-    src:url("Police-Roboto/Shrikhand-Regular.ttf") format("truetype");
-}
-body  /* Police des 5 pages  " La Page Index et les 4 pages Menu " */
-{
-    font-family:"Roboto Regular", sans-serif;
-} 
-.Header-Menu
-{
-    position:relative;
-}
-#ohmyfood-Menu-La-Note-Enchantee  /* ID Logo de la page    " Page Menu " */
-{
-    width:43.5%;
-    margin:23px 0px 8px;
-}
-#ohmyfood-Menu-A-La-Française  /* ID Logo de la page    " Page Menu " */
-{
-    width:43.5%;
-    margin:23px 0px 8px;
-}
-#ohmyfood-Menu-Le-Delice-Des-Sens  /* ID Logo de la page    " Page Menu " */
-{
-    width:43.5%;
-    margin:23px 0px 8px;
-}
-#ohmyfood-Menu-La-Palette-Du-Goût  /* ID Logo de la page    " Page Menu " */
-{
-    width:43.5%;
-    margin:23px 0px 8px;
-}
-.Description-Menu  /* Classe pour mettre en léger gris  les descriptions des Menu sur la  " Page Menu "   */
-{
-    color:#353535;
-    padding:0px 0px 17px 10px;
-    margin:0px;
-    font-size:1.2rem;
-    white-space:nowrap; 
-    overflow:hidden;
-    text-overflow:ellipsis;
-}
-.H1-La-palette-du-gout  /* H1 Titre principal pour mettre la taille et les margins" Page Menu " */
-{
-    display:flex;
-    width:98%;
-    font-size:3em;
-    font-family:"Shrikhand Regular", sans-serif;
-    background-color:#F6F6F6;
-    margin:0px;
-    padding:40px 0px 50px 2%;
+@font-face
+/* Police des 5 pages  " La Page Index et les 4 pages Menu " */
 
-}
-.Dimension-Coeur
-{
-    margin-left:50px;
-    width:45px;
-    position:relative;
-}
-.Coeur-Vide-Menu i /* Style pour mettre l'icon Coeur  du H1 en flex et avec un margin " Page Menu " */
-{
-    Margin:0px 0px 0px 0px;
-    width:22px;
-    height:22px;
-    line-height:22px;
-    font-size:3rem;
-}
-.Coeur-Plein-Menu
-{
-    top:1px;
-    left:3px;
-    position:absolute;
-    font-size:2.7rem;
-    opacity:0;
-    color:transparent;
-}
-.Coeur-Plein-Menu:hover
-{
-    animation:3s ease-out Coeur;
-    -webkit-background-clip:text;
-    opacity:1;
-}
-@keyframes Coeur
-{
-    25%
-    {
-    background:linear-gradient(to bottom, #FF79DA 100%, #9356DC 0%);
-    background:-webkit-linear-gradient(to bottom, #FF79DA 40%, #9356DC 60%);/* Chrome, Opera 15+, Safari 3.1+ */
-    background:-ms-linear-gradient(to bottom, #FF79DA 40%, #9356DC 60%);   /* IE 9 */
-    -webkit-background-clip:text;
-    opacity:0.7;
-    }
-    65%
-    {
-    background:linear-gradient(to bottom, #FF79DA 0%, #9356DC 60%);
-    background:-webkit-linear-gradient(to bottom, #FF79DA 0%, #9356DC 60%);/* Chrome, Opera 15+, Safari 3.1+ */
-    background:-ms-linear-gradient(to bottom, #FF79DA 0%, #9356DC 60%);   /* IE 9 */
-    -webkit-background-clip:text;
-    opacity:0.9;
-    }
-    100% 
-    { 
-    background:linear-gradient(to bottom, #FF79DA 0%, #9356DC 80%);
-    background:-webkit-linear-gradient(to bottom, #FF79DA 0%, #9356DC 80%);/* Chrome, Opera 15+, Safari 3.1+ */
-    background:-ms-linear-gradient(to bottom, #FF79DA 0%, #9356DC 80%);   /* IE 9 */
-    -webkit-background-clip:text;
-    opacity:1;
-    }
-}
-.Entrees
-{
-    width:30%;
-    margin:0px 10px;
-}
-.Plats
-{   
-    width:30%;
-    margin:0px 10px;
+  {
+    font-family: "Roboto Regular";
+    src: url("Police-Roboto/Roboto-Regular.ttf") format("truetype");
+  }
 
-}
-.Desserts    
-{
-    width:30%;
-    margin:0px 10px;
-}
-.Titre_Entrees, .Titre_Plats, .Titre_Desserts  /* Classe pour mettre un margin top-bottom pour le titre Entrées-Plats-Desserts  " Page Menu "   */
-{
-    display:block;
-    font-size:2rem;
-    font-weight:normal;
-    padding:23px 0px 20px 0px;
-    margin-bottom:7px;
-    margin-top:0px;
-}
-.Titre_Entrees
-{
-    animation:1.650s ease  Plat;
-}
-.Titre_Plats
-{
-    animation:1.800s linear  Plat;
+@font-face
+/* Police des 5 pages  " La Page Index et les 4 pages Menu " */
 
-}
-.Titre_Desserts
-{
-    animation:1.925s ease-in  Plat;
-}
-.Bordure-Titre /* Classe pour mettre une bordure verte au des Titres H2 D'entrees-Plats-Desserts " Page Menu "*/ 
-{
-    width:95%;
-    display:block;
-    padding-bottom:7px;
-    border-bottom:1px solid #99E2D0;
-    border-width:4px;
-}
-.Texte-Plat
-{
-    overflow:hidden;
-    width:80%;
-}
-.Prix  /* Classe pour mettre Les chiffres ( prix ) à droite avec un margin right dans les divs  " Page Menu "   */
-{
-    width:20%;
-    display:flex;
-    flex-direction:column-reverse;
-    font-weight:bold;
-    margin:0px;
-    font-size:1.2rem;
-    color:#353535;
-    padding:0px 0px 16px 0px;
-    align-items:center;
-}
-#Main-Menu /* Id-Main Pour mettre les paddings du Main " Page Menu " */
-{
-    background-color:#F6F6F6; 
-    padding:0px;
-}
-.Content-Menu  /* Classe pour mettre la section Menu en flex colonne " Page Menu " */
-{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:space-around;
-}
-.Menu-Bold2  /* Classe pour mettre les titres de Menu en gras et avec un padding -top "Page Menu" */
-{
-    font-size:1.4rem;
-    font-weight:bold;
-    margin:0px;
-    padding:10px 0px 10px 10px;
-    white-space:nowrap; 
-    overflow:hidden;
-    text-overflow:ellipsis;
-}
-.Icon-Validation
-{
-    width:21px;
-    height:21px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    background-color:white;
-    border-radius:100px;
-    transition:transform 1s ease-in-out;
-}
-.Icon-Validation i
-{
-    width:1rem;
-    color:#99e2d0;
-}
-.Menu1:hover .Icon-Validation, .Menu2:hover .Icon-Validation, .Menu3:hover .Icon-Validation
-{
-    transform:rotate(-1turn);
-}
-.Validation-Plat
-{
-    background-color:#99e2d0;
-    border-radius:0px 20px 20px 0px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    width:20%;
-    margin-right:-150px;
-}
-.Menu1:hover .Texte-Plat, .Menu2:hover .Texte-Plat, .Menu3:hover .Texte-Plat
-{
-    overflow:visible;
-    animation:1s alternate both Selection-Plat;
-}
+  {
+    font-family: "Shrikhand Regular";
+    src: url("Police-Roboto/Shrikhand-Regular.ttf") format("truetype");
+  }
 
-@keyframes Selection-Plat
-{
-    0%   
-    { 
-        width: 80%;
-    }
-    100% 
-    {
-        width: 60%;
-    }
-}
-.Figure-Menu /* Classe pour la figure de l'image du Menu Menu   " Page Menu  "    */
-{
-    width:100%;
-    margin:0px;
-    padding:0px;
-}
-.img_cover-Menu /* Classe pour la Div de l'image du Menu Menu  " Page Menu  "    */
-{
-    height:260px;
-    overflow:hidden;
-}
-.Figure-Menu img /* Classe pour la figure de l'image du Menu Menu  " Page Menu  "    */
-{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    object-position:center;
-}
-.Boutton-Commander /* Classe pour le bouton Commander des Menus "Page Menu" */
-{
-    width:40%;
-    height:100px;
-    background:linear-gradient(to bottom right,#FF79DA 0%,#9356DC 100%);
-    color:white;
-    border-radius:50px;
-    border:none;
-    margin:45px 30% 58px;
-    font-size:2.5rem;
-}
-.Menu1 /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div  " Page Menu  " */
-{
-    display:flex;
-    box-shadow:0px 3px 20px #E5E5E5;
-    border-radius:20px;
-    margin:0px 0px 25px 0px;
-    animation:1.650s ease  Plat;
+body
+/* Police des 5 pages  " La Page Index et les 4 pages Menu " */
+
+  {
+    font-family: "Roboto Regular", sans-serif;
+  }
+
+.Header-Menu 
+
+  {
+    position: relative;
+  }
+
+#ohmyfood-Menu-La-Note-Enchantee
+/* ID Logo de la page    " Page Menu " */
+
+  {
+    width: 43.5%;
+    margin: 23px 0px 8px;
+  }
+
+#ohmyfood-Menu-A-La-Française
+/* ID Logo de la page    " Page Menu " */
+
+  {
+    width: 43.5%;
+    margin: 23px 0px 8px;
+  }
+
+#ohmyfood-Menu-Le-Delice-Des-Sens
+/* ID Logo de la page    " Page Menu " */
+
+  {
+    width: 43.5%;
+    margin: 23px 0px 8px;
+  }
+
+#ohmyfood-Menu-La-Palette-Du-Goût
+/* ID Logo de la page    " Page Menu " */
+
+  {
+    width: 43.5%;
+    margin: 23px 0px 8px;
+  }
+
+.Description-Menu
+/* Classe pour mettre en léger gris  les descriptions des Menu sur la  " Page Menu "   */
+
+  {
+    color: #353535;
+    padding: 0px 0px 17px 10px;
+    margin: 0px;
+    font-size: 1.2rem;
+    white-space: nowrap;
     overflow: hidden;
-    cursor:pointer;
-}
-.Menu2 /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div  " Page Menu  " */
+    text-overflow: ellipsis;
+  }
+
+.H1-La-palette-du-gout
+/* H1 Titre principal pour mettre la taille et les margins" Page Menu " */
+
+  {
+    display: flex;
+    width: 98%;
+    font-size: 3em;
+    font-family: "Shrikhand Regular", sans-serif;
+    background-color: #F6F6F6;
+    margin: 0px;
+    padding: 40px 0px 50px 2%;
+  }
+
+.Dimension-Coeur 
+
+  {
+    margin-left: 50px;
+    width: 45px;
+    position: relative;
+  }
+
+.Coeur-Vide-Menu i
+/* Style pour mettre l'icon Coeur  du H1 en flex et avec un margin " Page Menu " */
+
+  {
+    Margin: 0px 0px 0px 0px;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 3rem;
+  }
+
+.Coeur-Plein-Menu 
+
+  {
+    top: 1px;
+    left: 3px;
+    position: absolute;
+    font-size: 2.7rem;
+    opacity: 0;
+    color: transparent;
+  }
+
+.Coeur-Plein-Menu:hover 
+
+  {
+    animation: 3s ease-out Coeur;
+    -webkit-background-clip: text;
+    opacity: 1;
+  }
+
+@keyframes Coeur 
+
 {
-    display:flex;
-    box-shadow:0px 3px 20px #E5E5E5;
-    border-radius:20px;
-    margin:0px 0px 25px 0px;
-    animation:1.800s linear Plat;
-    overflow:hidden;
+  25% 
+  {
+    background: linear-gradient(to bottom, #FF79DA 100%, #9356DC 0%);
+    background: -webkit-linear-gradient(to bottom, #FF79DA 40%, #9356DC 60%);
+    /* Chrome, Opera 15+, Safari 3.1+ */
+    background: -ms-linear-gradient(to bottom, #FF79DA 40%, #9356DC 60%);
+    /* IE 9 */
+    -webkit-background-clip: text;
+    opacity: 0.7;
+  }
+  65% 
+  {
+    background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 60%);
+    background: -webkit-linear-gradient(to bottom, #FF79DA 0%, #9356DC 60%);
+    /* Chrome, Opera 15+, Safari 3.1+ */
+    background: -ms-linear-gradient(to bottom, #FF79DA 0%, #9356DC 60%);
+    /* IE 9 */
+    -webkit-background-clip: text;
+    opacity: 0.9;
+  }
+  100% 
+  {
+    background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 80%);
+    background: -webkit-linear-gradient(to bottom, #FF79DA 0%, #9356DC 80%);
+    /* Chrome, Opera 15+, Safari 3.1+ */
+    background: -ms-linear-gradient(to bottom, #FF79DA 0%, #9356DC 80%);
+    /* IE 9 */
+    -webkit-background-clip: text;
+    opacity: 1;
+  }
 }
-.Menu3 /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div et la dernière avec un padding different " Page Menu " */
+
+.Entrees 
+
+  {
+    width: 30%;
+    margin: 0px 10px;
+  }
+
+.Plats 
+
+  {
+    width: 30%;
+    margin: 0px 10px;
+  }
+
+.Desserts 
+
+  {
+    width: 30%;
+    margin: 0px 10px;
+  }
+
+.Titre_Entrees, .Titre_Plats, .Titre_Desserts
+/* Classe pour mettre un margin top-bottom pour le titre Entrées-Plats-Desserts  " Page Menu "   */
+
+  {
+    display: block;
+    font-size: 2rem;
+    font-weight: normal;
+    padding: 23px 0px 20px 0px;
+    margin-bottom: 7px;
+    margin-top: 0px;
+  }
+
+.Titre_Entrees 
+
+  {
+    animation: 1.650s ease Plat;
+  }  
+
+.Titre_Plats 
+
+  {
+    animation: 1.800s linear Plat;
+  }
+
+.Titre_Desserts 
+
+  {
+    animation: 1.925s ease-in Plat;
+  }
+
+.Bordure-Titre
+/* Classe pour mettre une bordure verte au des Titres H2 D'entrees-Plats-Desserts " Page Menu "*/
+
+  {
+    width: 95%;
+    display: block;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #99E2D0;
+    border-width: 4px;
+  }
+
+.Texte-Plat 
+
+  {
+    overflow: hidden;
+    width: 80%;
+  }
+
+.Prix
+/* Classe pour mettre Les chiffres ( prix ) à droite avec un margin right dans les divs  " Page Menu "   */
+
+  {
+    width: 20%;
+    display: flex;
+    flex-direction: column-reverse;
+    font-weight: bold;
+    margin: 0px;
+    font-size: 1.2rem;
+    color: #353535;
+    padding: 0px 0px 16px 0px;
+    align-items: center;
+  }
+
+#Main-Menu
+/* Id-Main Pour mettre les paddings du Main " Page Menu " */
+
+  {
+    background-color: #F6F6F6;
+    padding: 0px;
+  }
+
+.Content-Menu
+/* Classe pour mettre la section Menu en flex colonne " Page Menu " */
+
+  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+.Menu-Bold2
+/* Classe pour mettre les titres de Menu en gras et avec un padding -top "Page Menu" */
+
+  {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 0px;
+    padding: 10px 0px 10px 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+.Icon-Validation 
+
+  {
+    width: 21px;
+    height: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 100px;
+    transition: transform 1s ease-in-out;
+  }
+
+.Icon-Validation i 
+
+  {
+    width: 1rem;
+    color: #99e2d0;
+  }
+
+.Menu1:hover .Icon-Validation, .Menu2:hover .Icon-Validation, .Menu3:hover .Icon-Validation 
+
+  {
+    transform: rotate(-1turn);
+  }
+
+.Validation-Plat 
+  
+  {
+    background-color: #99e2d0;
+    border-radius: 0px 20px 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    margin-right:-150px;
+  }
+
+.Menu1:hover .Texte-Plat, .Menu2:hover .Texte-Plat, .Menu3:hover .Texte-Plat 
+
+  {
+    overflow: visible;
+    animation: 1s alternate both Selection-Plat;
+  }
+
+@keyframes Selection-Plat 
+
 {
-    display:flex;
-    box-shadow:0px 3px 20px #E5E5E5;
-    border-radius:20px;
-    margin:0px 0px 25px 0px;
-    animation:1.925s ease-in Plat;
-    overflow:hidden;
+  0% 
+  {
+    width: 80%;
+  }
+  100% 
+  {
+    width: 60%;
+  }
 }
-@keyframes Plat
+
+.Figure-Menu
+/* Classe pour la figure de l'image du Menu Menu   " Page Menu  "    */
+
+  {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+
+.img_cover-Menu
+/* Classe pour la Div de l'image du Menu Menu  " Page Menu  "    */
+
+  {
+    height: 260px;
+    overflow: hidden;
+  }
+
+.Figure-Menu img
+/* Classe pour la figure de l'image du Menu Menu  " Page Menu  "    */
+
+  {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+.Boutton-Commander
+/* Classe pour le bouton Commander des Menus "Page Menu" */
+
+  {
+    width: 40%;
+    height: 100px;
+    background: linear-gradient(to bottom right, #FF79DA 0%, #9356DC 100%);
+    color: white;
+    border-radius: 50px;
+    border: none;
+    margin: 45px 30% 58px;
+    font-size: 2.5rem;
+  }
+
+.Menu1
+/* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div  " Page Menu  " */
+
+  {
+    display: flex;
+    box-shadow: 0px 3px 20px #E5E5E5;
+    border-radius: 20px;
+    margin: 0px 0px 25px 0px;
+    animation: 1.650s ease Plat;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+.Menu2
+/* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div  " Page Menu  " */
+
+  {
+    display: flex;
+    box-shadow: 0px 3px 20px #E5E5E5;
+    border-radius: 20px;
+    margin: 0px 0px 25px 0px;
+    animation: 1.800s linear Plat;
+    overflow: hidden;
+  }
+
+.Menu3
+/* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div et la dernière avec un padding different " Page Menu " */
+
+  {
+    display: flex;
+    box-shadow: 0px 3px 20px #E5E5E5;
+    border-radius: 20px;
+    margin: 0px 0px 25px 0px;
+    animation: 1.925s ease-in Plat;
+    overflow: hidden;
+  }
+
+@keyframes Plat 
+
 {
-    0% 
-    {
+  0% 
+  {
     transform: translatey(0px);
-    opacity:0;
-    }
-    100% 
-    {
+    opacity: 0;
+  }
+  100% 
+  {
     transform: translatey(-10px);
-    opacity:1;
-    }
+    opacity: 1;
+  }
 }
-#ohmyfood-Menu-La-Note-Enchantee  /* ID Logo de la page    " Page Menu " */
-{
-    width:50%;
-    margin:23px 0px 8px;
-}
-#ohmyfood-Menu-A-La-Française  /* ID Logo de la page    " Page Menu " */
-{
-    width:50%;
-    margin:23px 0px 8px;
-}
-#ohmyfood-Menu-Le-Delice-Des-Sens  /* ID Logo de la page    " Page Menu " */
-{
-    width:50%;
-    margin:23px 0px 8px;
-}
-.Bouton-Retour-Logo  /* Classe du Logo et du Bouton Retour pour mettre la Div en position relative des "4 pages Menu" */
-{
-    width:50%;
-    margin:0px auto;
-    position:relative;
-    text-align:center;
-}
-.Menu-Boutton-Retour /* Classe pour le bouton-Retour des "4 pages Menu" */
-{
-    position:absolute;
-    border:0px;
-    color:black;
-    font-size:3rem;
-    left:-25px;
-    top:25px;
-}
-.Menu-Boutton-Retour a /* Classe pour mettre le liens en noir bouton-Retour des "4 pages Menu" */
-{
-    color:black;
-}
-footer /* Footer des 5 pages Version Desktop " La Page Index et les 4 pages Menu "    */
-{
+
+#ohmyfood-Menu-La-Note-Enchantee
+/* ID Logo de la page    " Page Menu " */
+
+  {
+    width: 50%;
+    margin: 23px 0px 8px;
+  }
+
+#ohmyfood-Menu-A-La-Française
+/* ID Logo de la page    " Page Menu " */
+
+  {
+    width: 50%;
+    margin: 23px 0px 8px;
+  }
+
+#ohmyfood-Menu-Le-Delice-Des-Sens
+/* ID Logo de la page    " Page Menu " */
+
+  {
+    width: 50%;
+    margin: 23px 0px 8px;
+  }
+
+.Bouton-Retour-Logo
+/* Classe du Logo et du Bouton Retour pour mettre la Div en position relative des "4 pages Menu" */
+
+  {
+    width: 50%;
+    margin: 0px auto;
+    position: relative;
+    text-align: center;
+  }
+
+.Menu-Boutton-Retour
+/* Classe pour le bouton-Retour des "4 pages Menu" */
+
+  {
+    position: absolute;
+    border: 0px;
+    color: black;
+    font-size: 3rem;
+    left: -25px;
+    top: 25px;
+  }
+
+.Menu-Boutton-Retour a
+/* Classe pour mettre le liens en noir bouton-Retour des "4 pages Menu" */
+
+  {
+    color: black;
+  }
+
+footer
+/* Footer des 5 pages Version Desktop " La Page Index et les 4 pages Menu "    */
+
+  {
     background-color: #353535;
-    padding:25px 0px 20px 25px;
-}
-footer p /* Texte pour le footer des 5 pages Version Desktop " La Page Index et les 4 pages Menu "     */
-{
-    color:white;
-    margin-top:0px;
-    margin-bottom:10px;
-    font-size:2rem;
-}
-.Fourchette-Couteau i /* Style pour les icons pour le footer des 5 pages Version Desktop " La Page Index et les 4 pages Menu "     */
-{
-    font-size:1.8rem;
-    color:white;
-    margin-right:30px;
-}
-.Partenaire i
-{
-    font-size:1.8rem;
-    color:white;
-    margin-right:17px;
-    transform:rotate(-10deg);
-}
-footer h3 /* Titre h3 pour le footer des 5 pages  Version Desktop " La Page Index et les 4 pages Menu " */  
-{
-    font-family:"Shrikhand Regular",sans-serif;
-    color:white;
-    margin-top:0px;
-    font-size:2rem;
-}
-footer p /* Texte pour le footer des 5 pages  " La Page Index et les 4 pages Menu "     */
-{
-    color:white;
-    margin-top:0px;
-    margin-bottom:10px;
-    font-size:1.8rem;
-}
-.Contact   /* Pour enlever le surlignement de contact ( émail ) " La Page Index et les 4 pages Menu " */  
-{
-    text-decoration:none;
-}
+    padding: 25px 0px 20px 25px;
+  }
+
+footer p
+/* Texte pour le footer des 5 pages Version Desktop " La Page Index et les 4 pages Menu "     */
+
+  {
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 2rem;
+  }
+
+.Fourchette-Couteau i
+/* Style pour les icons pour le footer des 5 pages Version Desktop " La Page Index et les 4 pages Menu "     */
+
+  {
+    font-size: 1.8rem;
+    color: white;
+    margin-right: 30px;
+  }
+
+.Partenaire i 
+
+  {
+    font-size: 1.8rem;
+    color: white;
+    margin-right: 17px;
+    transform: rotate(-10deg);
+  }
+
+footer h3
+/* Titre h3 pour le footer des 5 pages  Version Desktop " La Page Index et les 4 pages Menu " */
+
+  {
+    font-family: "Shrikhand Regular", sans-serif;
+    color: white;
+    margin-top: 0px;
+    font-size: 2rem;
+  }
+
+footer p
+/* Texte pour le footer des 5 pages  " La Page Index et les 4 pages Menu "     */
+
+  {
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+  }
+
+.Contact
+/* Pour enlever le surlignement de contact ( émail ) " La Page Index et les 4 pages Menu " */
+
+  {
+    text-decoration: none;
+  }
+
 /* Version Desktop */
 
-@media screen and (min-width:1090px) and (max-width:1280px)  /* styles pour tablettes*/
+@media screen and (min-width:1090px) and (max-width:1280px)
+/* styles pour tablettes*/
+
 {
-.H1-La-palette-du-gout  /* H1 Titre principal pour mettre la taille et les margins" Page Menu " */
-{
-    width:96%;
-    font-size:2.5em;
-    font-family:"Shrikhand Regular", sans-serif;
-    background-color:#F6F6F6;
-    margin:0px;
-    padding:40px 0px 50px 4%;
-    
-}
-.Coeur-Vide-Menu i /* Style pour mettre l'icon Coeur  du H1 en flex et avec un margin " Page Menu " */
-{
-    Margin:0px 0px 0px 0px;
-    width:22px;
-    height:22px;
-    line-height:22px;
-    font-size:2.5rem;
-}
-.Coeur-Plein-Menu /* Style pour mettre l'icon Coeur  du H1 en flex et avec un margin " Page Menu " */
-{
-    top:2px;
-    left:3px;
-    position:absolute;
-    font-size:2.2rem;
-    opacity:0;
-    color:transparent;
-}
-.Content-Menu  /* Classe pour mettre la section Menu en flex colonne " Page Menu " */
-{
-    display:flex;
-    justify-content:space-around;
-}
-.Menu-Bold2  /* Classe pour mettre les titres de Menu en gras et avec un padding -top "Page Menu" */
-{
-    font-size:1.4rem;
-    font-weight:bold;
-    margin:0px;
-    padding:10px 0px 10px 10px;
-    white-space:nowrap; 
-    overflow:hidden;
-    text-overflow:ellipsis;
-}
-.Entrees, .Plats, .Desserts 
-{
-    width:45%;
-    margin:0px 10px;
-}
-.Titre_Entrees, .Titre_Plats, .Titre_Desserts  /* Classe pour mettre un margin top-bottom pour le titre Entrées-Plats-Desserts  " Page Menu "   */
-{
-    display:block;
-    font-size:1.5rem;
-    font-weight:normal;
-    padding:23px 0px 20px 0px;
-    margin-bottom:7px;
-    margin-top:0px;
-}
-.Bordure-Titre /* Classe pour mettre une bordure verte au des Titres H2 D'entrees-Plats-Desserts " Page Menu "*/ 
-{
-    width:90%;
-    display:block;
-    padding-bottom:7px;
-    border-bottom:1px solid #99E2D0;
-    border-width:4px;
-}
-#Main-Menu .Menu1 /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div  " Page Menu  " */
-{
-    width:90%;
-    box-shadow:0px 3px 20px #E5E5E5;
-    border-radius:20px;
-    margin:0px 0px 25px 0px;
-    animation:1.650s ease Plat;
-}
-#Main-Menu .Menu2 /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div  " Page Menu  " */
-{
-    width:90%;
-    box-shadow:0px 3px 20px #E5E5E5;
-    border-radius:20px;
-    margin:0px 0px 25px 0px;
-    animation:1.800s linear Plat;
- }
-#Main-Menu .Menu3 /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div et la dernière avec un padding different " Page Menu " */
-    {
-    width:90%;
-    box-shadow:0px 3px 20px #E5E5E5;
-    border-radius:20px;
-    margin:0px 0px 25px 0px;
-    animation:1.925s ease-in Plat;
-    }
-footer h3 /* Titre h3 pour le footer des 5 pages  Version Desktop " La Page Index et les 4 pages Menu " */  
-{
-    font-family:"Shrikhand Regular",sans-serif;
-    color:white;
-    margin-top:0px;
-    font-size:1.8rem;
-}
-footer p /* Texte pour le footer des 5 pages  " La Page Index et les 4 pages Menu "     */
-{
-    color:white;
-    margin-top:0px;
-    margin-bottom:10px;
-    font-size:1.6rem;
-}
-.Fourchette-Couteau i /* Style pour les icons pour le footer des 5 pages Version Desktop " La Page Index et les 4 pages Menu "     */
-{
-    font-size:1.6rem;
-    color:white;
-    margin-right:30px;
-}
-.Partenaire i
-{
-    font-size:1.6rem;
-    color:white;
-    margin-right:17px;
-    transform:rotate(-10deg);
-}
-}
-@media screen and (min-width:769px) and (max-width:1089px)  /* styles pour tablettes*/
-{
-.Menu-Boutton-Retour /* Classe pour le bouton-Retour des "4 pages Menu" */
-{
-    position:absolute;
-    background-color:transparent;
-    border:0px;
-    color:black;
-    font-size:2rem;
-    left:-25px;
-    top:25px;
-}
-.H1-La-palette-du-gout  /* H1 Titre principal pour mettre la taille et les margins" Page Menu " */
-{
-    width:96%;
-    font-size:2.5em;
-    font-family:"Shrikhand Regular", sans-serif;
-    background-color:#F6F6F6;
-    margin:0px;
-    padding:40px 0px 50px 4%;
-}
-.Coeur-Vide-Menu i /* Style pour mettre l'icon Coeur  du H1 en flex et avec un margin " Page Menu " */
-{
-    Margin:0px 0px 0px 0px;
-    width:22px;
-    height:22px;
-    line-height:22px;
-    font-size:2.5rem;
-}
-.Coeur-Plein-Menu /* Style pour mettre l'icon Coeur  du H1 en flex et avec un margin " Page Menu " */
-{
-    top:1px;
-    left:2px;
-    position:absolute;
-    font-size:2.3rem;
-    opacity:0;
-    color:transparent;
-}
-.Content-Menu /* Classe pour mettre en flex la div Content " Page Menu "   */
-{
-    display:flex;
-    flex-wrap:wrap;
-}
-.Entrees, .Plats, .Desserts 
-{
-    width:45%;
-    display:flex;
-    flex-direction:column;
-}
-.Titre_Entrees, .Titre_Plats, .Titre_Desserts  /* Classe pour mettre un margin top-bottom pour le titre Entrées-Plats-Desserts  " Page Menu "   */
-{
-    display:block;
-    font-size:1.5rem;
-    font-weight:normal;
-    padding:23px 0px 20px 10px;
-    margin:0px 0px 7px 0px;
-}
-.Bordure-Titre /* Classe pour mettre une bordure verte au des Titres H2 D'entrees-Plats-Desserts " Page Menu "*/ 
-{
-    width:90%;
-}
-    
-#Main-Menu .Menu1 /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div  " Page Menu  " */
-{
-    width:90%;
-    box-shadow:0px 3px 20px #E5E5E5;
-    border-radius:20px;
-    margin:0px 0px 25px 0px;
-    animation:1.650s ease Plat;
-}
-#Main-Menu .Menu2 /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div  " Page Menu  " */
-{
-    width:90%;
-    box-shadow:0px 3px 20px #E5E5E5;
-    border-radius:20px;
-    margin:0px 0px 25px 0px;
-    animation:1.800s linear Plat;
-}
-#Main-Menu .Menu3 /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div et la dernière avec un padding different " Page Menu " */
-{
-    width:90%;
-    box-shadow:0px 3px 20px #E5E5E5;
-    border-radius:20px;
-    margin:0px 0px 25px 0px;
-    animation:1.925s ease-in Plat;
-}
-.Menu-Bold2  /* Classe pour mettre les titres de Menu en gras et avec un padding -top "Page Menu" */
-{
-    font-size:1.2rem;
-    font-weight:bold;
-    margin:0px;
-    padding:10px 0px 10px 10px;
-    white-space:nowrap; 
-    overflow:hidden;
-    text-overflow:ellipsis;
-}
-.Description-Menu  /* Classe pour mettre en léger gris  les descriptions des Menu sur la  " Page Menu "   */
-{
-    color:#353535;
-     padding:0px 0px 16px 10px;
-    margin:0px;
-    font-size:1.1rem;
-    white-space:nowrap; 
-    overflow:hidden;
-    text-overflow:ellipsis;
-}
-.Texte-Plat
-{
-    overflow:hidden;
-}
-.Prix  /* Classe pour mettre Les chiffres ( prix ) à droite avec un margin right dans les divs  " Page Menu "   */
-{
-    font-size:1.1rem;
-}
-.Boutton-Commander /* Classe pour le bouton Commander des Menus "Page Menu" */
-{
-    width:40%;
-    height:100px;
-    background:linear-gradient(to bottom right,#FF79DA 0%,#9356DC 100%);
-    color:white;
-    border-radius:50px;
-    border:none;
-    margin:45px 30% 58px;
-    font-size:2.5rem;
-}
-footer h3 /* Titre h3 pour le footer des 5 pages  Version Desktop " La Page Index et les 4 pages Menu " */  
-{
-    font-family:"Shrikhand Regular",sans-serif;
-    color:white;
-    margin-top:0px;
-    font-size:1.6rem;
-}
-footer p /* Texte pour le footer des 5 pages  " La Page Index et les 4 pages Menu "     */
-{
-    color:white;
-    margin-top:0px;
-    margin-bottom:10px;
-    font-size:1.4rem;
-}
-.Fourchette-Couteau i /* Style pour les icons pour le footer des 5 pages Version Desktop " La Page Index et les 4 pages Menu "     */
-{
-    font-size:1.4rem;
-    color:white;
-    margin-right:28px;
- }
-.Partenaire i
-{
-    font-size:1.4rem;
-    color:white;
-    margin-right:17px;
-    transform:rotate(-10deg);
-}
-}
-@media screen and (min-width:376px) and (max-width:768px)   /* styles pour mobile paysage+Portrait*/
-{
-    .Menu-Boutton-Retour /* Classe pour le bouton-Retour des "4 pages Menu" */
-{
-    position:absolute;
-    background-color:transparent;
-    border:0px;
-    color:black;
-    font-size:1.5rem;
-    left:-25px;
-    top:25px;
-}
-.Div-Boutton  /* Classe pour mettre le boutton Commander des Menus au centre de la page "Page Menu" */
-{
-    text-align:center;
-}
-.Boutton-Commander /* Classe pour le bouton Commander des Menus "Page Menu" */
-{
-    width:230px;
-    background:linear-gradient(to bottom right,#FF79DA 0%,#9356DC 100%);
-    color:white;
-    border-radius:50px;
-    border:none;
-    margin:45px 0px 58px;
-    font-size:2rem;
-}
-#Main-Menu /* Id-Main Pour mettre les paddings du Main " Page Menu " */
-{
-    width:100%;
+  .H1-La-palette-du-gout
+  /* H1 Titre principal pour mettre la taille et les margins" Page Menu " */
+
+  {
+    width: 96%;
+    font-size: 2.5em;
+    font-family: "Shrikhand Regular", sans-serif;
+    background-color: #F6F6F6;
+    margin: 0px;
+    padding: 40px 0px 50px 4%;
+  }
+
+  .Coeur-Vide-Menu i
+  /* Style pour mettre l'icon Coeur  du H1 en flex et avec un margin " Page Menu " */
+
+  {
+    Margin: 0px 0px 0px 0px;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 2.5rem;
+  }
+
+  .Coeur-Plein-Menu
+  /* Style pour mettre l'icon Coeur  du H1 en flex et avec un margin " Page Menu " */
+
+  {
+    top: 2px;
+    left: 3px;
+    position: absolute;
+    font-size: 2.2rem;
+    opacity: 0;
+    color: transparent;
+  }
+
+  .Content-Menu
+  /* Classe pour mettre la section Menu en flex colonne " Page Menu " */
+  
+  {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .Menu-Bold2
+  /* Classe pour mettre les titres de Menu en gras et avec un padding -top "Page Menu" */
+
+  {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 0px;
+    padding: 10px 0px 10px 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .Entrees, .Plats, .Desserts 
+
+  {
+    width: 45%;
+    margin: 0px 10px;
+  }
+
+  .Titre_Entrees, .Titre_Plats, .Titre_Desserts
+  /* Classe pour mettre un margin top-bottom pour le titre Entrées-Plats-Desserts  " Page Menu "   */
+
+  {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: normal;
+    padding: 23px 0px 20px 0px;
+    margin-bottom: 7px;
+    margin-top: 0px;
+  }
+
+  .Bordure-Titre
+  /* Classe pour mettre une bordure verte au des Titres H2 D'entrees-Plats-Desserts " Page Menu "*/
+
+  {
+    width: 90%;
+    display: block;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #99E2D0;
+    border-width: 4px;
+  }
+  #Main-Menu .Menu1
+  /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div  " Page Menu  " */
+
+  {
+    width: 90%;
+    box-shadow: 0px 3px 20px #E5E5E5;
+    border-radius: 20px;
+    margin: 0px 0px 25px 0px;
+    animation: 1.650s ease Plat;
+  }
+  #Main-Menu .Menu2
+  /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div  " Page Menu  " */
+
+  {
+    width: 90%;
+    box-shadow: 0px 3px 20px #E5E5E5;
+    border-radius: 20px;
+    margin: 0px 0px 25px 0px;
+    animation: 1.800s linear Plat;
+  }
+  #Main-Menu .Menu3
+  /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div et la dernière avec un padding different " Page Menu " */
+
+  {
+    width: 90%;
+    box-shadow: 0px 3px 20px #E5E5E5;
+    border-radius: 20px;
+    margin: 0px 0px 25px 0px;
+    animation: 1.925s ease-in Plat;
+  }
+
+  footer h3
+  /* Titre h3 pour le footer des 5 pages  Version Desktop " La Page Index et les 4 pages Menu " */
+
+  {
+    font-family: "Shrikhand Regular", sans-serif;
+    color: white;
+    margin-top: 0px;
+    font-size: 1.8rem;
+  }
+  footer p
+  /* Texte pour le footer des 5 pages  " La Page Index et les 4 pages Menu "     */
+
+  {
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+  }
+
+  .Fourchette-Couteau i
+  /* Style pour les icons pour le footer des 5 pages Version Desktop " La Page Index et les 4 pages Menu "     */
+
+  {
+    font-size: 1.6rem;
+    color: white;
+    margin-right: 30px;
+  }
+
+  .Partenaire i 
+
+  {
+    font-size: 1.6rem;
+    color: white;
+    margin-right: 17px;
+    transform: rotate(-10deg);
+  }
 }
 
-#Main-Menu .Menu1 /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div  " Page Menu  " */
+@media screen and (min-width:769px) and (max-width:1089px)
+/* styles pour tablettes*/
+
 {
-    width:80%;
-    box-shadow:0px 3px 20px #E5E5E5;
-    border-radius:20px;
-    margin:0px 20px;
-    animation:1.650s ease Plat;
-}
-#Main-Menu .Menu2 /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div  " Page Menu  " */
-{
-    width:80%;
-    box-shadow:0px 3px 20px #E5E5E5;
-    border-radius:20px;
-    margin:0px 20px;
-    animation:1.800s linear Plat;
-}
-#Main-Menu .Menu3 /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div et la dernière avec un padding different " Page Menu " */
-{
-    width:80%;
-    box-shadow:0px 3px 20px #E5E5E5;
-    border-radius:20px;
-    margin:0px 20px;
-    animation:1.925s ease-in Plat;
-}
-.H1-La-palette-du-gout  /* H1 Titre principal pour mettre la taille et les margins" Page Menu " */
-{
-    display:flex;
-    justify-content:space-evenly;
-    width:94%;
-    font-size:2em;
-    font-family:"Shrikhand Regular", sans-serif;
-    background-color:#F6F6F6;
-    margin:0px;
-    padding:40px 0px 0px 6%;
+  .Menu-Boutton-Retour
+  /* Classe pour le bouton-Retour des "4 pages Menu" */
+
+  {
+    position: absolute;
+    background-color: transparent;
+    border: 0px;
+    color: black;
+    font-size: 2rem;
+    left: -25px;
+    top: 25px;
+  }
+
+  .H1-La-palette-du-gout
+  /* H1 Titre principal pour mettre la taille et les margins" Page Menu " */
+
+  {
+    width: 96%;
+    font-size: 2.5em;
+    font-family: "Shrikhand Regular", sans-serif;
+    background-color: #F6F6F6;
+    margin: 0px;
+    padding: 40px 0px 50px 4%;
+  }
+
+  .Coeur-Vide-Menu i
+  /* Style pour mettre l'icon Coeur  du H1 en flex et avec un margin " Page Menu " */
+
+  {
+    Margin: 0px 0px 0px 0px;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 2.5rem;
+  }
+
+  .Coeur-Plein-Menu
+  /* Style pour mettre l'icon Coeur  du H1 en flex et avec un margin " Page Menu " */
+
+  {
+    top: 1px;
+    left: 2px;
+    position: absolute;
+    font-size: 2.3rem;
+    opacity: 0;
+    color: transparent;
+  }
+
+  .Content-Menu
+  /* Classe pour mettre en flex la div Content " Page Menu "   */
+
+  {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .Entrees, .Plats, .Desserts 
+
+  {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Titre_Entrees, .Titre_Plats, .Titre_Desserts
+  /* Classe pour mettre un margin top-bottom pour le titre Entrées-Plats-Desserts  " Page Menu "   */
+
+  {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: normal;
+    padding: 23px 0px 20px 10px;
+    margin: 0px 0px 7px 0px;
+  }
+
+  .Bordure-Titre
+  /* Classe pour mettre une bordure verte au des Titres H2 D'entrees-Plats-Desserts " Page Menu "*/
+
+  {
+    width: 90%;
+  }
+
+  #Main-Menu .Menu1
+  /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div  " Page Menu  " */
+
+  {
+    width: 90%;
+    box-shadow: 0px 3px 20px #E5E5E5;
+    border-radius: 20px;
+    margin: 0px 0px 25px 0px;
+    animation: 1.650s ease Plat;
+  }
+
+  #Main-Menu .Menu2
+  /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div  " Page Menu  " */
+
+  {
+    width: 90%;
+    box-shadow: 0px 3px 20px #E5E5E5;
+    border-radius: 20px;
+    margin: 0px 0px 25px 0px;
+    animation: 1.800s linear Plat;
+  }
+
+  #Main-Menu .Menu3
+  /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div et la dernière avec un padding different " Page Menu " */
+
+  {
+    width: 90%;
+    box-shadow: 0px 3px 20px #E5E5E5;
+    border-radius: 20px;
+    margin: 0px 0px 25px 0px;
+    animation: 1.925s ease-in Plat;
+  }
+
+  .Menu-Bold2
+  /* Classe pour mettre les titres de Menu en gras et avec un padding -top "Page Menu" */
+
+  {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0px;
+    padding: 10px 0px 10px 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .Description-Menu
+  /* Classe pour mettre en léger gris  les descriptions des Menu sur la  " Page Menu "   */
+
+  {
+    color: #353535;
+    padding: 0px 0px 16px 10px;
+    margin: 0px;
+    font-size: 1.1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .Texte-Plat 
+
+  {
+    overflow: hidden;
+  }
+
+  .Prix
+  /* Classe pour mettre Les chiffres ( prix ) à droite avec un margin right dans les divs  " Page Menu "   */
+
+  {
+    font-size: 1.1rem;
+  }
+
+  .Boutton-Commander
+  /* Classe pour le bouton Commander des Menus "Page Menu" */
+
+  {
+    width: 40%;
+    height: 100px;
+    background: linear-gradient(to bottom right, #FF79DA 0%, #9356DC 100%);
+    color: white;
+    border-radius: 50px;
+    border: none;
+    margin: 45px 30% 58px;
+    font-size: 2.5rem;
+  }
+
+  footer h3
+  /* Titre h3 pour le footer des 5 pages  Version Desktop " La Page Index et les 4 pages Menu " */
+
+  {
+    font-family: "Shrikhand Regular", sans-serif;
+    color: white;
+    margin-top: 0px;
+    font-size: 1.6rem;
+  }
+
+  footer p
+  /* Texte pour le footer des 5 pages  " La Page Index et les 4 pages Menu "   */
+
+  {
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+  }
+
+  .Fourchette-Couteau i
+  /* Style pour les icons pour le footer des 5 pages Version Desktop " La Page Index et les 4 pages Menu "  */
+
+  {
+    font-size: 1.4rem;
+    color: white;
+    margin-right: 28px;
+  }
+
+  .Partenaire i 
+
+  {
+    font-size: 1.4rem;
+    color: white;
+    margin-right: 17px;
+    transform: rotate(-10deg);
+  }
 
 }
-.Coeur-Vide-Menu i /* Style pour mettre l'icon Coeur  du H1 en flex et avec un margin " Page Menu " */
+
+@media screen and (min-width:376px) and (max-width:768px)
+/* styles pour mobile paysage+Portrait*/
+
 {
-    Margin:0px;
-    width:22px;
-    height:22px;
-    line-height:22px;
-    font-size:2rem;
-}
-.Coeur-Plein-Menu /* Style pour mettre l'icon Coeur  du H1 en flex et avec un margin " Page Menu " */
-{
-    top:0px;
-    left:1px;
-    position:absolute;
+  .Menu-Boutton-Retour
+  /* Classe pour le bouton-Retour des "4 pages Menu" */
+
+  {
+    position: absolute;
+    background-color: transparent;
+    border: 0px;
+    color: black;
+    font-size: 1.5rem;
+    left: -25px;
+    top: 25px;
+  }
+
+  .Div-Boutton
+  /* Classe pour mettre le boutton Commander des Menus au centre de la page "Page Menu" */
+
+  {
+    text-align: center;
+  }
+
+  .Boutton-Commander
+  /* Classe pour le bouton Commander des Menus "Page Menu" */
+
+  {
+    width: 230px;
+    background: linear-gradient(to bottom right, #FF79DA 0%, #9356DC 100%);
+    color: white;
+    border-radius: 50px;
+    border: none;
+    margin: 45px 0px 58px;
+    font-size: 2rem;
+  }
+
+  #Main-Menu
+  /* Id-Main Pour mettre les paddings du Main " Page Menu " */
+
+  {
+    width: 100%;
+  }
+
+  #Main-Menu .Menu1
+  /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div  " Page Menu  " */
+  
+  {
+    width:80%;
+    box-shadow:0px 3px 20px #E5E5E5;
+    border-radius: 20px;
+    margin:0px auto 25px;
+    animation: 1.650s ease Plat;
+  }
+
+  #Main-Menu .Menu2
+  /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div  " Page Menu  " */
+
+  {
+    width:80%;
+    box-shadow: 0px 3px 20px #E5E5E5;
+    border-radius: 20px;
+    margin:0px auto 25px;
+    animation: 1.800s linear Plat;
+  }
+
+  #Main-Menu .Menu3
+  /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div et la dernière avec un padding different " Page Menu " */
+
+  {
+    width:80%;
+    box-shadow: 0px 3px 20px #E5E5E5;
+    border-radius: 20px;
+    margin:0px auto 25px;
+    animation: 1.925s ease-in Plat;
+  }
+
+  .H1-La-palette-du-gout
+  /* H1 Titre principal pour mettre la taille et les margins" Page Menu " */
+
+  {
+    display: flex;
+    justify-content: space-evenly;
+    width:90%;
+    font-size:1.9em;
+    font-family: "Shrikhand Regular", sans-serif;
+    background-color: #F6F6F6;
+    margin:0px;
+    padding:40px 0px 0px 10%;
+  }
+
+  .Coeur-Vide-Menu i
+  /* Style pour mettre l'icon Coeur  du H1 en flex et avec un margin " Page Menu " */
+
+  {
+    Margin: 0px;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
     font-size:1.9rem;
-    opacity:0;
-    color:transparent;
-}
-.Dimension-Coeur /* Style pour mettre l'icon Coeur sans margin " Page Menu " */
-{
-    margin:0px;
-}
-.Content-Menu /* Classe pour mettre en flex la div Content " Page Menu "   */
-{
+  }
+
+  .Coeur-Plein-Menu
+  /* Style pour mettre l'icon Coeur  du H1 en flex et avec un margin " Page Menu " */
+
+  {
+    top: 0px;
+    left: 1px;
+    position: absolute;
+    font-size:1.8rem;
+    opacity: 0;
+    color: transparent;
+  }
+
+  .Dimension-Coeur
+  /* Style pour mettre l'icon Coeur sans margin " Page Menu " */
+
+  {
+    margin: 0px;
+  }
+
+  .Content-Menu
+  /* Classe pour mettre en flex la div Content " Page Menu "   */
+
+  {
     display:initial;
-}
-.Entrees, .Plats, .Desserts 
-{
-    width:initial;
-    margin:0px;
-}
-.Titre_Entrees, .Titre_Plats, .Titre_Desserts  /* Classe pour mettre un margin top-bottom pour le titre Entrées-Plats-Desserts  " Page Menu "   */
-{
-    display:block;
-    font-size:1.5rem;
-    font-weight:normal;
-    padding:23px 0px 20px 30px;
-    margin-bottom:7px;
-    margin-top:0px;
-}
-.Bordure-Titre /* Classe pour mettre une bordure verte au des Titres H2 D'entrees-Plats-Desserts " Page Menu "*/ 
-{
+  }
+
+  .Entrees, .Plats, .Desserts 
+
+  {
+    width: initial;
+    margin: 0px;
+  }
+
+  .Titre_Entrees, .Titre_Plats, .Titre_Desserts
+  /* Classe pour mettre un margin top-bottom pour le titre Entrées-Plats-Desserts  " Page Menu "   */
+
+  {
+    display: block;
     width:80%;
-    display:block;
-    padding-bottom:7px;
-    border-bottom:1px solid #99E2D0;
-    border-width:3px;
+    font-size: 1.5rem;
+    font-weight: normal;
+    padding: 23px 0px 20px 0px;
+    margin:0px auto 7px;
+  }
+
+  .Bordure-Titre
+  /* Classe pour mettre une bordure verte au des Titres H2 D'entrees-Plats-Desserts " Page Menu "*/
+
+  {
+    width:98%;
+    display: block;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #99E2D0;
+    border-width: 3px;
+  }
+
+  .Menu-Bold2
+  /* Classe pour mettre les titres de Menu en gras et avec un padding -top "Page Menu" */
+
+  {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0px;
+    padding: 10px 0px 10px 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .Description-Menu
+  /* Classe pour mettre en léger gris  les descriptions des Menu sur la  " Page Menu "   */
+
+  {
+    color: #353535;
+    padding: 0px 0px 12px 10px;
+    margin: 0px;
+    font-size: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .Prix
+  /* Classe pour mettre Les chiffres ( prix ) à droite avec un margin right dans les divs  " Page Menu "   */
+
+  {
+    font-size: 1rem;
+    padding: 0px 0px 12px 0px;
+  }
+
+  footer h3
+  /* Titre h3 pour le footer des 5 pages  Version Desktop " La Page Index et les 4 pages Menu " */
+
+  {
+    font-family: "Shrikhand Regular", sans-serif;
+    color: white;
+    margin-top: 0px;
+    font-size: 1.5rem;
+  }
+
+  footer p
+  /* Texte pour le footer des 5 pages  " La Page Index et les 4 pages Menu "     */
+
+  {
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+
+  .Fourchette-Couteau i
+  /* Style pour les icons pour le footer des 5 pages Version Desktop " La Page Index et les 4 pages Menu "     */
+
+  {
+    font-size: 1.2rem;
+    color: white;
+    margin-right: 25px;
+  }
+
+  .Partenaire i 
+
+  {
+    font-size: 1.2rem;
+    color: white;
+    margin-right: 17px;
+    transform: rotate(-10deg);
+  }
+
 }
-.Menu-Bold2  /* Classe pour mettre les titres de Menu en gras et avec un padding -top "Page Menu" */
+
+@media screen and (max-width:375px)
+/* styles pour mobile petit écran paysage+Portrait*/
+
 {
-    font-size:1.2rem;
-    font-weight:bold;
-    margin:0px;
-    padding:10px 0px 10px 10px;
-    white-space:nowrap; 
-    overflow:hidden;
-    text-overflow:ellipsis;
-}
-.Description-Menu  /* Classe pour mettre en léger gris  les descriptions des Menu sur la  " Page Menu "   */
-{
-    color:#353535;
-    padding:0px 0px 12px 10px;
-    margin:0px;
-    font-size:1rem;
-    white-space:nowrap; 
-    overflow:hidden;
-    text-overflow:ellipsis;
-}
-.Prix  /* Classe pour mettre Les chiffres ( prix ) à droite avec un margin right dans les divs  " Page Menu "   */
-{
-    font-size:1rem;
-    padding:0px 0px 12px 0px;
-}
-footer h3 /* Titre h3 pour le footer des 5 pages  Version Desktop " La Page Index et les 4 pages Menu " */  
-{
-    font-family:"Shrikhand Regular",sans-serif;
-    color:white;
-    margin-top:0px;
-    font-size:1.5rem;
-}
-footer p /* Texte pour le footer des 5 pages  " La Page Index et les 4 pages Menu "     */
-{
-    color:white;
-    margin-top:0px;
-    margin-bottom:10px;
-    font-size:1.2rem;
-}
-.Fourchette-Couteau i /* Style pour les icons pour le footer des 5 pages Version Desktop " La Page Index et les 4 pages Menu "     */
-{
-    font-size:1.2rem;
-    color:white;
-    margin-right:25px;
-}
-.Partenaire i
-{
-    font-size:1.2rem;
-    color:white;
-    margin-right:17px;
-    transform:rotate(-10deg);
-}
-}
-@media screen and (max-width:375px) /* styles pour mobile petit écran paysage+Portrait*/
-{.Header-Menu
-{
-    width:100%;
-    padding:0px;
-}
-#ohmyfood-Menu-La-Palette-Du-Goût  /* ID Logo de la page    " Page Menu " */
-{
-    width:43.5%;
-    margin:23px 0px 8px;
-}
-.Description-Menu  /* Classe pour mettre en léger gris  les descriptions des Menu sur la  " Page Menu "   */
-{
-    color:#353535;
-    padding:0px;
-    margin:0px;
-    font-size:14px;
-}
-.H1-La-palette-du-gout  /* H1 Titre principal pour mettre la taille et les margins" Page Menu " */
-{
-    font-family:"Shrikhand Regular", sans-serif;
-    width:95%;
-    position:absolute;
-    top:-65px;
-    left:0px;
-    padding:40px 0px 0px 5%;
-    border-radius:50px 50px 0px 0px;
-    font-size:1.7em;
-    height:26px;
-    margin:0px;
-    background-color:#F6F6F6;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-.Coeur-Vide-Menu i /* Style pour mettre l'icon Coeur  du H1 en flex et avec un margin " Page Menu " */
-    {
-    Margin:0px;
-    width:22px;
-    height:22px;
-    line-height:22px;
-    font-size:1.4rem;
-    }
-.Coeur-Plein-Menu /* Style pour mettre l'icon Coeur  du H1 en flex et avec un margin " Page Menu " */
-{
-    top:4px;
-    left:0.5px;
-    position:absolute;
-    font-size:1.4rem;
-    opacity:0;
-    color:transparent;
-}
-.Dimension-Coeur /* Style pour mettre l'icon Coeur sans margin " Page Menu " */
-{
-     margin:0px;
-}
-.Content-Menu
-    {
-    display:initial;
-    }
-.Entrees, .Plats, .Desserts  /* Style pour les titres des différents Plats " Page Menu " */
-    {
-    width:initial;
-    display:flex;
-    flex-direction:column;
-    justify-content:space-around;
-    margin:0px;
-    }
-.Titre_Entrees /* Classe pour mettre un margin top-bottom pour le titre Entrées  " Page Menu "   */
-{
-    font-weight:normal;
-    font-size:1rem;
-    margin:45px 0px 10px 20px;
-    padding:0px 0px 7px;
-}
-.Titre_Plats /* Classe pour mettre un margin top-bottom pour le titre Plats  " Page Menu "   */
-{
-    font-weight:normal;
-    font-size:1rem;
-    margin:30px 0px 10px 20px;
-}
-.Titre_Desserts /* Classe pour mettre un margin top-bottom pour le titre Desserts  " Page Menu "   */
-{
-    font-weight:normal;
-    font-size:1rem;
-    margin:30px 0px 10px 20px;
-    padding-top:0px;
-}
-.Bordure-Titre /* Classe pour mettre une bordure verte au des Titres H2 D'entrees-Plats-Desserts " Page Menu "*/ 
-{
-    display:block;
-    width:40px;
-    padding-bottom:7px;
-    border-bottom:1px solid #99E2D0;
-    border-width:3px;
-}
-.Prix  /* Classe pour mettre Les chiffres ( prix ) à droite avec un margin right dans les divs  " Page Menu "   */
-{
-    font-size:14px;
-    padding:0px 0px 14px 0px;
-}
-#Main-Menu /* Id-Main Pour mettre les paddings du Main " Page Menu " */
-{
-    position:relative;
-    width:100%;
-    background-color:#F6F6F6; 
-    padding:0px;
-}
-    
-.Menu-Bold2  /* Classe pour mettre les titres de Menu en gras et avec un padding -top "Page Menu" */
-{
-    font-weight:bold;
-    margin:0px;
-    padding:10px 0px 10px;
-    font-size:1rem;
-}
-.Boutton-Commander /* Classe pour le bouton Commander des Menus "Page Menu" */
-{
-    width:187px;
-    height:50px;
-    background:linear-gradient(to bottom right,#FF79DA 0%,#9356DC 100%);
-    color:white;
-    border-radius:50px;
-    border:none;
-    margin:45px 82px 58px;
-    font-size:initial;
-}
-.Figure-Menu img /* Classe pour la figure de l'image du Menu Menu  " Page Menu "    */
-{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    object-position:center;
-}
-.Figure-Menu /* Classe pour la Div de l'image du Menu Menu  " Page Menu "    */
-{
-    width:100%;
-    height:initial;
-    overflow:hidden;
-    margin:0px;
-    padding:0px;
-}
-.img_cover-Menu /* Classe pour la Div de l'image du Menu Menu  " Page  Menu "    */
-{
-    height:260px;
-    overflow:hidden;
-}
-#Main-Menu .Menus /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div  " Page Menu  " */
-{
-    width:90%;
-    height:69px;
-    padding-left:3%;
-    margin:0px 3.5% 15px;
-    animation:1.650s ease Plat;
-}
-#Main-Menu .Menu1 /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div  " Page Menu  " */
-{
-    width:90%;
-    height:69px;
-    padding-left:3%;
-    margin:0px 3.5% 15px;
-    animation:1.800s linear Plat;
-}
-#Main-Menu .Menu2 /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div et la dernière avec un padding different " Page Menu " */
-{
-    width:90%;
-    height:69px;
-    padding-left:3%;
-    margin:0px 3.5% 15px;
-    animation:1.925s ease-in Plat;
-}
-#Main-Menu .Menu3 /* Id-Main  Pour enlever le margin-bottom de la dernière div " .Mousse-Au-Chocolat  " Page Menu " */
-{
-    width:90%;
-    height:69px;
-    box-shadow:0px 3px 20px #E5E5E5;
-    border-radius:20px;
-    padding-left:3%;
-    margin:0px 3.5%;
-    animation:1.925s ease-in Plat;
-}
-.Bouton-Retour-Logo  /* Classe du Logo et du Bouton Retour pour mettre la Div en position relative des "4 pages Menu" */
-{
-    position:relative;
-    width:100%; 
-    text-align:center;
-}
-.Menu-Boutton-Retour /* Classe pour le bouton-Retour des "4 pages Menu" */
-{
-    position:absolute;
+  .Header-Menu
+
+  {
+    width: 100%;
+    padding: 0px;
+  }
+
+  #ohmyfood-Menu-La-Palette-Du-Goût
+  /* ID Logo de la page    " Page Menu " */
+
+  {
+    width: 43.5%;
+    margin: 23px 0px 8px;
+  }
+
+  .Description-Menu
+  /* Classe pour mettre en léger gris  les descriptions des Menu sur la  " Page Menu "   */
+
+  {
+    color: #353535;
+    padding: 0px;
+    margin: 0px;
+    font-size: 14px;
+  }
+
+  .H1-La-palette-du-gout
+  /* H1 Titre principal pour mettre la taille et les margins" Page Menu " */
+
+  {
+    font-family: "Shrikhand Regular", sans-serif;
+    width: 95%;
+    position: absolute;
+    top: -65px;
+    left: 0px;
+    padding: 40px 0px 0px 5%;
+    border-radius: 50px 50px 0px 0px;
+    font-size: 1.7em;
+    height: 26px;
+    margin: 0px;
+    background-color: #F6F6F6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .Coeur-Vide-Menu i
+  /* Style pour mettre l'icon Coeur  du H1 en flex et avec un margin " Page Menu " */
+
+  {
+    Margin: 0px;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 1.4rem;
+  }
+
+  .Coeur-Plein-Menu
+  /* Style pour mettre l'icon Coeur  du H1 en flex et avec un margin " Page Menu " */
+
+  {
+    top: 4px;
+    left: 0.5px;
+    position: absolute;
+    font-size: 1.4rem;
+    opacity: 0;
+    color: transparent;
+  }
+
+  .Dimension-Coeur
+  /* Style pour mettre l'icon Coeur sans margin " Page Menu " */
+
+  {
+    margin: 0px;
+  }
+
+  .Content-Menu 
+
+  {
+    display: initial;
+  }
+
+  .Entrees, .Plats, .Desserts
+  /* Style pour les titres des différents Plats " Page Menu " */
+
+  {
+    width: initial;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0px;
+  }
+
+  .Titre_Entrees
+  /* Classe pour mettre un margin top-bottom pour le titre Entrées  " Page Menu "   */
+
+  {
+    font-weight: normal;
+    font-size: 1rem;
+    margin: 45px 0px 10px 20px;
+    padding: 0px 0px 7px;
+  }
+
+  .Titre_Plats
+  /* Classe pour mettre un margin top-bottom pour le titre Plats  " Page Menu "   */
+
+  {
+    font-weight: normal;
+    font-size: 1rem;
+    margin: 30px 0px 10px 20px;
+  }
+
+  .Titre_Desserts
+  /* Classe pour mettre un margin top-bottom pour le titre Desserts  " Page Menu "   */
+
+  {
+    font-weight: normal;
+    font-size: 1rem;
+    margin: 30px 0px 10px 20px;
+    padding-top: 0px;
+  }
+
+  .Bordure-Titre
+  /* Classe pour mettre une bordure verte au des Titres H2 D'entrees-Plats-Desserts " Page Menu "*/
+
+  {
+    display: block;
+    width: 40px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #99E2D0;
+    border-width: 3px;
+  }
+
+  .Prix
+  /* Classe pour mettre Les chiffres ( prix ) à droite avec un margin right dans les divs  " Page Menu "   */
+
+  {
+    font-size: 14px;
+    padding: 0px 0px 14px 0px;
+  }
+
+  #Main-Menu
+  /* Id-Main Pour mettre les paddings du Main " Page Menu " */
+
+  {
+    position: relative;
+    width: 100%;
+    background-color: #F6F6F6;
+    padding: 0px;
+  }
+
+  .Menu-Bold2
+  /* Classe pour mettre les titres de Menu en gras et avec un padding -top "Page Menu" */
+
+  {
+    font-weight: bold;
+    margin: 0px;
+    padding: 10px 0px 10px;
+    font-size: 1rem;
+  }
+
+  .Boutton-Commander
+  /* Classe pour le bouton Commander des Menus "Page Menu" */
+
+  {
+    width: 187px;
+    height: 50px;
+    background: linear-gradient(to bottom right, #FF79DA 0%, #9356DC 100%);
+    color: white;
+    border-radius: 50px;
+    border: none;
+    margin: 45px 82px 58px;
+    font-size: initial;
+  }
+
+  .Figure-Menu img
+  /* Classe pour la figure de l'image du Menu Menu  " Page Menu "    */
+
+  {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .Figure-Menu
+  /* Classe pour la Div de l'image du Menu Menu  " Page Menu "    */
+
+  {
+    width: 100%;
+    height: initial;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .img_cover-Menu
+  /* Classe pour la Div de l'image du Menu Menu  " Page  Menu "    */
+
+  {
+    height: 260px;
+    overflow: hidden;
+  }
+
+  #Main-Menu .Menus
+  /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div  " Page Menu  " */
+
+  {
+    width: 90%;
+    height: 69px;
+    padding-left: 3%;
+    margin: 0px 3.5% 15px;
+    animation: 1.650s ease Plat;
+  }
+
+  #Main-Menu .Menu1
+  /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div  " Page Menu  " */
+
+  {
+    width: 90%;
+    height: 69px;
+    padding-left: 3%;
+    margin: 0px 3.5% 15px;
+    animation: 1.800s linear Plat;
+  }
+
+  #Main-Menu .Menu2
+  /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div et la dernière avec un padding different " Page Menu " */
+
+  {
+    width: 90%;
+    height: 69px;
+    padding-left: 3%;
+    margin: 0px 3.5% 15px;
+    animation: 1.925s ease-in Plat;
+  }
+
+  #Main-Menu .Menu3
+  /* Id-Main  Pour enlever le margin-bottom de la dernière div " .Mousse-Au-Chocolat  " Page Menu " */
+
+  {
+    width: 90%;
+    height: 69px;
+    box-shadow: 0px 3px 20px #E5E5E5;
+    border-radius: 20px;
+    padding-left: 3%;
+    margin: 0px 3.5%;
+    animation: 1.925s ease-in Plat;
+  }
+
+  .Bouton-Retour-Logo
+  /* Classe du Logo et du Bouton Retour pour mettre la Div en position relative des "4 pages Menu" */
+
+  {
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+
+  .Menu-Boutton-Retour
+  /* Classe pour le bouton-Retour des "4 pages Menu" */
+
+  {
+    position: absolute;
     background-color: white;
-    color:black;
-    border:0px;
-    top:25px;
-    left:22px;
-    bottom:0px;
-    width:19px;
-    height:16px;
-    font-size:initial;
-}
-.Menu-Boutton-Retour a /* Classe pour le bouton-Retour des "4 pages Menu" */
-{
-    color:black;
-}
-    footer /* Footer des 5 pages  " La Page Index et les 4 pages Menu "    */
-{
+    color: black;
+    border: 0px;
+    top: 25px;
+    left: 22px;
+    bottom: 0px;
+    width: 19px;
+    height: 16px;
+    font-size: initial;
+  }
+
+  .Menu-Boutton-Retour a
+  /* Classe pour le bouton-Retour des "4 pages Menu" */
+
+  {
+    color: black;
+  }
+
+  footer
+  /* Footer des 5 pages  " La Page Index et les 4 pages Menu "    */
+
+  {
     background-color: #353535;
-    padding:27px 0px 26px 25px;
+    padding: 27px 0px 26px 25px;
+  }
+
+  footer h3
+  /* Titre h3 pour le footer des 5 pages  " La Page Index et les 4 pages Menu " */
+
+  {
+    font-family: "Shrikhand Regular", sans-serif;
+    color: white;
+    margin: 0px 0px 23px 0px;
+    font-size: 1.3rem;
+  }
+
+  footer p
+  /* Texte pour le footer des 5 pages  " La Page Index et les 4 pages Menu "     */
+
+  {
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+  }
+
+  .Fourchette-Couteau i
+  /* Style pour l' icon Fourchette-Couteau pour le footer des 5 pages  " La Page Index et les 4 pages Menu "   */
+
+  {
+    font-size: 15px;
+    color: white;
+    margin-right: 12px;
+    font-weight: bold;
+  }
+
+  .Partenaire i
+  /* Style pour l'icon partenaire pour le footer des 5 pages  " La Page Index et les 4 pages Menu "   */
+
+  {
+    font-size: 12px;
+    color: white;
+    margin-right: 9px;
+    transform: rotate(-10deg);
+    font-weight: bold;
+  }
+
+  .bold
+  /* Style pour mettre en gras les Icons Footer Fourchette-Couteau et Partenaire " La Page Index et les 4 pages Menu "   */
+
+  {
+    font-weight: bold;
+  }
+
 }
-    footer h3 /* Titre h3 pour le footer des 5 pages  " La Page Index et les 4 pages Menu " */  
+
+@media screen and (max-width:350px)
+/* styles pour les mobiles très petit écrants */
+
 {
-    font-family:"Shrikhand Regular", sans-serif;
-    color:white;
-    margin:0px 0px 23px 0px ;
-    font-size:1.3rem;
-}
-footer p /* Texte pour le footer des 5 pages  " La Page Index et les 4 pages Menu "     */
-{
-    color:white;
-    margin-top:0px;
-    margin-bottom:10px;
-    font-size:0.9rem;
-}
-.Fourchette-Couteau i /* Style pour l' icon Fourchette-Couteau pour le footer des 5 pages  " La Page Index et les 4 pages Menu "     */
-{
-    font-size:15px;
-    color:white;
-    margin-right:12px;
-    font-weight:bold;
-}
-.Partenaire i /* Style pour l'icon partenaire pour le footer des 5 pages  " La Page Index et les 4 pages Menu "     */
-{
-    font-size:12px;
-    color:white;
-    margin-right:9px;
-    transform:rotate(-10deg);
-    font-weight:bold;
-}
-.bold /* Style pour mettre en gras les Icons Footer Fourchette-Couteau et Partenaire " La Page Index et les 4 pages Menu "     */
-{
-    font-weight:bold;
-}
-}
-@media screen and (max-width:350px) /* styles pour les mobiles très petit écrants */
-{
-.Menu-Boutton-Retour /* Classe pour le bouton-Retour des "4 pages Menu" */
-{
-    top:22px;
-    left:5px;
-    width:0px;
-    height:0px;
-    font-size:0.8rem;
-}
-.H1-La-palette-du-gout  /* H1 Titre principal pour mettre la taille et les margins" Page Menu " */
-{
-    font-size:1.2rem;
-}
-.Coeur-Plein-Menu /* Style pour mettre l'icon Coeur  du H1 en flex et avec un margin " Page Menu " */
-{
-    top:0px;
-    left:0.5px;
-    position:absolute;
-    font-size:1.4rem;
-    opacity:0;
-    color:transparent;
-}
-.Dimension-Coeur /* Style pour mettre l'icon Coeur sans margin " Page Menu " */
-{
-    margin:0px;
-}
-.Menu-Bold2    
-{
-    white-space:nowrap; 
-    overflow:hidden;
-    text-overflow:ellipsis;
-}
-#Main-Menu .Menu-Rectangle, #Main-Menu .Mousse-Au-Chocolat /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les divs  " Page Menu " */
-{
-    width:90%;
-    height:69px;
-    padding-left:3.2%;
-    margin:0px 3.2% 15px 3.2%;
-}
-#Main-Menu .Menus /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div  " Page Menu  " */
-{
-    width:90%;
-    height:69px;
-    padding-left:3.2%;
-    margin:0px 3.2% 15px 3.2%;
-    animation:1.650s ease Plat;
-}
-#Main-Menu .Menu /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div  " Page Menu  " */
-{
-    width:90%;
-    height:69px;
-    padding-left:3.2%;
-    margin:0px 3.2% 15px 3.2%;
-    animation:1.800s linear Plat;
-}
-#Main-Menu .Menuerts, .Mousse-Au-Chocolat /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div et la dernière avec un padding different " Page Menu " */
-{
-    width:90%;
-    height:69px;
-    padding-left:3.2%;
-    margin:0px 3.2% 15px 3.2%;
-    animation:1.925s ease-in Plat;
-}
-.Prix  /* Classe pour mettre Les chiffres ( prix ) à droite avec un margin right dans les divs  " Page Menu "   */
-{
-    font-size:13px;
-    padding:40px 0px 14px 0px;
-}
-.Description-Menu  /* Classe pour mettre en léger gris  les descriptions des Menu sur la  " Page Menu "   */
-{
-    color:#353535;
-    padding:0px 0px 15px 0px;
-    margin:0px;
-    font-size:15px;
-    white-space:nowrap; 
-    overflow:hidden;
-    text-overflow:ellipsis;
-}
-.Boutton-Commander /* Classe pour le bouton Commander des Menus "Page Menu" */
-{
-    width:60%;
-    height:50px;
-    background:linear-gradient(to bottom right,#FF79DA 0%,#9356DC 100%);
-    color:white;
-    border-radius:50px;
-    border:none;
-    margin:45px 20% 58px;
-    font-size:initial;
-}
+  .Menu-Boutton-Retour
+  /* Classe pour le bouton-Retour des "4 pages Menu" */
+
+  {
+    top: 22px;
+    left: 5px;
+    width: 0px;
+    height: 0px;
+    font-size: 0.8rem;
+  }
+
+  .H1-La-palette-du-gout
+  /* H1 Titre principal pour mettre la taille et les margins" Page Menu " */
+
+  {
+    font-size: 1.2rem;
+  }
+
+  .Coeur-Plein-Menu
+  /* Style pour mettre l'icon Coeur  du H1 en flex et avec un margin " Page Menu " */
+
+  {
+    top:1px;
+    left: 0.5px;
+    position: absolute;
+    font-size: 1.3rem;
+    opacity: 0;
+    color: transparent;
+  }
+
+  .Dimension-Coeur
+  /* Style pour mettre l'icon Coeur sans margin " Page Menu " */
+
+  {
+    margin: 0px;
+  }
+
+  .Menu-Bold2 
+  {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  #Main-Menu .Menu1
+  /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div  " Page Menu  " */
+
+  {
+    width: 90%;
+    height: 69px;
+    padding-left: 3.2%;
+    margin: 0px 3.2% 15px 3.2%;
+    animation: 1.650s ease Plat;
+  }
+
+  #Main-Menu .Menu2
+  /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div  " Page Menu  " */
+
+  {
+    width: 90%;
+    height: 69px;
+    padding-left: 3.2%;
+    margin: 0px 3.2% 15px 3.2%;
+    animation: 1.800s linear Plat;
+  }
+
+  #Main-Menu .Menu3
+  /* Id-Main  Pour mettre la largeur et la hauteur + un box-shadow pour les div et la dernière avec un padding different " Page Menu " */
+
+  {
+    width: 90%;
+    height: 69px;
+    padding-left: 3.2%;
+    margin: 0px 3.2% 15px 3.2%;
+    animation: 1.925s ease-in Plat;
+  }
+
+  .Prix
+  /* Classe pour mettre Les chiffres ( prix ) à droite avec un margin right dans les divs  " Page Menu "   */
+
+  {
+    font-size: 13px;
+    padding: 40px 0px 14px 0px;
+  }
+
+  .Description-Menu
+  /* Classe pour mettre en léger gris  les descriptions des Menu sur la  " Page Menu "   */
+
+  {
+    color: #353535;
+    padding: 0px 0px 15px 0px;
+    margin: 0px;
+    font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .Boutton-Commander
+  /* Classe pour le bouton Commander des Menus "Page Menu" */
+
+  {
+    width: 60%;
+    height: 50px;
+    background: linear-gradient(to bottom right, #FF79DA 0%, #9356DC 100%);
+    color: white;
+    border-radius: 50px;
+    border: none;
+    margin: 45px 20% 58px;
+    font-size: initial;
+  }
+
 }
